@@ -67,6 +67,21 @@
 			color: #ffd700 !important;
 			border-color: #ffd700 !important;
 		}
+		@keyframes ppGlow {
+			0%   { box-shadow: 0 0 4px rgba(0,112,240,0.3); }
+			50%  { box-shadow: 0 0 16px rgba(0,112,240,0.85), 0 0 30px rgba(0,150,255,0.4); }
+			100% { box-shadow: 0 0 4px rgba(0,112,240,0.3); }
+		}
+		a.pp-glow img {
+			border-radius: 8px;
+			animation: ppGlow 2.2s ease-in-out infinite;
+			transition: transform 0.2s;
+		}
+		a.pp-glow:hover img {
+			transform: scale(1.08);
+			animation: none;
+			box-shadow: 0 0 24px rgba(0,112,240,1);
+		}
 	</style>
 	</head>
 	<body class="is-preload">
@@ -303,10 +318,7 @@
 									<h3> Contribute ? </h3>
 									<ul>
 									<li>
-									<p>Contribute with <a href="https://www.paypal.com/paypalme/notatranslator" target="_blank" runtime_url="https://www.paypal.com/paypalme/notatranslator" type="url" style="display: initial;"><img src="images/pp.png" alt="" data-position="25% 25%" /></a></p></p>
-									</li>
-									<li>
-									<p>Donate with <a href="https://www.leetchi.com/c/notatranslator" target="_blank" runtime_url="https://www.leetchi.com/c/notatranslator" type="url" style="display: initial;"><img src="images/leetchi.png" alt="" data-position="25% 25%" /></a></p></p>
+									<p>Contribute with <a href="https://www.paypal.com/paypalme/notatranslator" target="_blank" class="pp-glow" style="display: initial;"><img src="images/pp.png" alt="" data-position="25% 25%" /></a></p></p>
 									</li>
 									<!--
 									<li>
