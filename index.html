@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en-US" dir="ltr">
+	<head>
+		<title>Not A Translator</title>
+		<meta name="description" content="Improve your understanding of languages : Not A Translator defines selected words conveniently in configurable tooltips. No ads, no trackers !" />
+	<link rel="canonical" href="https://notatranslator.go.yj.fr/" />
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Not A Translator defines every word in a tooltip !" />
+	<meta property="og:description" content="Improve your understanding of foreign languages : Not A Translator fetches definitions of selected words and displays them conveniently in inline configurable tooltips. No ads, no trackers, but please...contribute !" />
+	<meta property="og:url" content="https://notatranslator.go.yj.fr/" />
+	<meta property="og:site_name" content="Not A Translator" />
+	<meta property="article:published_time" content="2021-05-11T23:03:41+00:00" />
+	<meta property="article:modified_time" content="2021-05-12T22:57:00+00:00" />
+	<meta property="og:image" content="https://lirp.cdn-website.com/6ce814e5/dms3rep/multi/opt/appscreenshotEN-600w.png" />
+	<meta property="og:image:width" content="500" />
+	<meta property="og:image:height" content="312.5" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:label1" content="written by">
+	<meta name="twitter:data1" content="AKGang">
+	<meta name="twitter:label2" content="Reading time is.">
+	<meta name="twitter:data2" content="7 minutes">
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="stripe/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    
+   <script src="https://js.stripe.com/v3/"></script>
+								  <script type="text/javascript">
+								// Create an instance of the Stripe object with your publishable API key
+								var stripe = Stripe("pk_test_51IptiYD73UOLroqVGhAMp7EqMPFpxsdcRbGoYG99PywqY3G0YsCpWDFu4fCIgGjt0bSjVyeOkxWvSncLXO8lKRds00YISxD3Cu");
+								var checkoutButton = document.getElementById("checkout-button");
+
+								checkoutButton.addEventListener("click", function () {
+								  fetch("/create-checkout-session", {
+									method: "POST",
+								  })
+									.then(function (response) {
+									  return response.json();
+									})
+									.then(function (session) {
+									  return stripe.redirectToCheckout({ sessionId: session.id });
+									})
+									.then(function (result) {
+									  // If redirectToCheckout fails due to a browser or network
+									  // error, you should display the localized error message to your
+									  // customer using error.message.
+									  if (result.error) {
+										alert(result.error.message);
+									  }
+									})
+									.catch(function (error) {
+									  console.error("Error:", error);
+									});
+								});
+	</script>
+	
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Usage, support</a></li>
+							<li><a href="#two">News</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<h2>NOT A TRANSLATOR 2.8.0 : A Chrome/Firefox extension</h2>
+						<div class="inner">
+							<span style="float:right"><figure><a href="https://chrome.google.com/webstore/detail/not-a-translator/oinpadiakgoonogncokelpgpoiiemcpo?hl=en" target="blank"><img src="images/appscreenshotEN.jpg" alt="Not a Translator" title="click & install 'Not_a_Translator' Extension for Firefox & Chrome-based browsers"  width="400" /></a></figure></span>
+							
+							
+							<p>Get inline word <em>definition</em> in a tooltip !<br/><br/>
+							<span style="justify:center!important;">
+							<br/>
+							<p class="text-align-left"><span style="font-style: italic; display: initial;">'Not a Translator' has been built for those who want to improve their fluency in a new language. To avoid approximative translations and breaks during the reading of a webpage (and thinking !), the extension</span> <em>defines</em> <span style="font-style: italic; display: initial;">the word you have selected rather than translating it. Then, it displays the definition in a tooltip "on the flow" without loading a new tab.</span> 
+							<span class="" style="display: initial;"> No break in your browsing.</span>
+							</span>							
+							<span style="font-style: italic; display: initial;">	
+							'Not a translator' is configurable. English Spanish and French dictionaries are available so far.	
+							</span></p>
+							<p >&nbsp;	
+							<ul class="actions" style="justify-content:center!important;">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="https://chrome.google.com/webstore/detail/not-a-translator/oinpadiakgoonogncokelpgpoiiemcpo?hl=en" target='blank' class="button scrolly"><img src="images/chrome-logo.svg" alt="Not A translator for Chrome & Firefox" width="25px" height="25px" style="vertical-align:middle"/> Install</a></li>
+								<li><a href="https://chrome.google.com/webstore/detail/not-a-translator/oinpadiakgoonogncokelpgpoiiemcpo?hl=en" target='blank' class="button scrolly"><img src="images/logo-edge.svg" title='Chrome extension supported by Edge' alt="Not A translator for Chrome, Edge & Firefox" width="25px" height="25px" style="vertical-align:middle"/> Install</a></li>
+								<li><a href="https://addons.mozilla.org/addon/not-a-translator/" target='blank' class="button scrolly"><img src="images/ffox-logo.svg" alt="Not A translator for FireFox" width="25px" height="25px" style="vertical-align:middle"/> Install</a></li>
+								<li><a href="#two-and-half" class="button scrolly">Contribute</a></li>
+							</ul>&nbsp;
+							</p>
+							<p class="text-align-left" style="float:right;">
+							<span style="display: initial; font-style: italic; font-size: 12px;">'Not a translator'</span>
+							<span class="" style="display: initial; font-size: 12px;"><span style="display: initial;"> is free for use but a</span>
+							<a href="#two-and-half" style="display: initial; font-size: 12px;">contribution</a> ↓							
+							<span style="display: initial; font-size: 12px;">would be greatly appreciated.</span>
+							</p>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Not a translator is easy to use but you may find additional support/info here :</h2>
+									<p><h3>General usage and behavior</h3>
+										<span>
+										Just right-click a word you want the meaning for during your reading. Select "get meaning for 'my word'" in the contextual menu. A tooltip displays the definition of the word from a well-known dictionary.
+										</span>
+									</p>
+									<p><h3>Selection</h3>
+										<span>
+										To select a word you double-click it (then right-click to open the contextual menu) or you can select by maintaining left button down while you move the cursor to the other end of your selection. Whatever fragment of text you have selected for definition, 'Not a translator' will always consider the <b>first string</b> that looks like a one and only word.
+										It means that if you select 'look for' the definition of 'look' is going to be looked for. If you select 'ond the curtain' : 'ond' will be looked for : Don't expect a good result, instead select 'beyond' or 'curtain' ! Next updates may see improvments as a two words seeker may be useful.
+										You can select and reselect the same word or overlap selections but do that only if you're a maniac who wants to play with the rotating tooltips because this is not very useful. However, sometimes it may help...
+										You won't get anything if you select inside an Iframe : This is a security issue in some browsers and it's refused right now.
+										Pressing F5 will refresh the page to its orginal state.
+										</span>									
+									</p>
+									<p><h3>Options</h3>
+										<span>
+										<p>If you right-click the dictionary icon near the navigation field in your web-browser, you can change the dictionary/language the selected word will be defined into. English and Spanish are supported so far.</p>
+										<p> If you left-click the dictionary icon you'll get access to the main gui option : tooltip color change !</p>
+										<p>If you need full speed performance for your navigation you can put the extension in sleep mode : basically the extension listeners are disabled and no html/css will be inserted in the pages.</p>
+										<p>Because the layout of a page is not predictable, tooltips have been made rotative in case sections of the page unfortunately overlap the definition that is to be displayed. Just click the arrowed cross that appears near your selection once it has been treated (This as a first approach. Continue reading for advanced usage).
+										<img src="images/appscreenshot4.png" alt="Not A translator for Chrome & Firefox" width="120px" height="100px" style="vertical-align:middle;border-radius: 20%;"/></p>
+										<p><img src="images/lang_auto.png" alt="Not A translator for Chrome & Firefox" width="100px" height="30px" style="vertical-align:middle;border-radius: 7%;"/><span> <em>lang autodetect</em> has been introduced since version 1.8 and adjusts automatically the dictionary to the language of the page you're visiting at load time. i18n.detectLanguage() API is used and is quite efficient.</span>
+										<span>However, when several different languages are entangled in the same page (like community portals for example) the result may not be has expected. It's still possible to change the dictionary quickly through the popup menu. It's also possible to deactivate <em>lang autodetect</em>. A refresh (F5) will often be sufficient.</span>
+										<p><em>lang autodetect</em> loads during page loading in a tab. If the language displayed in the Badge text seems unsynchronised just refresh the page (F5).</p>
+										<p><img src="images/repair.png" alt="Not A translator for Chrome & Firefox" width="60px" height="30px" style="vertical-align:middle;border-radius: 7%;"/><span> <em>repair/fix tooltip</em> may need some more technical explanations as a functionality : Usually tooltips are injected inline in the html flow. In most of the cases it's sufficient to get a proper render even if some color changes may be required to balance styles inheritances and fusions.</span>
+										<span>But most cases are not all the cases and sometimes it's really a mess when styles from the host page cypher tooltips own styles, when blocks of any kind overlap the definition, etc... Autodetecting overlaps is possible but overlapping is not always the problem as the tips are made rotative. Moreover, even with overlapping, preserving inline injection and some style inheritance is sometimes a better way to display a comfortable/readable result as offsets of selection are not always easy to guess.</span>
+										<span>The best way to handle this issue, to me, was to let the choice to correct the tooltip position and display: this correction is a sort of trick according to the usual flow of html. We try to intercept the coordinates of the selection and replace it by an overlapping block that mimics inline injection, the tooltip is made overlapping everything.</span>
+										<span>This seems acceptable although not perfect. Deleting the tooltip with “∅” is still possible. Refreshing (F5) will return you to the original page in the worst of any cases. Here below are samples of such fixes.</span>
+										<span>And if you still feel some enhancement are required, contact us at the end of this page.</span>
+										<span>N.B: Please don't ask for iframe support as this is a security related issue different from this, for the moment : browsers don't allow easily to jump from host to host to modify inline content.</span>
+										<p><img src="images/quickt.png" alt="Not A translator for Chrome & FireFox" width="100px" height="30px" style="vertical-align:middle;border-radius: 7%;"/><span> <em>Quick Translate and Return</em> is a new, totally against the spirit, freestyle functionality : It uses LibreTranslate API to provide a quick translation into browser current local.
+										<span>This has been done because it may occur that you are stuck inside the definition and still don't understand. Don't over-use : Intuition is highly encouraged as intuition errors will still be more useful than a correct translation one would forget as soon as readed ! But hey ! as you want...This is a very quick one-word translation provided raw. Another click on the 4 leaves clover and you're back to the defintion.</span>
+										<span>Let me know for bugs...</span>
+										<span>Ahh...Almost forgot : you have no excuse overusing 'quick-translate' because you can do that : </span>
+										<p><span><a href='https://notatranslator.go.yj.fr/images/insides.png' target="blank"><img src="images/insides.png" title='click to enlarge in a new tab' alt="Not A translator for Chrome & FireFox" width="200px" height="200px" style="vertical-align:middle;border-radius: 7%;"/></a></span></p>
+										<p><span>(As you may notice it may or may not erase selected word you ask definition for inside the tooltip)</span></p>
+										</p>
+										<table style="width:100%">
+											<tr>
+												<th><u>Before fixing:</u></th>
+												<th><u>After fixing:</u></th> 
+											</tr>
+											<tr>
+												<td><img src="images/mess01before.png" alt="La Montagne newspaper"title="La Montagne newspaper" width="200px" height="100px" style="vertical-align:middle;border-radius: 7%;"/></td>
+												<td><img src="images/mess01after.png" alt="La Montagne newspaper" title="La Montagne newspaper" width="200px" height="100px" style="vertical-align:middle;border-radius: 7%;"/></td> 
+											</tr>
+											<tr>
+												<td><img src="images/mess02before.png" alt="Steam Community Portal" title="Steam Community Portal" width="220px" height="100px" style="vertical-align:middle;border-radius: 7%;"/></td>
+												<td><img src="images/mess02after.png" alt="Steam Community Portal" title="Steam Community Portal" width="200px" height="100px" style="vertical-align:middle;border-radius: 7%;"/></td> 
+											</tr>
+											<tr>
+												<td><img src="images/mess03before.png" alt="Google Search" title="Google Search" width="200px" height="100px" style="vertical-align:middle;border-radius: 7%;"/></td>
+												<td><img src="images/mess03after.png" alt="Google Search" title="Google Search" width="200px" height="100px" style="vertical-align:middle;border-radius: 7%;"/></td> 
+											</tr>
+										</table>
+										</span>
+									</p>
+									<p><h3>What it does in the background</h3>
+										<span>
+										there are no ads and no trackers in this extension. It just inserts some html/css code on the fly to generate the tooltip and requests data to online well-known dictionaries.
+										</span>
+									</p>
+									<p><h3>Why ?</h3>
+										<span>
+										Online translators can be unconfortable to deal with in many ways : Some of them launch another tab, displays an annoying icon all the way but this is not really decisive in the choice of an alternate solution.
+										Some professional translators, such as DeepL, for example are excellent and sometimes translations seem unavoidable, for example when you begin to learn a new language. But to really improve ones skills in a foreign language it may be better to get one's mind converging with 'thinking in the language' rather than  
+										translating each word in one's own mothertongue. This is what <i>Not a translator</i> intends to do.
+										</span>
+									</p>
+									<p><h3>Work</h3>
+										<span>
+										This has been released using Chrome extension API Manifest Version 3. If you're interested in extension developpment you can start here : <a href='https://developer.chrome.com/docs/extensions/mv3/getstarted/'>developer.chrome.com</a>.
+										Don't forget to study <a href='https://developer.mozilla.org/en-US/docs/Glossary/Polyfill'>Polyfills</a> from the beginning. It allows to quickly develop a portable code beetween Firefox and Chrome. 
+										</span>
+									</p>
+									<p><h3>i18n</h3>
+										<span>
+										This extension adapts itself to your browser language environment : English and French are supported so far. Spanish is supported too but may need improvments. Feel free to use the <a href="#three">contact info</a> if you're available to redo the translation.
+										</span>
+									</p>
+									<p><h3>Expectations</h3>
+										<span>
+										You can contact me if you want to submit some ideas for evolutions or functionalities. Fill in the form on this little website. You can expect this extension to be free from ads and trackers.
+										</span>
+										<span>
+										This has been done to be useful and enjoyable ! Hope you'll <a href="#two-and-half" style="display: initial;">contribute</a> too, woud be neat ! You'll have to create a paypal account for that if you haven't got one already.	</span>
+									</p>
+									<ul class="actions">
+										<li><a href="#two" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+<!--
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Feugiat consequat</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ultricies aliquam</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+-->
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>News</h2>
+							<p>Current version : 2.8.0</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>recent News :</h3>
+									<p>Improve Cambridge dictionary definition retrieval.</p>
+									<p>Firefox install bug still to be fixed.</p>
+									<p>2.9 nearly ready to be published.</p>
+									<p>Edge portage/publishing ongoing.</p>
+									<p>Maybe new dictionaries to be added.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Last updates</h3>
+									<p><ul>
+										<li>timers & backgrounds...better experience !</li>
+										<li>bug fixes and higher resolution for language detection.</li>
+										<li>High treason feature : quick translate in tooltip and back to def !!?!!</li>
+										<li>Surprise backgrounds !</li>
+										<li>version 2.8.0: Enhanced multi-language, multi-tabs support !</li>
+										<li>version 2.7.0: Italian & German dictionaries !</li>
+										<li>version 2.2.3: FireFox publication done !</li>
+										<li>version 2.2: Fix tooltip feature can enhance render in case of style mess or overlaps.</li>
+										<li>version 2.1: Ability to remove the tooltip.</li>
+										<li>version 1.8: Page language detection and dictionary auto-switch.</li>
+										<li>version 1.6: Iframe browsing detection.</li>
+										<li>French dictionary added.</li>
+										<li>Dictionary selector replicated in the popup GUI.</li>
+										<li>Security improvements.</li>
+										<li>Spanish i18n done (needs improvement I guess !)</li>
+										</ul></p>						
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span> 
+									<h3>Dictionaries :</h3>
+									<p><ul>
+										<li><a href='https://dictionary.cambridge.org/dictionary/english/' target='blank'><img src="images/logo-lrg2.jpg" alt="Cambridge" data-position="25% 25%" width="27px" height="31px" /> Cambridge English dictionary</a></li>
+										<li><a href='https://dle.rae.es/' target='blank'><img src="images/rae2.jpg" alt="DLE" data-position="25% 25%" width="26px" height="35px" /> Diccionario de lengua Espanola</a></li>
+										<li><a href='https://www.larousse.fr/' target='blank'><img src="images/logo_larousse.png" alt="Larousse" data-position="25% 25%" width="75px" height="38px"/> Dictionnaire de langue Française Larousse</a></li>
+										<li><a href='https://www.treccani.it/' target='blank'><img src="images/logo_treccani.png" alt="Treccani" data-position="25% 25%" width="35px" height="38px"/> Portale Treccani</a></li>
+										<li><a href='https://www.duden.de/' target='blank'><img src="images/logo_duden.svg" alt="Duden" data-position="25% 25%" width="75px" height="38px"/> Duden Wörterbuch</a></li>									
+										<li><a href='https://libretranslate.de/' target='blank'><img src="images/logo_libreT.png" alt="LibreTranslate" data-position="25% 25%" width="75px" height="30px"/> Libre Translate</a></li>
+										<li><a href='https://en.wiktionary.org/wiki/Wiktionary:Main_Page' target='blank'><img src="images/enwiktionary.png" alt="" data-position="25% 25%" width="34px" height="41px"/>Wiktionnaire</a></li>
+									</ul></p>
+								</section>								
+								<section id="two-and-half">
+									<span class="icon solid major fa-link"></span>
+									<h3> Contribute ? </h3>
+									<ul>
+									<li>
+									<p>Contribute with <a href="https://www.paypal.com/paypalme/notatranslator" target="_blank" runtime_url="https://www.paypal.com/paypalme/notatranslator" type="url" style="display: initial;"><img src="images/pp.png" alt="" data-position="25% 25%" /></a></p></p>
+									</li>
+									<li>
+									<p>Donate with <a href="https://www.leetchi.com/c/notatranslator" target="_blank" runtime_url="https://www.leetchi.com/c/notatranslator" type="url" style="display: initial;"><img src="images/leetchi.png" alt="" data-position="25% 25%" /></a></p></p>
+									</li>
+									<!--
+									<li>
+									
+									<div class="product">
+									Contribute with 
+										<span style="background-color:white;">
+										<svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 92 91">
+										  <g fill="none" fill-rule="evenodd">
+											<path class="hover-fillLight" fill="#6772E5" d="M45.5578512,90.555 C20.3969448,90.555 0,70.407814 0,45.555 C0,20.7021863 20.3969448,0.555 45.5578512,0.555 C70.718758,0.555 91.115702,20.7021863 91.115702,45.555 C91.115702,70.407814 70.718758,90.555 45.5578512,90.555 Z"></path>
+											<path fill="#FFF" d="M43.0168821,37.3455209 C43.0168821,35.6487301 44.4103217,34.9961182 46.7182061,34.9961182 C50.0276252,34.9961182 54.2079441,35.9967897 57.5173632,37.7805955 L57.5173632,27.556343 C53.9031292,26.1205969 50.3324401,25.555 46.7182061,25.555 C37.8785734,25.555 32,30.1667905 32,37.8676104 C32,49.8756686 48.5470956,47.9613404 48.5470956,53.1387279 C48.5470956,55.1400709 46.805296,55.792683 44.3667767,55.792683 C40.7525427,55.792683 36.1367739,54.3134292 32.4789949,52.3120862 L32.4789949,62.666861 C36.5286788,64.407159 40.6219077,65.146786 44.3667767,65.146786 C53.4241343,65.146786 59.6510676,60.665518 59.6510676,52.8776831 C59.6075226,39.9124609 43.0168821,42.2183561 43.0168821,37.3455209 Z"></path>
+										  </g>
+										</svg>
+										</span>&nbsp; Stripe :
+										<div class="description">
+										  <span>Stripe is like Paypal but may be easier to use</span>
+										  <h5><div class="field half">
+													<label for="name">Please, fill amount and click 'contribute with Stripe' :</label>
+													<input type="number" required max='8' name="amount" id="amount" style="background-color:grey; overflow:hidden; "  min="1" max="999999999"/>&nbsp; <button type="button" id="checkout-button">Contribute with Stripe</button>												
+												</div>
+											</h5>
+										</div>
+									
+								  </div>
+																  
+								 </li> 
+								 -->	
+								 <br><br><br>
+									<div class="boxfoot" style="float:right;">
+									
+									<img
+									  src="images/dictionary.png"
+									  alt="Contribute"
+									  width="40px" height="40px"
+									/><br>
+									<a href='#intro'>
+									 Thanks !
+									 </a>
+								 </div>								
+							</section>
+								<!--
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul>
+						</div>-->
+					</section>
+								
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Please send suggestions, problems or other...</h2>
+							<p>Tell us about your experience. Send us comments, suggestions, ask for support...</p>
+							<div class="split style1">
+							
+								<section><!--
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								--></section>
+								
+								<section>
+									<ul class="contact">
+										<!--<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>-->
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:akgang@gmail.com">akgang@gmail.com</a>
+										</li>
+										<!--
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										
+											</ul>
+										</li>
+									   -->
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; NotATranslator. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
