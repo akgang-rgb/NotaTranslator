@@ -1,4 +1,4 @@
-const stripe = require('stripe')('sk_test_51IptiYD73UOLroqVYVHBp7oNr9Lt6X6AGbdGqJRrgnzVAdfOWlNhG9Qkg2DceXFM1VlV0QrQIXyeBMqixMHJPU9K00gSDS42W2');
+const stripe = require('stripe')('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 const express = require('express');
 const app = express();
 app.use(express.static('.'));
