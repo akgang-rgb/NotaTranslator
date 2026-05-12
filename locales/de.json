@@ -1,296 +1,296 @@
 {
-  "lang": "de",
-  "meta": {
-    "title": "Not A Translator - Definitionen in der Ursprungssprache direkt auf der Seite",
-    "description": "Definitionen in der Ursprungssprache, Audio, Einheiten- und Zeitzonen-Umrechnungen, intelligentere Suchpfade und Konsolenmodus für schwierige Seiten."
-  },
-  "shared": {
-    "appName": "Not A Translator",
-    "lookup": "Bedeutung suchen für",
-    "consoleMode": "Konsolenmodus",
-    "tooltipMode": "Tooltip-Modus",
-    "contribute": "Beitragen",
-    "dictionary": "Wörterbuch",
-    "badges": {
-      "risky": "riskant",
-      "conditional": "funktioniert unter Bedingungen",
-      "ok": "ok"
+    "lang": "de",
+    "meta": {
+        "title": "Not A Translator - Definitionen in der Ursprungssprache direkt auf der Seite",
+        "description": "Definitionen in der Ursprungssprache, Audio, Einheiten- und Zeitzonen-Umrechnungen, intelligentere Suchpfade und Konsolenmodus für schwierige Seiten."
     },
-    "console": {
-      "copy": "Kopieren",
-      "remove": "Entfernen",
-      "forceForSite": "Konsolenmodus für diese Seite erzwingen"
+    "shared": {
+        "appName": "Not A Translator",
+        "lookup": "Bedeutung suchen für",
+        "consoleMode": "Konsolenmodus",
+        "tooltipMode": "Tooltip-Modus",
+        "contribute": "Beitragen",
+        "dictionary": "Wörterbuch",
+        "badges": {
+            "risky": "riskant",
+            "conditional": "funktioniert unter Bedingungen",
+            "ok": "ok"
+        },
+        "console": {
+            "copy": "Kopieren",
+            "remove": "Entfernen",
+            "forceForSite": "Konsolenmodus für diese Seite erzwingen"
+        },
+        "languages": {
+            "english": "Englisch",
+            "spanish": "Spanisch",
+            "french": "Französisch",
+            "german": "Deutsch",
+            "italian": "Italienisch",
+            "finnish": "Finnisch",
+            "ancient": "Latein + Griechisch (�obersetzung)"
+        }
     },
-    "languages": {
-      "english": "Englisch",
-      "spanish": "Spanisch",
-      "french": "Französisch",
-      "german": "Deutsch",
-      "italian": "Italienisch",
-      "finnish": "Finnisch",
-      "ancient": "Latein + Griechisch (�obersetzung)"
+    "site": {
+        "languageLabel": "Sprache",
+        "brandTagline": "Definitionen bleiben im Lesefluss.",
+        "nav": {
+            "features": "Funktionen",
+            "updates": "Neuheiten",
+            "engine": "Engine",
+            "usage": "Verwendung",
+            "faq": "FAQ"
+        },
+        "hero": {
+            "eyebrow": "Erst lesen. Dann übersetzen, wenn nötig.",
+            "title": "Die Definition auf der Seite behalten, in der Sprache, zu der das Wort gehört.",
+            "lead": "Not A Translator fügt leichte Tooltips nahe an Ihrer Auswahl ein, hält die Definition in der Ursprungssprache im Vordergrund und versteckt viel Technik hinter einer sehr einfachen Geste.",
+            "primaryCta": "Funktionalitäten ansehen",
+            "secondaryCta": "Nutzung",
+            "storeCtas": {
+                "install": "",
+                "chrome": "Chrome",
+                "firefoxAndroid": "Ffox Android",
+                "firefox": "Firefox",
+                "paypal": "PayPal Me",
+                "paypalLabel": ""
+            },
+            "panelNote": "Der Konsolenmodus bewahrt Einträge, wenn eine Seite das Tooltip-Rendering stört.",
+            "status": {
+                "published": {
+                    "kicker": "Jetzt veröffentlicht",
+                    "title": "Verfügbar für Chrome, Firefox und Firefox Android.",
+                    "body": "Die Anwendung wird bereits auf den wichtigsten aktuellen Plattformen verteilt."
+                },
+                "funding": {
+                    "kicker": "Safari-Erweiterung",
+                    "title": "Die Safari-Portierung ist in Entwicklung, braucht aber Finanzierung bis zur Veröffentlichung im Apple Store.",
+                    "body": "Die Code-Migration existiert, die browserspezifische Arbeit ist gemacht, und Finanzierung würde helfen, den letzten Schritt zu schaffen.",
+                    "cta": "Entwicklung unterstützen"
+                }
+            },
+            "points": [
+                "Definitionen bleiben in der Ausgangssprache, statt das Lesen durch einen allgemeinen Übersetzungsumweg zu unterbrechen. Kein neuer Tab unterbricht das Lesen. Kein Sprachwechsel unterbricht das Verständnis.",
+                "Audio, trotzdem übersetzen, Reparatur und Seitenöffnung bleiben direkt im Tooltip oder im Konsoleneintrag erreichbar.",
+                "Hinter den Kulissen passiert viel: Suchwiederholungen, Kandidaten-Routing, Fallback-Anbieter und Schutzmechanismen pro Website, Erkennung der beteiligten Sprachen und von Seiten, die sich gegen Injektionen sperren."
+            ],
+            "inlineDemo": {
+                "before": "Not A Translator fügt leichte ",
+                "word": "Tooltips",
+                "badge": "rotierend",
+                "definition": "(Subst.) schwebende Definitionsfelder, die nahe an der Auswahl bleiben und sich um sie drehen k�nnen, um R�ndern und �berlappungen auszuweichen.",
+                "after": " nahe an Ihrer Auswahl ein, hält die Definition in der Ursprungssprache möglichst nah am Text, ohne Ihr Verständnis zu stören, und verbirgt viel technische Komplexität hinter einer sehr einfachen Geste."
+            }
+        },
+        "demo": {
+            "word": "epoch",
+            "time": "09:58:47",
+            "definition": "(Subst.) ein langer Zeitraum, besonders einer, der durch bestimmte Ereignisse oder Entwicklungen geprägt ist."
+        },
+        "signals": {
+            "items": [
+                {
+                    "value": "3 veröffentlichte Builds",
+                    "label": "Heute verfügbar",
+                    "body": "Chrome, Firefox Desktop und Firefox Android sind die derzeit veröffentlichten Erweiterungen."
+                },
+                {
+                    "value": "Konsolenmodus",
+                    "label": "Für schwierige Seiten",
+                    "body": "Wenn eine Seite das Tooltip-Rendering stört, wechseln gespeicherte Definitionen in eine kontrollierte Seitenkonsole."
+                },
+                {
+                    "value": "Intelligentere Suche",
+                    "label": "Hinter dem Tooltip",
+                    "body": "Kandidatenrettung, Mehrwortsuche und Kompositabehandlung verbessern unauffällig das sichtbare Ergebnis."
+                }
+            ]
+        },
+        "manifesto": {
+            "eyebrow": "Warum es sich anders anfühlt",
+            "title": "Ein Lesen-zuerst-Ablauf.",
+            "lead": "Die Erweiterung ist darauf ausgelegt, die Seite im Zentrum der Erfahrung zu lassen: direkt auf der Seite definieren, nur bei Bedarf übersetzen und lesbar bleiben, auch wenn die Injection schwierig wird.",
+            "items": [
+                {
+                    "title": "Definition vor �obersetzung",
+                    "body": "Die Erweiterung soll die Idee bewahren, dass ein Wort oft intuitiver verstanden wird, wenn seine Definition zuerst in seiner eigenen Sprache gegeben wird."
+                },
+                {
+                    "title": "Die Seite bleibt die Hauptfläche",
+                    "body": "Tooltip, Quick Translate, Audio und Seitenöffnung bleiben nahe an der Auswahl, damit Lesen nicht sofort zu Tab-Wechseln wird. Der rote Faden bleibt erhalten!"
+                },
+                {
+                    "title": "Wenn die Seite sich wehrt, muss das Ergebnis überleben",
+                    "body": "Manche Seiten sind feindlich gegenüber Inline-Injections oder schlicht instabil. Der Konsolenmodus sorgt dafür, dass das Wesentliche, die gespeicherte Definition, verfügbar bleibt, statt mit dem Tooltip zu verschwinden. Im schlimmsten Fall setzt F5/Refresh die Seite wieder in ihren Ausgangszustand zurück. Auf dieser Ebene ist keine Änderung dauerhaft."
+                }
+            ]
+        },
+        "screenshots": {
+            "eyebrow": "Im Einsatz",
+            "title": "Die Erweiterung ist dafür gemacht, in echten Lesesituationen zu leben.",
+            "lead": "Eine Firefox-Desktop-Ansicht und eine Safari-iPhone-Entwicklungsansicht machen das greifbarer.",
+            "desktop": {
+                "title": "Firefox Desktop",
+                "body": "Tooltip nahe am ausgewählten Wort, Popup-Steuerung und ursprünglicher Lesefluss bleiben erhalten."
+            },
+            "mobile": {
+                "title": "Safari iPhone Entwicklungs-Build",
+                "body": "Ein mobiles Layout, in dem der Tooltip kompakt und lesbar innerhalb einer mobilen Seite bleibt."
+            }
+        },
+        "features": {
+            "eyebrow": "Kernfunktionen",
+            "title": "An der Oberfläche einfach, darunter dicht.",
+            "lead": "Eine einzige Auswahl kann Wörterbuch-Routing, Ersatzsuchen, Definitionen neuer Kandidaten auf Variantenformen, Audioquellen, Umrechnungs-Parsing, Zeitzonen-Interpretation und auf feindlichen Seiten einen kontrollierten Wechsel in den Konsolenmodus auslösen.",
+            "items": [
+                {
+                    "title": "Definitionen in der Ursprungssprache",
+                    "body": "Der Hauptpfad bleibt dieselbe Idee: ein Wort auswählen und seine Definition in der Sprache erhalten, zu der es gehört, damit Lesen und Sprachenlernen verbunden bleiben."
+                },
+                {
+                    "title": "Umrechnungen und Zeitzonenhilfen",
+                    "body": "Numerische Auswahlen können in den Umrechnungsmodus wechseln, einschlie�Ylich Einheiten und zeitzonenbezogener Uhrzeiten, ohne die Seite zu verlassen."
+                },
+                {
+                    "title": "Audio nahe an der Auswahl",
+                    "body": "Wenn eine Aussprache verfügbar ist, kann der Tooltip oder der Konsoleneintrag Audio direkt bereitstellen und die beste verfügbare Quelle wählen. Das Symbol zeigt an, ob die Stimme menschlich oder synthetisch ist"
+                },
+                {
+                    "title": "Konsolenmodus für feindliche Seiten",
+                    "body": "Die Aktion repair öffnet jetzt direkt den Konsolenmodus. Alle anderen Reparaturen werden vorher automatisch behandelt. Wenn Inline-Rendering unzuverlässig wird, bleiben die Einträge in einem kontrollierten Panel lesbar, statt verloren zu gehen."
+                },
+                {
+                    "title": "Intelligentere Suchpfade",
+                    "body": "Die Suche stützt sich jetzt auf robusteres Kandidaten-Routing: zuerst die exakte Form, dann gerettete Kandidaten, Mehrwortausdrücke sowie Lemma- oder Kompositastrategien, wenn sie nützlich sind."
+                },
+                {
+                    "title": "Viel Technik, leise",
+                    "body": "Quick Translate ersetzt jetzt die Definition direkt im Tooltip. Dahinter stehen Fallback-Anbieter, Schutzmechanismen pro Website, mobile Positionierungsarbeit und browserspezifische Workarounds, damit die Interaktion kurz bleibt."
+                }
+            ]
+        },
+        "updates": {
+            "eyebrow": "Jüngste Verbesserungen",
+            "title": "Die Website spiegelt jetzt den realen Stand der Erweiterung wider.",
+            "lead": "Die Präsentationsseite beschreibt endlich die aktuelle Version statt eines älteren Schnappschusses.",
+            "items": [
+                {
+                    "kicker": "Umrechnung",
+                    "title": "Korrekte Auswertung gro�Yer Zahlen",
+                    "body": "Auswahlen wie �?z12,333 feet�?o oder sogar �?z12,333,425 feet�?o werden jetzt als Tausendergruppen statt als Dezimalzahlen interpretiert."
+                },
+                {
+                    "kicker": "Zeit",
+                    "title": "Zeitzonen bleiben Teil derselben Geste",
+                    "body": "Eine Uhrzeit-Auswahl kann ein eigenes Tooltip öffnen, wenn eine Zeitzone erkannt wird, statt einen getrennten Ablauf zu erzwingen."
+                },
+                {
+                    "kicker": "Wörterbuch",
+                    "title": "Finnisch gehört jetzt zum aktiven Satz",
+                    "body": "Finnisch ist jetzt Teil der lebendigen Auswahl, mit Wörterbuchzugang, Menüeinträgen sowie der zugehörigen Audio- und Suchlogik."
+                },
+                {
+                    "kicker": "Suche",
+                    "title": "Neue Suchpfade unter dem Tooltip",
+                    "body": "Neuere Sucharbeit verbessert die Kandidatenrettung für englische Mehrwortausdrücke und stärkt die Kompositabehandlung für Finnisch, wenn die Direktsuche nicht reicht."
+                }
+            ]
+        },
+        "engine": {
+            "eyebrow": "Unter der Haube",
+            "title": "Es passiert viel mehr, als die Oberfläche erkennen lässt.",
+            "lead": "Die Erweiterung wirkt absichtlich leicht und ist im Hintergrund sehr aktiv.",
+            "items": [
+                {
+                    "title": "Kandidaten-Routing",
+                    "body": "Eine Suche endet nicht bei einer rohen Form. Die Engine kann exakte Formen, gerettete Varianten und Mehrwortkandidaten erneut versuchen, bevor sie aufgibt."
+                },
+                {
+                    "title": "Umrechnungen, die echten Text lesen",
+                    "body": "Der Umrechnungspfad behandelt Tausendergruppen jetzt sicherer und kann aus derselben Auswahl zwischen Einheit und Zeitzone unterscheiden."
+                },
+                {
+                    "title": "Konsolen-Fallback",
+                    "body": "Die repair-Steuerung wirkt jetzt wie ein echter Moduswechsel: Sie schickt die aktuelle Suche in den Konsolenmodus statt nur eine kosmetische Reparatur zu versuchen."
+                },
+                {
+                    "title": "Audioquellen",
+                    "body": "Aussprache kann je nach Wörterbuch und Verfügbarkeit aus Wiktionary, Commons, DWDS oder einem generierten Fallback kommen."
+                },
+                {
+                    "title": "Finnisch-spezifische Arbeit",
+                    "body": "Finnisch ist nicht nur ein weiterer Menüeintrag: Dahinter stehen eigenes Wörterbuch-Routing und kompositaorientierte Strategien."
+                },
+                {
+                    "title": "Hinweise zur Zuverlässigkeit pro Website",
+                    "body": "Das Badge soll nicht nur Sprache anzeigen. Es soll auch Vertrauen vermitteln, auch auf eingeschränkten oder feindlichen Seiten."
+                },
+                {
+                    "title": "Smartphone-Kompatibilität",
+                    "body": "Die Präsentationsseite behält jetzt dieselbe Hierarchie auf kleinen Bildschirmen: gestapelte Aktionen, Buttons über die volle Breite und lesbare Karten statt einer gequetschten Desktop-Ansicht."
+                }
+            ]
+        },
+        "usage": {
+            "eyebrow": "Verwendung",
+            "title": "Eine kurze Geste, die das Lesen bewahren will.",
+            "lead": "Die Erweiterung versucht, den Kontext zu erhalten, unnötige Navigation zu vermeiden und sich sauber zurückzunehmen, wenn eine Seite die Injection stört.",
+            "steps": [
+                "Wählen Sie ein Wort oder einen Ausdruck auf der Seite aus, die Sie gerade lesen.",
+                "Nutzen Sie die Aktion der Erweiterung oder das Kontextmenü, um die Definition anzufordern.",
+                "Lesen Sie den Tooltip nahe an der Auswahl und bleiben Sie für Definition, Audio, Quick Translate oder das �-ffnen der Seite in der Seite.",
+                "Wenn die Website-Erkennung den Konsolenmodus vorschlägt, antworten Sie mit OK, um zu wechseln. Sie können auch auf repair, das Werkzeugsymbol im Tooltip, klicken, um diese Suche in die Konsole zu schicken.",
+                "Der Konsolenmodus hält gespeicherte Einträge in einem stabilen Seitenpanel, wenn Inline-Rendering unzuverlässig wird.",
+                "Um Tooltip-Farbe und Opazität einzustellen oder die automatische Spracherkennung zu deaktivieren, öffnen Sie das Popup der Erweiterung: Dort finden Sie die aktuelle Farbe, die verfügbare Palette, den Opazitätsregler und den Schalter für die Sprachautodetektion."
+            ]
+        },
+        "platforms": {
+            "title": "Plattformen",
+            "items": [
+                "Veröffentlicht: Firefox Desktop",
+                "Veröffentlicht: Chrome Desktop",
+                "Veröffentlicht: Firefox Android",
+                "Safari befindet sich in aktiver Entwicklung und braucht Finanzierung bis zur Veröffentlichung."
+            ]
+        },
+        "dictionaries": {
+            "title": "Wörterbücher",
+            "items": [
+                "Englisch - Merriam-Webster Learner's Dictionary",
+                "Spanisch - Diccionario de la Lengua Española",
+                "Französisch - Larousse",
+                "Deutsch - DWDS",
+                "Italienisch - De Mauro Internazionale",
+                "Finnisch - Kielitoimiston sanakirja / Wiktionary-Fallback",
+                "Latein + Griechisch - übersetzungsorientierter Pfad für antike Sprachen"
+            ]
+        },
+        "faq": {
+            "eyebrow": "FAQ",
+            "title": "Ein paar Dinge, die klar gesagt werden sollten.",
+            "items": [
+                {
+                    "q": "Ist das eine maschinelle �obersetzungserweiterung?",
+                    "a": "Nein. �obersetzung existiert als optionaler Rückweg. Die Hauptidee bleibt, zuerst die Definition in der Ursprungssprache zu zeigen."
+                },
+                {
+                    "q": "Warum ist der Konsolenmodus wichtig?",
+                    "a": "Weil manche Seiten Inline-DOM-Injections stören. Sie können entweder über den von der Erweiterung vorgeschlagenen Hinweis dorthin wechseln oder auf repair, das Werkzeugsymbol im Tooltip, klicken. Der Konsolenmodus bewahrt dann den nützlichen Teil, die gespeicherten Definitionen, auch wenn die Seite schwierig ist."
+                },
+                {
+                    "q": "Kann man das Aussehen der Tooltips anpassen?",
+                    "a": "Ja. Im Popup der Erweiterung können Sie die Farbe der Tooltips wählen, ihre Opazität mit dem vorgesehenen Regler anpassen und die automatische Spracherkennung deaktivieren, wenn Sie das aktive Wörterbuch lieber selbst steuern möchten."
+                },
+                {
+                    "q": "Passiert im Hintergrund viel Technik?",
+                    "a": "Ja, absichtlich. Fallback-Anbieter, intelligentere Suchkandidaten, Audio-Routing, Umrechnungsheuristiken und browserspezifische Workarounds sorgen dafür, dass die sichtbare Geste einfach bleibt."
+                },
+                {
+                    "q": "Funktioniert das überall?",
+                    "a": "Fast überall, aber nicht auf Seiten, die vom Browser selbst eingeschränkt werden, etwa Erweiterungs-Stores oder andere privilegierte Flächen, auf denen Content-Skripte blockiert sind."
+                }
+            ]
+        },
+        "footer": "Keine Werbung, keine Tracker, viel Sorgfalt und viele browser-spezifische Grenzfälle, die transparent abgefangen werden."
     }
-  },
-  "site": {
-    "languageLabel": "Sprache",
-    "brandTagline": "Definitionen bleiben im Lesefluss.",
-    "nav": {
-      "features": "Funktionen",
-      "updates": "Neuheiten",
-      "engine": "Engine",
-      "usage": "Verwendung",
-      "faq": "FAQ"
-    },
-    "hero": {
-      "eyebrow": "Erst lesen. Dann übersetzen, wenn nötig.",
-      "title": "Die Definition auf der Seite behalten, in der Sprache, zu der das Wort gehört.",
-      "lead": "Not A Translator fügt leichte Tooltips nahe an Ihrer Auswahl ein, hält die Definition in der Ursprungssprache im Vordergrund und versteckt viel Technik hinter einer sehr einfachen Geste.",
-      "primaryCta": "Funktionalitäten ansehen",
-      "secondaryCta": "Nutzung",
-      "storeCtas": {
-        "install": "",
-        "chrome": "Chrome",
-        "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "PayPal Me",
-        "paypalLabel": ""
-      },
-      "panelNote": "Der Konsolenmodus bewahrt Einträge, wenn eine Seite das Tooltip-Rendering stört.",
-      "status": {
-        "published": {
-          "kicker": "Jetzt veröffentlicht",
-          "title": "Verfügbar für Chrome, Firefox und Firefox Android.",
-          "body": "Die Anwendung wird bereits auf den wichtigsten aktuellen Plattformen verteilt."
-        },
-        "funding": {
-          "kicker": "Safari-Erweiterung",
-          "title": "Die Safari-Portierung ist in Entwicklung, braucht aber Finanzierung bis zur Veröffentlichung im Apple Store.",
-          "body": "Die Code-Migration existiert, die browserspezifische Arbeit ist gemacht, und Finanzierung würde helfen, den letzten Schritt zu schaffen.",
-          "cta": "Entwicklung unterstützen"
-        }
-      },
-      "points": [
-        "Definitionen bleiben in der Ausgangssprache, statt das Lesen durch einen allgemeinen Übersetzungsumweg zu unterbrechen. Kein neuer Tab unterbricht das Lesen. Kein Sprachwechsel unterbricht das Verständnis.",
-        "Audio, trotzdem übersetzen, Reparatur und Seitenöffnung bleiben direkt im Tooltip oder im Konsoleneintrag erreichbar.",
-        "Hinter den Kulissen passiert viel: Suchwiederholungen, Kandidaten-Routing, Fallback-Anbieter und Schutzmechanismen pro Website, Erkennung der beteiligten Sprachen und von Seiten, die sich gegen Injektionen sperren."
-      ],
-      "inlineDemo": {
-        "before": "Not A Translator fügt leichte ",
-        "word": "Tooltips",
-        "badge": "rotierend",
-        "definition": "(Subst.) schwebende Definitionsfelder, die nahe an der Auswahl bleiben und sich um sie drehen k�nnen, um R�ndern und �berlappungen auszuweichen.",
-        "after": " nahe an Ihrer Auswahl ein, hält die Definition in der Ursprungssprache möglichst nah am Text, ohne Ihr Verständnis zu stören, und verbirgt viel technische Komplexität hinter einer sehr einfachen Geste."
-      }
-    },
-    "demo": {
-      "word": "epoch",
-      "time": "09:58:47",
-      "definition": "(Subst.) ein langer Zeitraum, besonders einer, der durch bestimmte Ereignisse oder Entwicklungen geprägt ist."
-    },
-    "signals": {
-      "items": [
-        {
-          "value": "3 veröffentlichte Builds",
-          "label": "Heute verfügbar",
-          "body": "Chrome, Firefox Desktop und Firefox Android sind die derzeit veröffentlichten Erweiterungen."
-        },
-        {
-          "value": "Konsolenmodus",
-          "label": "Für schwierige Seiten",
-          "body": "Wenn eine Seite das Tooltip-Rendering stört, wechseln gespeicherte Definitionen in eine kontrollierte Seitenkonsole."
-        },
-        {
-          "value": "Intelligentere Suche",
-          "label": "Hinter dem Tooltip",
-          "body": "Kandidatenrettung, Mehrwortsuche und Kompositabehandlung verbessern unauffällig das sichtbare Ergebnis."
-        }
-      ]
-    },
-    "manifesto": {
-      "eyebrow": "Warum es sich anders anfühlt",
-      "title": "Ein Lesen-zuerst-Ablauf.",
-      "lead": "Die Erweiterung ist darauf ausgelegt, die Seite im Zentrum der Erfahrung zu lassen: direkt auf der Seite definieren, nur bei Bedarf übersetzen und lesbar bleiben, auch wenn die Injection schwierig wird.",
-      "items": [
-        {
-          "title": "Definition vor �obersetzung",
-          "body": "Die Erweiterung soll die Idee bewahren, dass ein Wort oft intuitiver verstanden wird, wenn seine Definition zuerst in seiner eigenen Sprache gegeben wird."
-        },
-        {
-          "title": "Die Seite bleibt die Hauptfläche",
-          "body": "Tooltip, Quick Translate, Audio und Seitenöffnung bleiben nahe an der Auswahl, damit Lesen nicht sofort zu Tab-Wechseln wird. Der rote Faden bleibt erhalten!"
-        },
-        {
-          "title": "Wenn die Seite sich wehrt, muss das Ergebnis überleben",
-          "body": "Manche Seiten sind feindlich gegenüber Inline-Injections oder schlicht instabil. Der Konsolenmodus sorgt dafür, dass das Wesentliche, die gespeicherte Definition, verfügbar bleibt, statt mit dem Tooltip zu verschwinden. Im schlimmsten Fall setzt F5/Refresh die Seite wieder in ihren Ausgangszustand zurück. Auf dieser Ebene ist keine Änderung dauerhaft."
-        }
-      ]
-    },
-    "screenshots": {
-      "eyebrow": "Im Einsatz",
-      "title": "Die Erweiterung ist dafür gemacht, in echten Lesesituationen zu leben.",
-      "lead": "Eine Firefox-Desktop-Ansicht und eine Safari-iPhone-Entwicklungsansicht machen das greifbarer.",
-      "desktop": {
-        "title": "Firefox Desktop",
-        "body": "Tooltip nahe am ausgewählten Wort, Popup-Steuerung und ursprünglicher Lesefluss bleiben erhalten."
-      },
-      "mobile": {
-        "title": "Safari iPhone Entwicklungs-Build",
-        "body": "Ein mobiles Layout, in dem der Tooltip kompakt und lesbar innerhalb einer mobilen Seite bleibt."
-      }
-    },
-    "features": {
-      "eyebrow": "Kernfunktionen",
-      "title": "An der Oberfläche einfach, darunter dicht.",
-      "lead": "Eine einzige Auswahl kann Wörterbuch-Routing, Ersatzsuchen, Definitionen neuer Kandidaten auf Variantenformen, Audioquellen, Umrechnungs-Parsing, Zeitzonen-Interpretation und auf feindlichen Seiten einen kontrollierten Wechsel in den Konsolenmodus auslösen.",
-      "items": [
-        {
-          "title": "Definitionen in der Ursprungssprache",
-          "body": "Der Hauptpfad bleibt dieselbe Idee: ein Wort auswählen und seine Definition in der Sprache erhalten, zu der es gehört, damit Lesen und Sprachenlernen verbunden bleiben."
-        },
-        {
-          "title": "Umrechnungen und Zeitzonenhilfen",
-          "body": "Numerische Auswahlen können in den Umrechnungsmodus wechseln, einschlie�Ylich Einheiten und zeitzonenbezogener Uhrzeiten, ohne die Seite zu verlassen."
-        },
-        {
-          "title": "Audio nahe an der Auswahl",
-          "body": "Wenn eine Aussprache verfügbar ist, kann der Tooltip oder der Konsoleneintrag Audio direkt bereitstellen und die beste verfügbare Quelle wählen. Das Symbol zeigt an, ob die Stimme menschlich oder synthetisch ist"
-        },
-        {
-          "title": "Konsolenmodus für feindliche Seiten",
-          "body": "Die Aktion repair öffnet jetzt direkt den Konsolenmodus. Alle anderen Reparaturen werden vorher automatisch behandelt. Wenn Inline-Rendering unzuverlässig wird, bleiben die Einträge in einem kontrollierten Panel lesbar, statt verloren zu gehen."
-        },
-        {
-          "title": "Intelligentere Suchpfade",
-          "body": "Die Suche stützt sich jetzt auf robusteres Kandidaten-Routing: zuerst die exakte Form, dann gerettete Kandidaten, Mehrwortausdrücke sowie Lemma- oder Kompositastrategien, wenn sie nützlich sind."
-        },
-        {
-          "title": "Viel Technik, leise",
-          "body": "Quick Translate ersetzt jetzt die Definition direkt im Tooltip. Dahinter stehen Fallback-Anbieter, Schutzmechanismen pro Website, mobile Positionierungsarbeit und browserspezifische Workarounds, damit die Interaktion kurz bleibt."
-        }
-      ]
-    },
-    "updates": {
-      "eyebrow": "Jüngste Verbesserungen",
-      "title": "Die Website spiegelt jetzt den realen Stand der Erweiterung wider.",
-      "lead": "Die Präsentationsseite beschreibt endlich die aktuelle Version statt eines älteren Schnappschusses.",
-      "items": [
-        {
-          "kicker": "Umrechnung",
-          "title": "Korrekte Auswertung gro�Yer Zahlen",
-          "body": "Auswahlen wie �?z12,333 feet�?o oder sogar �?z12,333,425 feet�?o werden jetzt als Tausendergruppen statt als Dezimalzahlen interpretiert."
-        },
-        {
-          "kicker": "Zeit",
-          "title": "Zeitzonen bleiben Teil derselben Geste",
-          "body": "Eine Uhrzeit-Auswahl kann ein eigenes Tooltip öffnen, wenn eine Zeitzone erkannt wird, statt einen getrennten Ablauf zu erzwingen."
-        },
-        {
-          "kicker": "Wörterbuch",
-          "title": "Finnisch gehört jetzt zum aktiven Satz",
-          "body": "Finnisch ist jetzt Teil der lebendigen Auswahl, mit Wörterbuchzugang, Menüeinträgen sowie der zugehörigen Audio- und Suchlogik."
-        },
-        {
-          "kicker": "Suche",
-          "title": "Neue Suchpfade unter dem Tooltip",
-          "body": "Neuere Sucharbeit verbessert die Kandidatenrettung für englische Mehrwortausdrücke und stärkt die Kompositabehandlung für Finnisch, wenn die Direktsuche nicht reicht."
-        }
-      ]
-    },
-    "engine": {
-      "eyebrow": "Unter der Haube",
-      "title": "Es passiert viel mehr, als die Oberfläche erkennen lässt.",
-      "lead": "Die Erweiterung wirkt absichtlich leicht und ist im Hintergrund sehr aktiv.",
-      "items": [
-        {
-          "title": "Kandidaten-Routing",
-          "body": "Eine Suche endet nicht bei einer rohen Form. Die Engine kann exakte Formen, gerettete Varianten und Mehrwortkandidaten erneut versuchen, bevor sie aufgibt."
-        },
-        {
-          "title": "Umrechnungen, die echten Text lesen",
-          "body": "Der Umrechnungspfad behandelt Tausendergruppen jetzt sicherer und kann aus derselben Auswahl zwischen Einheit und Zeitzone unterscheiden."
-        },
-        {
-          "title": "Konsolen-Fallback",
-          "body": "Die repair-Steuerung wirkt jetzt wie ein echter Moduswechsel: Sie schickt die aktuelle Suche in den Konsolenmodus statt nur eine kosmetische Reparatur zu versuchen."
-        },
-        {
-          "title": "Audioquellen",
-          "body": "Aussprache kann je nach Wörterbuch und Verfügbarkeit aus Wiktionary, Commons, DWDS oder einem generierten Fallback kommen."
-        },
-        {
-          "title": "Finnisch-spezifische Arbeit",
-          "body": "Finnisch ist nicht nur ein weiterer Menüeintrag: Dahinter stehen eigenes Wörterbuch-Routing und kompositaorientierte Strategien."
-        },
-        {
-          "title": "Hinweise zur Zuverlässigkeit pro Website",
-          "body": "Das Badge soll nicht nur Sprache anzeigen. Es soll auch Vertrauen vermitteln, auch auf eingeschränkten oder feindlichen Seiten."
-        },
-        {
-          "title": "Smartphone-Kompatibilität",
-          "body": "Die Präsentationsseite behält jetzt dieselbe Hierarchie auf kleinen Bildschirmen: gestapelte Aktionen, Buttons über die volle Breite und lesbare Karten statt einer gequetschten Desktop-Ansicht."
-        }
-      ]
-    },
-    "usage": {
-      "eyebrow": "Verwendung",
-      "title": "Eine kurze Geste, die das Lesen bewahren will.",
-      "lead": "Die Erweiterung versucht, den Kontext zu erhalten, unnötige Navigation zu vermeiden und sich sauber zurückzunehmen, wenn eine Seite die Injection stört.",
-      "steps": [
-        "Wählen Sie ein Wort oder einen Ausdruck auf der Seite aus, die Sie gerade lesen.",
-        "Nutzen Sie die Aktion der Erweiterung oder das Kontextmenü, um die Definition anzufordern.",
-        "Lesen Sie den Tooltip nahe an der Auswahl und bleiben Sie für Definition, Audio, Quick Translate oder das �-ffnen der Seite in der Seite.",
-        "Wenn die Website-Erkennung den Konsolenmodus vorschlägt, antworten Sie mit OK, um zu wechseln. Sie können auch auf repair, das Werkzeugsymbol im Tooltip, klicken, um diese Suche in die Konsole zu schicken.",
-        "Der Konsolenmodus hält gespeicherte Einträge in einem stabilen Seitenpanel, wenn Inline-Rendering unzuverlässig wird.",
-        "Um Tooltip-Farbe und Opazität einzustellen oder die automatische Spracherkennung zu deaktivieren, öffnen Sie das Popup der Erweiterung: Dort finden Sie die aktuelle Farbe, die verfügbare Palette, den Opazitätsregler und den Schalter für die Sprachautodetektion."
-      ]
-    },
-    "platforms": {
-      "title": "Plattformen",
-      "items": [
-        "Veröffentlicht: Firefox Desktop",
-        "Veröffentlicht: Chrome Desktop",
-        "Veröffentlicht: Firefox Android",
-        "Safari befindet sich in aktiver Entwicklung und braucht Finanzierung bis zur Veröffentlichung."
-      ]
-    },
-    "dictionaries": {
-      "title": "Wörterbücher",
-      "items": [
-        "Englisch - Merriam-Webster Learner's Dictionary",
-        "Spanisch - Diccionario de la Lengua Española",
-        "Französisch - Larousse",
-        "Deutsch - DWDS",
-        "Italienisch - De Mauro Internazionale",
-        "Finnisch - Kielitoimiston sanakirja / Wiktionary-Fallback",
-        "Latein + Griechisch - übersetzungsorientierter Pfad für antike Sprachen"
-      ]
-    },
-    "faq": {
-      "eyebrow": "FAQ",
-      "title": "Ein paar Dinge, die klar gesagt werden sollten.",
-      "items": [
-        {
-          "q": "Ist das eine maschinelle �obersetzungserweiterung?",
-          "a": "Nein. �obersetzung existiert als optionaler Rückweg. Die Hauptidee bleibt, zuerst die Definition in der Ursprungssprache zu zeigen."
-        },
-        {
-          "q": "Warum ist der Konsolenmodus wichtig?",
-          "a": "Weil manche Seiten Inline-DOM-Injections stören. Sie können entweder über den von der Erweiterung vorgeschlagenen Hinweis dorthin wechseln oder auf repair, das Werkzeugsymbol im Tooltip, klicken. Der Konsolenmodus bewahrt dann den nützlichen Teil, die gespeicherten Definitionen, auch wenn die Seite schwierig ist."
-        },
-        {
-          "q": "Kann man das Aussehen der Tooltips anpassen?",
-          "a": "Ja. Im Popup der Erweiterung können Sie die Farbe der Tooltips wählen, ihre Opazität mit dem vorgesehenen Regler anpassen und die automatische Spracherkennung deaktivieren, wenn Sie das aktive Wörterbuch lieber selbst steuern möchten."
-        },
-        {
-          "q": "Passiert im Hintergrund viel Technik?",
-          "a": "Ja, absichtlich. Fallback-Anbieter, intelligentere Suchkandidaten, Audio-Routing, Umrechnungsheuristiken und browserspezifische Workarounds sorgen dafür, dass die sichtbare Geste einfach bleibt."
-        },
-        {
-          "q": "Funktioniert das überall?",
-          "a": "Fast überall, aber nicht auf Seiten, die vom Browser selbst eingeschränkt werden, etwa Erweiterungs-Stores oder andere privilegierte Flächen, auf denen Content-Skripte blockiert sind."
-        }
-      ]
-    },
-    "footer": "Keine Werbung, keine Tracker, viel Sorgfalt und viele browser-spezifische Grenzfälle, die leise abgefangen werden."
-  }
 }
