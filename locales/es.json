@@ -1,0 +1,296 @@
+{
+  "lang": "es",
+  "meta": {
+    "title": "Not A Translator - Definiciones en el idioma original dentro de la p&#225;gina",
+    "description": "Definiciones en la lengua de origen, audio, conversiones de unidades y zonas horarias, b&#250;squedas m&#225;s inteligentes y modo consola para p&#225;ginas dif&#237;ciles."
+  },
+  "shared": {
+    "appName": "Not A Translator",
+    "lookup": "Obtener significado para",
+    "consoleMode": "Modo consola",
+    "tooltipMode": "Modo tooltip",
+    "contribute": "Contribuir",
+    "dictionary": "Diccionario",
+    "badges": {
+      "risky": "arriesgado",
+      "conditional": "funciona bajo condiciones",
+      "ok": "ok"
+    },
+    "console": {
+      "copy": "Copiar",
+      "remove": "Eliminar",
+      "forceForSite": "Forzar la consola para este sitio"
+    },
+    "languages": {
+      "english": "Ingl&#233;s",
+      "spanish": "Espa&#241;ol",
+      "french": "Franc&#233;s",
+      "german": "Alem&#225;n",
+      "italian": "Italiano",
+      "finnish": "Finland&#233;s",
+      "ancient": "Lat&#237;n + griego (traducci&#243;n)"
+    }
+  },
+  "site": {
+    "languageLabel": "Idioma",
+    "brandTagline": "Las definiciones permanecen dentro del flujo de lectura.",
+    "nav": {
+      "features": "Funciones",
+      "updates": "Novedades",
+      "engine": "Motor",
+      "usage": "Uso",
+      "faq": "FAQ"
+    },
+    "hero": {
+      "eyebrow": "Leer primero. Traducir despu&#233;s si hace falta.",
+      "title": "Mantener la definici&#243;n dentro de la p&#225;gina, en la lengua que le pertenece a la palabra.",
+      "lead": "Not A Translator inyecta tooltips ligeros cerca de la selecci&#243;n, deja la definici&#243;n original en primer plano y esconde mucha t&#233;cnica detr&#225;s de un gesto muy simple.",
+      "primaryCta": "Ver funcionalidades",
+      "secondaryCta": "Uso",
+      "storeCtas": {
+        "install": "",
+        "chrome": "Chrome",
+        "firefoxAndroid": "Ffox Android",
+        "firefox": "Firefox",
+        "paypal": "Contribuir",
+        "paypalLabel": "PayPal"
+      },
+      "panelNote": "El modo consola conserva las entradas cuando una p&#225;gina se resiste al renderizado inline.",
+      "status": {
+        "published": {
+          "kicker": "Publicado ahora",
+          "title": "Disponible en Chrome, Firefox y Firefox Android.",
+          "body": "La aplicación ya se distribuye en las principales plataformas actuales."
+        },
+        "funding": {
+          "kicker": "Extensión Safari",
+          "title": "El port a Safari está en desarrollo, pero necesita financiación para llegar a publicarse en la Apple Store.",
+          "body": "La migración del código existe, el trabajo específico del navegador está hecho y una financiación ayudaría a cruzar la última etapa.",
+          "cta": "Apoyar el desarrollo"
+        }
+      },
+      "points": [
+        "Las definiciones permanecen en la lengua de origen en lugar de romper la lectura con un desvío genérico de traducción. Ninguna pestaña nueva rompe la lectura. Ningún cambio de idioma interrumpe la comprensión.",
+        "Audio, traducir de todos modos, reparaci&#243;n y apertura de p&#225;gina siguen disponibles dentro del tooltip o de la entrada de consola.",
+        "Detrás hay mucho trabajo: reintentos de búsqueda, rutas de candidatos, proveedores de reserva y salvaguardas por sitio, detección de las lenguas implicadas y de las páginas refractarias a las inyecciones."
+      ],
+      "inlineDemo": {
+        "before": "Not A Translator inyecta ",
+        "word": "tooltips",
+        "badge": "rotativos",
+        "definition": "(sust.) cuadros de definici&#243;n flotantes que permanecen cerca de la selecci&#243;n y pueden girar a su alrededor para escapar de los bordes y los solapamientos.",
+        "after": " ligeros cerca de su selección, mantiene la definición en la lengua de origen lo más cerca posible del texto, sin perturbar la comprensión, y esconde mucha tecnicidad detrás de un gesto muy simple."
+      }
+    },
+    "demo": {
+      "word": "epoch",
+      "time": "09:58:47",
+      "definition": "(sust.) periodo largo de tiempo, especialmente marcado por acontecimientos o un desarrollo particular."
+    },
+    "signals": {
+      "items": [
+        {
+          "value": "3 builds publicados",
+          "label": "Disponibles hoy",
+          "body": "Chrome, Firefox desktop y Firefox Android son las extensiones actualmente publicadas."
+        },
+        {
+          "value": "Modo consola",
+          "label": "Para p&#225;ginas dif&#237;ciles",
+          "body": "Cuando una p&#225;gina complica el renderizado del tooltip, las definiciones almacenadas pasan a una consola lateral controlada."
+        },
+        {
+          "value": "B&#250;squeda m&#225;s fina",
+          "label": "Detr&#225;s del tooltip",
+          "body": "Rescate de candidatos, expresiones de varias palabras y manejo de compuestos mejoran discretamente el resultado visible."
+        }
+      ]
+    },
+    "manifesto": {
+      "eyebrow": "Por qu&#233; se siente distinto",
+      "title": "No es un flujo traducci&#243;n primero. Es un flujo lectura primero.",
+      "lead": "La extensión está diseñada para mantener la página en el centro de la experiencia: definir en el sitio, traducir solo cuando sea necesario y seguir siendo legible incluso cuando la inyección se vuelve difícil.",
+      "items": [
+        {
+          "title": "La definici&#243;n antes que la traducci&#243;n",
+          "body": "La extensión está pensada para preservar la idea de que una palabra suele entenderse de forma más intuitiva cuando su definición se da primero en su propia lengua."
+        },
+        {
+          "title": "Publicado donde ya importa",
+          "body": "Tooltip, quick translate, audio y apertura de página permanecen cerca de la selección para evitar que la lectura se convierta inmediatamente en navegación entre pestañas. ¡Se conserva el hilo!"
+        },
+        {
+          "title": "Cuando la página resiste, el resultado debe sobrevivir",
+          "body": "Algunas páginas son hostiles a las inyecciones inline o simplemente inestables. El modo consola existe para que lo esencial, la definición almacenada, siga disponible en lugar de desaparecer con el tooltip. En el peor de los casos, F5/refresh devolverá la página a su estado inicial. Ninguna modificación es permanente a este nivel."
+        }
+      ]
+    },
+    "screenshots": {
+      "eyebrow": "En situaci&#243;n",
+      "title": "La extensi&#243;n est&#225; pensada para vivir dentro de situaciones reales de lectura.",
+      "lead": "Una vista Firefox desktop y una vista Safari iPhone en desarrollo ayudan a volver eso concreto.",
+      "desktop": {
+        "title": "Firefox desktop",
+        "body": "Tooltip cerca de la palabra seleccionada, controles del popup y el flujo de lectura original conservado."
+      },
+      "mobile": {
+        "title": "Build Safari iPhone en desarrollo",
+        "body": "Una disposici&#243;n port&#225;til donde el tooltip sigue siendo compacto y legible dentro de una p&#225;gina m&#243;vil."
+      }
+    },
+    "features": {
+      "eyebrow": "Funciones clave",
+      "title": "Simple en uso, t&#233;cnico en segundo plano.",
+      "lead": "Una sola selección puede activar el enrutado de diccionarios, búsquedas de respaldo, definiciones de nuevos candidatos sobre formas variantes, fuentes de audio, parsing de conversiones, interpretación de zonas horarias y, en páginas hostiles, un cambio controlado al modo consola.",
+      "items": [
+        {
+          "title": "Definiciones en la lengua original",
+          "body": "La idea principal sigue siendo la misma: seleccionar una palabra y obtener su definici&#243;n en su propia lengua para mantener unidas la lectura y el aprendizaje."
+        },
+        {
+          "title": "Conversiones y zonas horarias",
+          "body": "Las selecciones num&#233;ricas pueden pasar al modo conversi&#243;n, incluidas unidades y horas con zona horaria reconocida, sin salir de la p&#225;gina."
+        },
+        {
+          "title": "Audio cerca de la selecci&#243;n",
+          "body": "Cuando existe pronunciación, el tooltip o la entrada de consola puede exponer el audio directamente usando la mejor fuente disponible. el icono indica si la voz es humana o sintética"
+        },
+        {
+          "title": "Modo consola para p&#225;ginas hostiles",
+          "body": "El clic en la acción repair abre ahora directamente el modo consola. todas las demás reparaciones se tratan automáticamente antes. Cuando el renderizado inline no es fiable, las entradas siguen siendo legibles en un panel controlado en vez de perderse."
+        },
+        {
+          "title": "Rutas de b&#250;squeda m&#225;s inteligentes",
+          "body": "Las b&#250;squedas ahora dependen de un enrutado de candidatos m&#225;s robusto: forma exacta primero, luego rescates, expresiones de varias palabras y estrategias de lema o compuesto cuando conviene."
+        },
+        {
+          "title": "Mucha t&#233;cnica, discretamente",
+          "body": "Quick translate ahora sustituye la definici&#243;n directamente dentro del tooltip. Proxys de traducci&#243;n, reservas, ajustes m&#243;viles y protecciones por sitio mantienen ese flujo compacto."
+        }
+      ]
+    },
+    "updates": {
+      "eyebrow": "Mejoras recientes",
+      "title": "La web ya refleja el estado real de la extensi&#243;n.",
+      "lead": "La p&#225;gina de presentaci&#243;n describe por fin la versi&#243;n actual en lugar de una instant&#225;nea antigua.",
+      "items": [
+        {
+          "kicker": "Conversi&#243;n",
+          "title": "Lectura correcta de n&#250;meros grandes",
+          "body": "Selecciones como &#8220;12,333 feet&#8221; e incluso &#8220;12,333,425 feet&#8221; se interpretan ahora como miles agrupados y no como n&#250;meros decimales."
+        },
+        {
+          "kicker": "Hora",
+          "title": "Las zonas horarias siguen formando parte del mismo gesto",
+          "body": "Una selecci&#243;n horaria puede abrir un tooltip dedicado cuando se reconoce una zona horaria, en lugar de obligar a un flujo aparte."
+        },
+        {
+          "kicker": "Diccionario",
+          "title": "El fin&#233;s entra en el conjunto activo",
+          "body": "El fin&#233;s ya forma parte de la l&#237;nea viva, con diccionario, men&#250;, i18n y la fontaner&#237;a de audio / b&#250;squeda asociada."
+        },
+        {
+          "kicker": "B&#250;squeda",
+          "title": "Nuevos modos de b&#250;squeda bajo el cap&#243;",
+          "body": "El trabajo reciente mejora el rescate de expresiones inglesas de varias palabras y a&#241;ade un manejo m&#225;s s&#243;lido de compuestos finlandeses cuando la b&#250;squeda directa no basta."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "Bajo el cap&#243;",
+      "title": "Suceden muchas m&#225;s cosas de las que deja ver la interfaz.",
+      "lead": "La extensi&#243;n es deliberadamente ligera en apariencia y muy activa en segundo plano.",
+      "items": [
+        {
+          "title": "Enrutado de candidatos",
+          "body": "Una b&#250;squeda no se detiene en una sola forma bruta. El motor puede reintentar formas exactas, variantes de rescate y candidatos de varias palabras antes de rendirse."
+        },
+        {
+          "title": "Conversiones que leen texto real",
+          "body": "La ruta de conversi&#243;n trata ahora con m&#225;s seguridad los miles agrupados y puede decidir entre unidad y zona horaria a partir de la misma selecci&#243;n."
+        },
+        {
+          "title": "Reserva en consola",
+          "body": "El control repair act&#250;a ahora como un verdadero cambio de modo: env&#237;a la b&#250;squeda actual al modo consola en lugar de limitarse a una recuperaci&#243;n cosm&#233;tica."
+        },
+        {
+          "title": "Suministro de audio",
+          "body": "La pronunciaci&#243;n puede venir de Wiktionary, Commons, DWDS o de una reserva generada seg&#250;n diccionario y disponibilidad."
+        },
+        {
+          "title": "Trabajo espec&#237;fico para fin&#233;s",
+          "body": "El fin&#233;s no es solo otra entrada de men&#250;: a&#241;ade enrutado de diccionarios y estrategias de compuestos detr&#225;s del tel&#243;n."
+        },
+        {
+          "title": "Pista de fiabilidad por sitio",
+          "body": "El badge no est&#225; solo para mostrar una lengua. Tambi&#233;n debe comunicar confianza, incluso en p&#225;ginas restringidas u hostiles."
+        },
+        {
+          "title": "Compatibilidad smartphone",
+          "body": "La web de presentaci&#243;n mantiene ahora la misma jerarqu&#237;a en pantallas peque&#241;as: acciones apiladas, botones a lo ancho y tarjetas legibles en lugar de un escritorio comprimido."
+        }
+      ]
+    },
+    "usage": {
+      "eyebrow": "Uso",
+      "title": "Un gesto corto que intenta preservar la lectura.",
+      "lead": "La extensi&#243;n intenta mantener el contexto, evitar navegaci&#243;n innecesaria y degradarse con elegancia cuando una p&#225;gina interfiere con la inyecci&#243;n.",
+      "steps": [
+        "Seleccione una palabra o una expresi&#243;n en la p&#225;gina que est&#225; leyendo.",
+        "Use la acci&#243;n de la extensi&#243;n o el men&#250; contextual para pedir la definici&#243;n.",
+        "Lea el tooltip junto a la selecci&#243;n y permanezca dentro de la p&#225;gina para la definici&#243;n, el audio, quick translate o la apertura de p&#225;gina si hace falta.",
+        "Si la detecci&#243;n del sitio propone el modo consola, responda OK para cambiar. Tambi&#233;n puede hacer clic en repair, el icono de herramienta dentro de un tooltip, para enviar esa b&#250;squeda a la consola.",
+        "El modo consola conserva las entradas almacenadas en un panel lateral estable cuando el renderizado inline se vuelve poco fiable.",
+        "Para ajustar el color y la opacidad de los tooltips, o desactivar la detecci&#243;n autom&#225;tica del idioma, abra el popup de la extensi&#243;n: all&#237; est&#225;n el color actual, la paleta disponible, el control deslizante de opacidad y el interruptor de autodetecci&#243;n de idioma."
+      ]
+    },
+    "platforms": {
+      "title": "Plataformas",
+      "items": [
+        "Publicado: Firefox desktop",
+        "Publicado: Chrome desktop",
+        "Publicado: Firefox Android",
+        "Safari est&#225; en desarrollo activo y necesita financiaci&#243;n para llegar a la publicaci&#243;n."
+      ]
+    },
+    "dictionaries": {
+      "title": "Diccionarios",
+      "items": [
+        "Ingl&#233;s - Merriam-Webster Learner's Dictionary",
+        "Espa&#241;ol - Diccionario de la Lengua Espa&#241;ola",
+        "Franc&#233;s - Larousse",
+        "Alem&#225;n - DWDS",
+        "Italiano - De Mauro Internazionale",
+        "Fin&#233;s - Kielitoimiston sanakirja con reserva en Wiktionary",
+        "Lat&#237;n + griego - ruta orientada a traducci&#243;n para lenguas antiguas"
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Algunas cosas que conviene decir con claridad.",
+      "items": [
+        {
+          "q": "&#191;Es una extensi&#243;n de traducci&#243;n autom&#225;tica?",
+          "a": "No. La traducci&#243;n existe como recurso opcional. La idea principal sigue siendo mostrar primero la definici&#243;n en la lengua original."
+        },
+        {
+          "q": "&#191;Por qu&#233; es importante el modo consola?",
+          "a": "Porque algunas p&#225;ginas interfieren con las inyecciones inline en el DOM. Puede entrar aceptando la detecci&#243;n propuesta por la extensi&#243;n o haciendo clic en repair, el icono de herramienta dentro de un tooltip. El modo consola conserva la parte &#250;til, las definiciones almacenadas, incluso cuando la p&#225;gina es dif&#237;cil."
+        },
+        {
+          "q": "&#191;Se puede ajustar el aspecto de los tooltips?",
+          "a": "S&#237;. En el popup de la extensi&#243;n puede elegir el color de los tooltips, ajustar la opacidad con el control deslizante dedicado y desactivar la detecci&#243;n autom&#225;tica del idioma si prefiere mantener el control sobre el diccionario activo."
+        },
+        {
+          "q": "&#191;Hay mucha t&#233;cnica detr&#225;s?",
+          "a": "S&#237;, a prop&#243;sito. Proveedores de reserva, candidatos de b&#250;squeda m&#225;s inteligentes, rutas de audio, heur&#237;sticas de conversi&#243;n y soluciones espec&#237;ficas del navegador sirven para mantener el gesto visible muy simple."
+        },
+        {
+          "q": "&#191;Funciona en todas partes?",
+          "a": "Casi en todas partes, pero no en p&#225;ginas restringidas por el propio navegador, por ejemplo las tiendas de extensiones u otras superficies privilegiadas donde los content scripts est&#225;n bloqueados."
+        }
+      ]
+    },
+    "footer": "Sin anuncios, sin rastreadores, con mucho cuidado, y con una gran cantidad de casos l&#237;mite del navegador resueltos discretamente."
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "lang": "fi",
+  "meta": {
+    "title": "Not A Translator - Määritelmät alkuperäiskielellä suoraan sivulla",
+    "description": "Alkuperäiskieliset määritelmät, ääni, yksikkö- ja aikavyöhykemuunnokset, älykkäämmät haut ja konsolitila vaikeille sivuille."
+  },
+  "shared": {
+    "appName": "Not A Translator",
+    "lookup": "Hae sanan merkitys",
+    "consoleMode": "Konsolitila",
+    "tooltipMode": "Työkaluvihjetila",
+    "contribute": "Osallistu",
+    "dictionary": "Sanakirja",
+    "badges": {
+      "risky": "riskialtis",
+      "conditional": "toimii tietyissä oloissa",
+      "ok": "ok"
+    },
+    "console": {
+      "copy": "Kopioi",
+      "remove": "Poista",
+      "forceForSite": "Pakota konsoli tälle sivustolle"
+    },
+    "languages": {
+      "english": "Englanti",
+      "spanish": "Espanja",
+      "french": "Ranska",
+      "german": "Saksa",
+      "italian": "Italia",
+      "finnish": "Suomi",
+      "ancient": "Latina + kreikka (käännös)"
+    }
+  },
+  "site": {
+    "languageLabel": "Kieli",
+    "brandTagline": "Määritelmät pysyvät lukemisen virrassa.",
+    "nav": {
+      "features": "Ominaisuudet",
+      "updates": "Uutta",
+      "engine": "Moottori",
+      "usage": "Käyttö",
+      "faq": "UKK"
+    },
+    "hero": {
+      "eyebrow": "Lue ensin. Käännö vasta tarvittaessa.",
+      "title": "Pidä määritelmä sivulla, sillä kielellä jolle sana kuuluu.",
+      "lead": "Not A Translator lisää kevyet työkaluvihjeet valinnan lähelle, nostaa alkuperäiskielisen määritelmän etusijalle ja piilottaa paljon tekniikkaa hyvin yksinkertaisen eleen taakse.",
+      "primaryCta": "Katso toiminnallisuudet",
+      "secondaryCta": "Käyttö",
+      "storeCtas": {
+        "install": "",
+        "chrome": "Chrome",
+        "firefoxAndroid": "Ffox Android",
+        "firefox": "Firefox",
+        "paypal": "Osallistu",
+        "paypalLabel": "PayPal"
+      },
+      "panelNote": "Konsolitila säilyttää merkinnät, kun sivu vastustaa työkaluvihjeiden renderöintiä.",
+      "status": {
+        "published": {
+          "kicker": "Julkaistu nyt",
+          "title": "Saatavilla Chromelle, Firefoxille ja Firefox Androidille.",
+          "body": "Sovellus on jo saatavilla tämän hetken tärkeimmillä alustoilla."
+        },
+        "funding": {
+          "kicker": "Safari-laajennus",
+          "title": "Safari-porttaus on kehityksessä, mutta tarvitsee rahoitusta julkaisuun Apple Storessa.",
+          "body": "Koodin migraatio on olemassa, selainkohtainen työ on tehty, ja rahoitus auttaisi viemään viimeisen vaiheen läpi.",
+          "cta": "Tue kehitystä"
+        }
+      },
+      "points": [
+        "Määritelmät pysyvät lähdekielellä sen sijaan, että lukeminen katkeaisi yleiseen käännöskierrokseen. Ei uutta välilehteä katkaisemaan lukemista. Ei kielenvaihtoa häiritsemään ymmärtämistä.",
+        "Ääni, käännä silti, korjaus ja sivun avaus pysyvät yhden napsautuksen päässä työkaluvihjeessä tai konsolimerkinnässä.",
+        "Kulissien takana tapahtuu paljon: hakujen uusintayrityksiä, ehdokasreititystä, varapalveluja ja sivustokohtaisia suojauksia, mukana olevien kielten tunnistusta sekä injektioita vastustavien sivujen tunnistusta."
+      ],
+      "inlineDemo": {
+        "before": "Not A Translator lisää kevyet ",
+        "word": "tooltipit",
+        "badge": "kiertyvät",
+        "definition": "(subst.) kelluvat määritelmälaatikot, jotka pysyvät valinnan lähellä ja voivat kiertää sen ympäri väistääkseen reunoja ja päällekkäisyyksiä.",
+        "after": " valinnan lähelle, pitää lähdekielisen määritelmän mahdollisimman lähellä tekstiä häiritsemättä ymmärtämistäsi ja piilottaa paljon teknistä monimutkaisuutta hyvin yksinkertaisen eleen taakse."
+      }
+    },
+    "demo": {
+      "word": "epoch",
+      "time": "09:58:47",
+      "definition": "(subst.) pitkä ajanjakso, jota leimaavat tietyt tapahtumat tai kehitys."
+    },
+    "signals": {
+      "items": [
+        {
+          "value": "3 julkaistua buildiä",
+          "label": "Saatavilla nyt",
+          "body": "Chrome, Firefox desktop ja Firefox Android ovat tällä hetkellä julkaistut laajennukset."
+        },
+        {
+          "value": "Konsolitila",
+          "label": "Vaikeille sivuille",
+          "body": "Kun sivu sotkee työkaluvihjeen renderöintiä, tallennetut määritelmät siirtyvät hallittuun sivukonsoliin."
+        },
+        {
+          "value": "Älykkäämpi haku",
+          "label": "Työkaluvihjeen takana",
+          "body": "Ehdokkaiden pelastusreitit, monisanaiset haut ja yhdysrakenteiden käsittely parantavat näkyvää tulosta hiljaa."
+        }
+      ]
+    },
+    "manifesto": {
+      "eyebrow": "Miksi tämä tuntuu erilaiselta",
+      "title": "Ei käännös ensin -työnkulku. Vaan luku ensin -työnkulku.",
+      "lead": "Laajennus on suunniteltu pitämään sivu kokemuksen keskiössä: määritellä paikalla, kääntää vain tarvittaessa ja pysyä luettavana myös silloin, kun injektio vaikeutuu.",
+      "items": [
+        {
+          "title": "Määritelmä ennen käännöstä",
+          "body": "Laajennus on suunniteltu säilyttämään ajatus siitä, että sana ymmärretään usein intuitiivisemmin, kun sen määritelmä annetaan ensin sen omalla kielellä."
+        },
+        {
+          "title": "Julkaistu siellä missä sillä jo on merkitystä",
+          "body": "Tooltip, quick translate, ääni ja sivun avaaminen pysyvät lähellä valintaa, jotta lukeminen ei muutu heti välilehtien välillä siirtyilyksi. Ajatus säilyy mukana!"
+        },
+        {
+          "title": "Kun sivu vastustaa, tuloksen täytyy säilyä",
+          "body": "Jotkin sivut ovat vihamielisiä inline-injektioille tai yksinkertaisesti epävakaita. Konsolitila on olemassa, jotta olennainen osa, tallennettu määritelmä, pysyy saatavilla eikä katoa työkaluvihjeen mukana. Pahimmassa tapauksessa F5/refresh palauttaa sivun alkuperäiseen tilaansa. Mikään muutos ei ole tällä tasolla pysyvä."
+        }
+      ]
+    },
+    "screenshots": {
+      "eyebrow": "Käytännössä",
+      "title": "Laajennus on tarkoitettu elämään aidoissa lukutilanteissa.",
+      "lead": "Firefox desktop -näkymä ja Safari iPhone -kehitysnäkymä tekevät siitä konkreettisen.",
+      "desktop": {
+        "title": "Firefox desktop",
+        "body": "Työkaluvihje valitun sanan lähellä, popup-ohjaimet ja alkuperäinen lukemisen virta säilyvät."
+      },
+      "mobile": {
+        "title": "Safari iPhone -kehitysversio",
+        "body": "Kannettava asettelu, jossa työkaluvihje pysyy kompaktina ja luettavana mobiilisivun sisällä."
+      }
+    },
+    "features": {
+      "eyebrow": "Ydinominaisuudet",
+      "title": "Käytössä yksinkertainen, taustalla tekninen.",
+      "lead": "Yksi valinta voi käynnistää sanakirjareitityksen, varahaut, uusien ehdokkaiden määritelmät varianttimuodoista, äänilähteiden haun, muunnosten parsinnan, aikavyöhykkeiden tulkinnan ja hankalilla sivuilla hallitun siirtymisen konsolitilaan.",
+      "items": [
+        {
+          "title": "Alkuperäiskieliset määritelmät",
+          "body": "Pääajatus on edelleen sama: valitse sana ja saat sen määritelmän sen omalla kielellä, jotta lukeminen ja oppiminen pysyvät yhdessä."
+        },
+        {
+          "title": "Muunnokset ja aikavyöhykkeet",
+          "body": "Numeerinen valinta voi vaihtua muunnostilaan, mukaan lukien yksiköt ja tunnistetut aikavyöhykkeet, ilman että poistut sivulta."
+        },
+        {
+          "title": "Ääni valinnan lähellä",
+          "body": "Kun ääntämys on saatavilla, työkaluvihje tai konsolimerkintä voi tarjota äänen suoraan valitsemalla parhaan saatavilla olevan lähteen. kuvake ilmaisee, onko ääni ihmisen vai synteettinen"
+        },
+        {
+          "title": "Konsolitila vaikeille sivuille",
+          "body": "Repair-toiminnon napsautus avaa nyt suoraan konsolitilan. kaikki muut korjaukset käsitellään automaattisesti etukäteen. Kun inline-renderöinti ei ole luotettava, merkinnät pysyvät luettavina hallitussa paneelissa katoamisen sijaan."
+        },
+        {
+          "title": "Älykkäämmät hakureitit",
+          "body": "Haku nojaa nyt vahvempaan ehdokasreititykseen: tarkka muoto ensin, sitten pelastusreitit, monisanaiset ilmaukset sekä lemma- ja yhdysstrategiat siellä missä niistä on hyötyä."
+        },
+        {
+          "title": "Paljon tekniikkaa, hiljaa",
+          "body": "Quick translate vaihtaa nyt määritelmän suoraan työkaluvihjeen sisällä. Käännösproxyt, varapalvelut, mobiilisijoittelu ja sivustokohtaiset suojaukset pitävät tämän virtauksen kompaktina."
+        }
+      ]
+    },
+    "updates": {
+      "eyebrow": "Viimeaikaiset parannukset",
+      "title": "Sivusto kuvaa nyt laajennuksen todellista nykytilaa.",
+      "lead": "Esittelysivu kertoo viimein nykyisestä versiosta eikä vanhasta tilannekuvasta.",
+      "items": [
+        {
+          "kicker": "Muunnos",
+          "title": "Suurten lukujen oikea tulkinta",
+          "body": "Valinnat kuten \"12,333 feet\" ja jopa \"12,333,425 feet\" tulkitaan nyt tuhaterottimiksi eikä desimaaliluvuiksi."
+        },
+        {
+          "kicker": "Aika",
+          "title": "Aikavyöhyke pysyy samassa eleessä",
+          "body": "Aikavalinta voi avata oman työkaluvihjeensä, kun aikavyöhyke tunnistetaan, sen sijaan että tarvittaisiin erillinen työnkulku."
+        },
+        {
+          "kicker": "Sanakirja",
+          "title": "Suomi liittyy aktiiviseen valikoimaan",
+          "body": "Suomi kuuluu nyt elävään sanakirjaryhmään menuineen, i18n-tukineen sekä siihen liittyvine ääni- ja hakureitteineen."
+        },
+        {
+          "kicker": "Haku",
+          "title": "Uusia hakutapoja konepellin alla",
+          "body": "Viimeaikainen työ parantaa englannin monisanaisten ilmausten pelastusreittejä ja lisää vahvemman yhdysrakenteiden käsittelyn suomelle, kun suora haku ei riitä."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "Konepellin alla",
+      "title": "Paljon enemmän tapahtuu kuin käyttöliittymä näyttää.",
+      "lead": "Laajennus on tarkoituksella kevyt ulospäin ja kiireinen taustalla.",
+      "items": [
+        {
+          "title": "Ehdokasreititys",
+          "body": "Haku ei pysähdy yhteen raakamuotoon. Moottori voi yrittää tarkkoja muotoja, pelastusvariantteja ja monisanaisia ehdokkaita ennen luovuttamista."
+        },
+        {
+          "title": "Muunnokset, jotka lukevat oikeaa tekstiä",
+          "body": "Muunnosreitti käsittelee nyt turvallisemmin tuhaterottimet ja voi erottaa yksikön ja aikavyöhykkeen samasta valinnasta."
+        },
+        {
+          "title": "Konsolivara",
+          "body": "Repair-ohjain toimii nyt oikeana tilanvaihtona: se lähettää nykyisen haun konsolitilaan pelkän kosmeettisen korjauksen sijaan."
+        },
+        {
+          "title": "Äänilähteet",
+          "body": "Ääntämys voi tulla Wiktionarystä, Commonsista, DWDS:stä tai luodusta varalähteestä sanakirjan ja saatavuuden mukaan."
+        },
+        {
+          "title": "Suomikohtainen työ",
+          "body": "Suomi ei ole vain yksi valikkorivi lisää: taustalla on omaa sanakirjareititystä ja yhdysstrategioita."
+        },
+        {
+          "title": "Sivukohtainen luotettavuusvihje",
+          "body": "Badgen tehtävä ei ole vain näyttää kieltä. Sen pitää viestiä myös luotettavuudesta, myös rajoitetuilla tai hankalilla sivuilla."
+        },
+        {
+          "title": "Älypuhelinyhteensopivuus",
+          "body": "Esittelysivusto säilyttää nyt saman hierarkian pienillä näytöillä: pinotut toiminnot, täysleveät painikkeet ja luettavat kortit puristetun desktop-näkymän sijaan."
+        }
+      ]
+    },
+    "usage": {
+      "eyebrow": "Käyttö",
+      "title": "Lyhyt ele, joka yrittää säilyttää lukemisen.",
+      "lead": "Laajennus yrittää säilyttää kontekstin, välttää turhaa siirtyilyä ja heikentyä hallitusti, kun sivu häiritsee injektiota.",
+      "steps": [
+        "Valitse sana tai ilmaus lukemaltasi sivulta.",
+        "Pyydä määritelmä laajennuksen toiminnolla tai kontekstivalikosta.",
+        "Lue työkaluvihje valinnan vierestä ja pysy sivulla määritelmän, äänen, quick translaten tai sivun avauksen kanssa tarvittaessa.",
+        "Jos sivuston tunnistus ehdottaa konsolitilaa, vastaa OK vaihtaaksesi siihen. Voit myös napsauttaa repair-kuvaketta, työkalukuvaketta tooltipissa, lähettääksesi haun konsoliin.",
+        "Konsolitila säilyttää tallennetut merkinnät vakaassa sivupaneelissa, kun inline-renderöinti muuttuu epäluotettavaksi.",
+        "Tooltipien väriä ja opasiteettia säädetään laajennuksen popupista. Samasta paikasta voit myös poistaa automaattisen kielentunnistuksen käytöstä: siellä näkyvät nykyinen väri, käytettävissä oleva paletti, opasiteettiliukusäädin ja kielentunnistuksen kytkin."
+      ]
+    },
+    "platforms": {
+      "title": "Alustat",
+      "items": [
+        "Julkaistu: Firefox desktop",
+        "Julkaistu: Chrome desktop",
+        "Julkaistu: Ffox Android",
+        "Safari on aktiivisessa kehityksessä ja tarvitsee rahoitusta julkaisuun asti."
+      ]
+    },
+    "dictionaries": {
+      "title": "Sanakirjat",
+      "items": [
+        "Englanti - Merriam-Webster Learner's Dictionary",
+        "Espanja - Diccionario de la Lengua Española",
+        "Ranska - Larousse",
+        "Saksa - DWDS",
+        "Italia - De Mauro Internazionale",
+        "Suomi - Kielitoimiston sanakirja ja Wiktionary-varareitti",
+        "Latina + kreikka - käännöspainotteinen reitti antiikin kielille"
+      ]
+    },
+    "faq": {
+      "eyebrow": "UKK",
+      "title": "Muutama asia on hyvä sanoa suoraan.",
+      "items": [
+        {
+          "q": "Onko tämä konekäännöslaajennus?",
+          "a": "Ei. Käännös on valinnainen varareitti. Pääajatus on edelleen näyttää ensin alkuperäiskielinen määritelmä."
+        },
+        {
+          "q": "Miksi konsolitila on tärkeää",
+          "a": "Koska jotkin sivut häiritsevät inline-DOM-injektioita. Voit siirtyä siihen joko hyväksymällä laajennuksen ehdottaman tunnistuksen tai napsauttamalla repair-kuvaketta tooltipissa. Konsolitila säilyttää silloin hyödyllisen osan, tallennetut määritelmät, vaikka sivu olisi vaikea."
+        },
+        {
+          "q": "Voiko tooltipien ulkoasua säätää?",
+          "a": "Kyllä. Laajennuksen popupissa voit valita tooltipien värin, säätää opasiteettia omalla liukusäätimellään ja poistaa automaattisen kielentunnistuksen käytöstä, jos haluat pitää aktiivisen sanakirjan itse hallinnassa."
+        },
+        {
+          "q": "Onko taustalla paljon tekniikkaa?",
+          "a": "Kyllä, tarkoituksella. Varapalvelut, älykkäämmät hakuehdokkaat, äänireititys, muunnosheuristiikat ja selainkohtaiset kiertotavat pitävät näkyvän eleen silti yksinkertaisena."
+        },
+        {
+          "q": "Toimiiko tämä kaikkialla?",
+          "a": "Lähes kaikkialla, mutta ei selaimen itsensä rajoittamilla sivuilla, kuten lisäosakaupoissa tai muissa etuoikeutetuissa näkymissä, joissa sisältöskriptit on estetty."
+        }
+      ]
+    },
+    "footer": "Ei mainoksia, ei seurantaa, paljon huolellisuutta, ja suuri määrä selainkohtaisia reunatapauksia hoidettuna hiljaa."
+  }
+}

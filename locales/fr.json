@@ -1,0 +1,296 @@
+{
+  "lang": "fr",
+  "meta": {
+    "title": "Not A Translator - Définitions en langue d'origine dans la page",
+    "description": "Définitions en langue source, audio, conversions d'unités et de fuseaux, recherches plus intelligentes et mode console pour les pages difficiles."
+  },
+  "shared": {
+    "appName": "Not A Translator",
+    "lookup": "Rechercher le sens de",
+    "consoleMode": "Mode console",
+    "tooltipMode": "Mode infobulle",
+    "contribute": "Contribuer",
+    "dictionary": "Dictionnaire",
+    "badges": {
+      "risky": "hasardeux",
+      "conditional": "sous conditions",
+      "ok": "ok"
+    },
+    "console": {
+      "copy": "Copier",
+      "remove": "Supprimer",
+      "forceForSite": "Forcer la console pour ce site"
+    },
+    "languages": {
+      "english": "Anglais",
+      "spanish": "Espagnol",
+      "french": "Français",
+      "german": "Allemand",
+      "italian": "Italien",
+      "finnish": "Finnois",
+      "ancient": "Latin + grec (traduction)"
+    }
+  },
+  "site": {
+    "languageLabel": "Langue",
+    "brandTagline": "Les définitions restent dans le flux de lecture.",
+    "nav": {
+      "features": "Fonctions",
+      "updates": "Nouveautés",
+      "engine": "Moteur",
+      "usage": "Utilisation",
+      "faq": "FAQ"
+    },
+    "hero": {
+      "eyebrow": "Lire d'abord. Traduire ensuite si besoin.",
+      "title": "Garder la définition dans la page, dans la langue du mot lui-même.",
+      "lead": "Not A Translator injecte des infobulles légères près de la sélection, met la définition d'origine au premier plan et cache beaucoup de technique derrière un geste très simple.",
+      "inlineDemo": {
+        "before": "Not A Translator injecte des ",
+        "word": "infobulles",
+        "badge": "rotatives",
+        "definition": "(nom) boîtes de définition flottantes qui restent près de la sélection et peuvent tourner autour d'elle pour échapper aux bords et aux chevauchements.",
+        "after": " légères près de votre sélection, garde la définition dans la langue d'origine au plus près du texte, sans perturber votre compréhension et cache beaucoup de technicité derrière un geste très simple."
+      },
+      "primaryCta": "Voir les fonctionnalités",
+      "secondaryCta": "Usage",
+      "storeCtas": {
+        "install": "",
+        "chrome": "Chrome",
+        "firefoxAndroid": "Ffox Android",
+        "firefox": "Firefox",
+        "paypal": "PayPal Me",
+        "paypalLabel": ""
+      },
+      "panelNote": "Le mode console conserve les entrées quand une page résiste au rendu des infobulles.",
+      "status": {
+        "published": {
+          "kicker": "Publié maintenant",
+          "title": "Disponible sur Chrome, Firefox et Firefox Android.",
+          "body": "L'application est déjà distribuée sur les principales plateformes actuelles"
+        },
+        "funding": {
+          "kicker": "Extension Safari",
+          "title": "Le portage Safari est en développement, mais a besoin de financements pour aller jusqu'à la publication sur Apple store.",
+          "body": "La migration du code existe, le travail spécifique au navigateur est fait, et un financement aiderait à franchir la dernière étape.",
+          "cta": "Soutenir le développement"
+        }
+      },
+      "points": [
+        "Les définitions restent dans la langue source au lieu de casser la lecture avec un détour de traduction générique.",
+        "Audio, traduire quand même, réparation et ouverture de page restent accessibles directement dans l'infobulle ou l'entrée console.",
+        "Beaucoup de choses se passent en coulisses : reprises de recherche, routage de candidats, fournisseurs de secours et garde-fous par site, détection des langues impliquées, des pages réfractaires aux injections."
+      ]
+    },
+    "demo": {
+      "word": "epoch",
+      "time": "09:58:47",
+      "definition": "(nom) longue période de temps, surtout marquée par des événements ou un développement particulier."
+    },
+    "signals": {
+      "items": [
+        {
+          "value": "3 builds publiés",
+          "label": "Disponibles aujourd'hui",
+          "body": "Chrome, Firefox desktop et Firefox Android sont les extensions actuellement publiées."
+        },
+        {
+          "value": "Mode console",
+          "label": "Pour les pages difficiles",
+          "body": "Quand une page contrarie le rendu des infobulles, les définitions stockées basculent dans une console latérale maîtrisée."
+        },
+        {
+          "value": "Recherche plus fine",
+          "label": "Derrière l'infobulle",
+          "body": "Secours de multiples lemmes candidats, fallbacks, expressions multi-mots et gestion des composés améliorent discrètement le résultat visible."
+        }
+      ]
+    },
+    "manifesto": {
+      "eyebrow": "Pourquoi l'expérience diffère",
+      "title": "Un parcours lecture d'abord.",
+      "lead": "L'extension est conçue pour laisser la page au centre de l'expérience : définir sur place, traduire seulement si nécessaire, et rester lisible même quand l'injection devient difficile.",
+      "items": [
+        {
+          "title": "La définition avant la traduction",
+          "body": "L'extension est pensée pour préserver l'idée qu'un mot se comprend souvent plus intuitivement quand sa définition est donnée d'abord dans sa propre langue."
+        },
+        {
+          "title": "La page reste la surface principale",
+          "body": "Infobulle, quick translate, audio et ouverture de page restent près de la sélection pour éviter que la lecture ne se transforme immédiatement en navigation entre onglets. On garde le fil!"
+        },
+        {
+          "title": "Quand la page résiste, le résultat doit survivre",
+          "body": "Certaines pages sont hostiles aux injections inline ou simplement instables. Le mode console existe pour que l'essentiel, la définition stockée, reste disponible au lieu de disparaître avec l'infobulle. Dans le pire des cas F5/refresh remettra la page dans son état initial. Aucune modification n'est permanente à ce niveau."
+        }
+      ]
+    },
+    "screenshots": {
+      "eyebrow": "En situation",
+      "title": "L'extension est faite pour vivre dans de vraies situations de lecture.",
+      "lead": "Une vue Firefox desktop et une vue Safari iPhone en développement rendent cela plus concret.",
+      "desktop": {
+        "title": "Firefox desktop",
+        "body": "Infobulle près du mot sélectionné, contrôles du popup et flux de lecture d'origine préservé."
+      },
+      "mobile": {
+        "title": "Build Safari iPhone en développement",
+        "body": "Une mise en page portable où l'infobulle reste compacte et lisible à l'intérieur d'une page mobile."
+      }
+    },
+    "features": {
+      "eyebrow": "Fonctions clés",
+      "title": "Simple en surface, dense en profondeur.",
+      "lead": "Une seule sélection peut déclencher du routage de dictionnaires, des recherches de secours, des définitions de nouveaux candidats sur des formes à variantes, du sourcing audio, du parsing de conversions, de l'interprétation de fuseaux horaires et, sur les pages hostiles, une bascule maîtrisée vers le mode console.",
+      "items": [
+        {
+          "title": "Définitions en langue d'origine",
+          "body": "Le principe reste le même : sélectionner un mot et obtenir sa définition dans sa propre langue, pour garder lecture et apprentissage liés."
+        },
+        {
+          "title": "Conversions et fuseaux horaires",
+          "body": "Les sélections numériques peuvent basculer en mode conversion, y compris pour les unités et les heures avec fuseau reconnu, sans quitter la page."
+        },
+        {
+          "title": "Audio au plus près de la sélection",
+          "body": "Quand une prononciation existe, l'infobulle ou l'entrée console peut l'exposer directement en choisissant la meilleure source disponible. l’icône indique si la voix est humaine ou synthétique"
+        },
+        {
+          "title": "Mode console pour les pages hostiles",
+          "body": "Le clic sur l'action repair ouvre maintenant directement le mode console. toutes les autres réparations sont traitées automatiquement en amont. Quand le rendu inline devient peu fiable, les entrées restent lisibles dans un panneau maîtrisé au lieu d'être perdues."
+        },
+        {
+          "title": "Parcours de recherche plus intelligents",
+          "body": "Les recherches s'appuient désormais sur un routage de candidats plus robuste : forme exacte d'abord, puis secours de multiples lemmes candidats, fallbacks, expressions multi-mots et stratégies de lemme ou de composé quand c'est utile."
+        },
+        {
+          "title": "Beaucoup de technique, discrètement",
+          "body": "Quick translate remplace maintenant la définition directement dans l'infobulle. Derrière cela se trouvent des fournisseurs de repli, des garde-fous par site, du travail de positionnement mobile et des contournements spécifiques aux navigateurs pour garder un geste court."
+        }
+      ]
+    },
+    "updates": {
+      "eyebrow": "Améliorations récentes",
+      "title": "Le site reflète maintenant l'état réel de l'extension.",
+      "lead": "La page de présentation décrit enfin la version actuelle au lieu d'un ancien instantané.",
+      "items": [
+        {
+          "kicker": "Conversion",
+          "title": "Lecture correcte des grands nombres",
+          "body": "Des sélections comme « 12,333 feet » ou même « 12,333,425 feet » sont maintenant interprétées comme des milliers groupés, et non comme des décimaux."
+        },
+        {
+          "kicker": "Heure",
+          "title": "Les fuseaux restent dans le même geste",
+          "body": "Une sélection horaire peut ouvrir une infobulle dédiée quand un fuseau est reconnu, au lieu d'imposer un parcours séparé."
+        },
+        {
+          "kicker": "Dictionnaire",
+          "title": "Le finnois rejoint l'ensemble actif",
+          "body": "Le finnois fait désormais partie de la gamme vivante, avec dictionnaire, menu, i18n et plomberie audio / recherche associée."
+        },
+        {
+          "kicker": "Recherche",
+          "title": "Nouveaux modes de recherche sous le capot",
+          "body": "Le travail récent améliore le secours sur expressions anglaises multi-mots et ajoute une gestion plus solide des composés finnois quand la recherche directe ne suffit pas."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "Sous le capot",
+      "title": "Il se passe bien plus de choses que l'interface ne le laisse voir.",
+      "lead": "L'extension est volontairement légère en apparence et très active en arrière-plan.",
+      "items": [
+        {
+          "title": "Routage des candidats",
+          "body": "Une recherche ne s'arrête pas à une forme brute. Le moteur peut retenter des formes exactes, des variantes de secours et des candidats multi-mots avant d'abandonner."
+        },
+        {
+          "title": "Conversions qui lisent du vrai texte",
+          "body": "Le parcours de conversion traite maintenant plus sûrement les milliers groupés et peut arbitrer entre unité et fuseau horaire à partir d'une même sélection."
+        },
+        {
+          "title": "Repli console",
+          "body": "Le contrôle repair agit maintenant comme un vrai changement de mode : il envoie la recherche en cours vers le mode console au lieu d'une simple tentative cosmétique."
+        },
+        {
+          "title": "Sourcing audio",
+          "body": "La prononciation peut venir de Wiktionary, Commons, DWDS ou d'un secours généré selon le dictionnaire et la disponibilité."
+        },
+        {
+          "title": "Travail spécifique au finnois",
+          "body": "Le finnois n'est pas qu'une entrée de menu supplémentaire : il apporte un routage de dictionnaires et des stratégies orientées composés derrière la scène."
+        },
+        {
+          "title": "Indice de fiabilité par site",
+          "body": "La pastille ne sert pas seulement à afficher une langue. Elle doit aussi communiquer la confiance, y compris sur les pages restreintes ou hostiles."
+        },
+        {
+          "title": "Compatibilité smartphone",
+          "body": "Le site de présentation garde maintenant la même hiérarchie sur petit écran : actions empilées, boutons pleine largeur et cartes lisibles au lieu d'un desktop écrasé."
+        }
+      ]
+    },
+    "usage": {
+      "eyebrow": "Utilisation",
+      "title": "Un geste court qui essaie de préserver la lecture.",
+      "lead": "L'extension cherche à garder le contexte, à éviter les détours inutiles et à se dégrader proprement quand une page perturbe l'injection.",
+      "steps": [
+        "Sélectionnez un mot ou une expression dans la page que vous lisez.",
+        "Utilisez l'action de l'extension ou le menu contextuel pour demander la définition.",
+        "Lisez l'infobulle près de la sélection et restez dans la page pour la définition, l'audio, quick translate ou l'ouverture de page si besoin.",
+        "Si la détection du site vous propose le mode console, répondez OK pour y basculer. Vous pouvez aussi cliquer sur repair, l'icône outil dans un tooltip, pour envoyer cette recherche vers la console.",
+        "Le mode console conserve les entrées stockées dans un panneau latéral stable quand le rendu inline devient peu fiable.",
+        "Pour régler la couleur et l'opacité des tooltips, ou désactiver la détection automatique de langue, ouvrez le popup de l'extension : vous y trouverez la couleur courante, la palette disponible, le curseur d'opacité et le commutateur de détection de langue."
+      ]
+    },
+    "platforms": {
+      "title": "Plateformes",
+      "items": [
+        "Publié : Firefox desktop",
+        "Publié : Chrome desktop",
+        "Publié : Firefox Android",
+        "Safari est en développement actif et a besoin de financements pour aller jusqu'à la publication."
+      ]
+    },
+    "dictionaries": {
+      "title": "Dictionnaires",
+      "items": [
+        "Anglais - Merriam-Webster Learner's Dictionary",
+        "Espagnol - Diccionario de la Lengua Española",
+        "Français - Larousse",
+        "Allemand - DWDS",
+        "Italien - De Mauro Internazionale",
+        "Finnois - Kielitoimiston sanakirja avec repli Wiktionary",
+        "Latin + grec - parcours orienté traduction pour les langues anciennes"
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Quelques points à dire clairement.",
+      "items": [
+        {
+          "q": "Est-ce une extension de traduction automatique ?",
+          "a": "Non. La traduction existe en secours facultatif. L'idée principale reste d'exposer d'abord la définition en langue d'origine."
+        },
+        {
+          "q": "Pourquoi le mode console est-il important ?",
+          "a": "Parce que certaines pages perturbent les injections inline dans le DOM. Vous pouvez y basculer soit en acceptant la détection proposée par l'extension, soit en cliquant sur repair, l'icône outil dans un tooltip. Le mode console conserve alors la partie utile, les définitions stockées, même quand la page est difficile."
+        },
+        {
+          "q": "Peut-on régler l'apparence des tooltips ?",
+          "a": "Oui. Dans le popup de l'extension, vous pouvez choisir la couleur des tooltips, ajuster leur opacité avec le curseur prévu pour cela et désactiver la détection automatique de langue si vous préférez garder la main sur le dictionnaire actif."
+        },
+        {
+          "q": "Y a-t-il beaucoup de technique derrière ?",
+          "a": "Oui, volontairement. Fournisseurs de repli, candidats de recherche plus intelligents, routage audio, heuristiques de conversion et contournements spécifiques aux navigateurs servent à garder le geste visible très simple."
+        },
+        {
+          "q": "Est-ce que cela fonctionne partout ?",
+          "a": "Presque partout, mais pas sur les pages restreintes par le navigateur lui-même, par exemple les stores d'extensions ou d'autres surfaces privilégiées où les content scripts sont bloqués."
+        }
+      ]
+    },
+    "footer": "Pas de pubs, pas de traceurs, beaucoup de soin, et une grande quantité de cas limites navigateur gérés discrètement."
+  }
+}
