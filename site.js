@@ -7,10 +7,10 @@
     messages: null
   };
 
-  const featureIcons = ['◍', '⇄', '🔊', '⌘', '∿', '⚙'];
+  const featureIcons = ['\u25cd', '\u21c4', '\ud83d\udd0a', '\u2318', '\u223f', '\u2699'];
   const updateAccents = ['Now', 'Improved', 'Mobile', 'Lookup'];
-  const signalIcons = ['↗', '◌', '⚑'];
-  const engineIcons = ['#', '≈', '↺', '◐', '⊕', '⤴'];
+  const signalIcons = ['\u2197', '\u25cc', '\u2691'];
+  const engineIcons = ['#', '\u2248', '\u21ba', '\u25d0', '\u2295', '\u2934'];
 
   function getPath(root, path) {
     return path.split('.').reduce((value, key) => {
@@ -214,6 +214,9 @@
     featuresEyebrow: 'site.features.eyebrow',
     featuresTitle: 'site.features.title',
     featuresLead: 'site.features.lead',
+    conversionShowcaseEyebrow: 'site.features.conversionShowcase.eyebrow',
+    conversionShowcaseTitle: 'site.features.conversionShowcase.title',
+    conversionShowcaseBody: 'site.features.conversionShowcase.body',
     updatesEyebrow: 'site.updates.eyebrow',
     updatesTitle: 'site.updates.title',
     updatesLead: 'site.updates.lead',
@@ -227,7 +230,8 @@
     dictionariesTitle: 'site.dictionaries.title',
     faqEyebrow: 'site.faq.eyebrow',
     faqTitle: 'site.faq.title',
-    footerLine: 'site.footer'
+    footerLine: 'site.footer',
+    contactLabel: 'site.contactLabel'
   };
 
   const legacyListBindings = {
@@ -285,9 +289,9 @@
     if (!root || !rotate || rotate.dataset.demoBound === '1') return;
     const positions = [
       'inline-tooltip-pos-bottom',
-      'inline-tooltip-pos-right',
+      'inline-tooltip-pos-left',
       'inline-tooltip-pos-top',
-      'inline-tooltip-pos-left'
+      'inline-tooltip-pos-right'
     ];
     let index = positions.findIndex((name) => root.classList.contains(name));
     if (index < 0) index = 0;

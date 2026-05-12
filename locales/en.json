@@ -1,296 +1,302 @@
 {
-    "lang": "en",
-    "meta": {
-        "title": "Not A Translator - Native-language definitions inside the page",
-        "description": "Native-language definitions, audio, unit and timezone conversions, smarter lookup routes and console mode for difficult pages."
+  "lang": "en",
+  "meta": {
+    "title": "Not A Translator - Native-language definitions inside the page",
+    "description": "Native-language definitions, audio, unit and timezone conversions, smarter lookup routes and console mode for difficult pages."
+  },
+  "shared": {
+    "appName": "Not A Translator",
+    "lookup": "Get meaning for",
+    "consoleMode": "Console mode",
+    "tooltipMode": "Tooltip mode",
+    "contribute": "Contribute",
+    "dictionary": "Dictionary",
+    "badges": {
+      "risky": "risky",
+      "conditional": "works under conditions",
+      "ok": "ok"
     },
-    "shared": {
-        "appName": "Not A Translator",
-        "lookup": "Get meaning for",
-        "consoleMode": "Console mode",
-        "tooltipMode": "Tooltip mode",
-        "contribute": "Contribute",
-        "dictionary": "Dictionary",
-        "badges": {
-            "risky": "risky",
-            "conditional": "works under conditions",
-            "ok": "ok"
-        },
-        "console": {
-            "copy": "Copy",
-            "remove": "Remove",
-            "forceForSite": "Force console for this site"
-        },
-        "languages": {
-            "english": "English",
-            "spanish": "Spanish",
-            "french": "French",
-            "german": "German",
-            "italian": "Italian",
-            "finnish": "Finnish",
-            "ancient": "Latin + Greek (translation)"
-        }
+    "console": {
+      "copy": "Copy",
+      "remove": "Remove",
+      "forceForSite": "Force console for this site"
     },
-    "site": {
-        "languageLabel": "Language",
-        "brandTagline": "Definitions stay in the text flow.",
-        "nav": {
-            "features": "Features",
-            "updates": "Updates",
-            "engine": "Engine",
-            "usage": "Usage",
-            "faq": "FAQ"
-        },
-        "hero": {
-            "eyebrow": "Read first. Translate later.",
-            "title": "Keep the definition inside the page, in the language that owns the word.",
-            "lead": "Not A Translator injects lightweight tooltips near your selection, keeps the original-language definition front and center, and hides a lot of technical work behind a very simple gesture.",
-            "primaryCta": "See features",
-            "secondaryCta": "Usage",
-            "storeCtas": {
-                "install": "",
-                "chrome": "Chrome",
-                "firefoxAndroid": "Ffox Android",
-                "firefox": "Firefox",
-                "paypal": "PayPal Me",
-                "paypalLabel": ""
-            },
-            "panelNote": "Console mode stores entries when a page resists tooltip rendering.",
-            "status": {
-                "published": {
-                    "kicker": "Published now",
-                    "title": "Available on Chrome, Firefox and Firefox Android.",
-                    "body": "The application is already distributed on the main current platforms."
-                },
-                "funding": {
-                    "kicker": "Safari Extension",
-                    "title": "The Safari port is in development, but needs funding to reach publication on the Apple Store.",
-                    "body": "The code migration exists, the browser-specific work is done, and funding would help cross the final step.",
-                    "cta": "Support development"
-                }
-            },
-            "points": [
-                "Definitions stay in the source language instead of breaking reading with a generic translation detour. no new tab to break your reading. no language swap to interrupt your understanding",
-                "Audio, translate-anyway, repair and open-page actions stay one click away inside the tooltip or console entry.",
-                "A lot happens behind the scenes: lookup retries, candidate routing, fallback providers and per-site safeguards, detection of the languages involved, and detection of pages that resist injection."
-            ],
-            "inlineDemo": {
-                "before": "Not A Translator injects lightweight ",
-                "word": "tooltips",
-                "badge": "rotating",
-                "definition": "(noun) floating definition boxes that stay close to the selection and can rotate around it to escape edges and overlap.",
-                "after": " near your selection, keeps the source-language definition as close as possible to the text without disturbing your understanding, and hides a lot of technical complexity behind a very simple gesture."
-            }
-        },
-        "demo": {
-            "word": "epoch",
-            "time": "09:58:47",
-            "definition": "(noun) a long period of time, especially one marked by distinctive events or development."
-        },
-        "signals": {
-            "items": [
-                {
-                    "value": "3 published builds",
-                    "label": "Live today",
-                    "body": "Chrome, Firefox desktop and Firefox Android are the currently published extensions."
-                },
-                {
-                    "value": "Console mode",
-                    "label": "For difficult pages",
-                    "body": "When a page fights tooltip rendering, stored definitions move into a controlled side console."
-                },
-                {
-                    "value": "Search smarter",
-                    "label": "Behind the tooltip",
-                    "body": "Candidate rescue, multi-word lookup and compound handling quietly improve the visible result."
-                }
-            ]
-        },
-        "manifesto": {
-            "eyebrow": "Why it feels different",
-            "title": "A reading-first workflow.",
-            "lead": "The extension is designed to keep the page at the center of the experience: define in place, translate only when necessary, and stay readable even when injection gets difficult.",
-            "items": [
-                {
-                    "title": "Definition before translation",
-                    "body": "The extension is designed to preserve the idea that a word is often understood more intuitively when its definition is given first in its own language."
-                },
-                {
-                    "title": "The page stays the main surface",
-                    "body": "Tooltip, quick translate, audio and open-page actions stay close to the selection so reading does not immediately turn into tab switching. You keep the thread!"
-                },
-                {
-                    "title": "When a page fights back, the result should survive",
-                    "body": "Some sites are hostile to inline injections or simply unstable. Console mode exists so the essential part, the stored definition, remains available instead of disappearing with the tooltip. In the worst case, F5/refresh will restore the page to its initial state. No change is permanent at this level."
-                }
-            ]
-        },
-        "screenshots": {
-            "eyebrow": "In context",
-            "title": "The extension is meant to live inside real reading situations.",
-            "lead": "A desktop Firefox view and a mobile Safari development view help make that concrete.",
-            "desktop": {
-                "title": "Firefox desktop",
-                "body": "Tooltip near the selected word, popup controls, and the original reading flow preserved."
-            },
-            "mobile": {
-                "title": "Safari iPhone development build",
-                "body": "A portable layout where the tooltip stays compact and readable inside a mobile page."
-            }
-        },
-        "features": {
-            "eyebrow": "Core features",
-            "title": "Simple on the surface, dense underneath.",
-            "lead": "One selection can trigger dictionary routing, backup searches, definitions of new candidates on variant forms, audio sourcing, conversion parsing, timezone interpretation and, on hostile pages, a controlled shift into console mode.",
-            "items": [
-                {
-                    "title": "Native-language definitions",
-                    "body": "The main path is still the same idea: select a word and get its definition in the language it belongs to, so reading and language learning stay connected."
-                },
-                {
-                    "title": "Conversions and timezone helpers",
-                    "body": "Numeric selections can switch into conversion mode, including unit conversions and timezone-aware time conversion without leaving the page."
-                },
-                {
-                    "title": "Audio close to the selection",
-                    "body": "When pronunciation is available, the tooltip or console entry can expose audio directly, using the best source available. the icon indicates whether the voice is human or synthetic"
-                },
-                {
-                    "title": "Console mode for hostile pages",
-                    "body": "The repair action now opens console mode directly. all other repairs are handled automatically upstream. When inline rendering is unreliable, stored entries stay readable in a controlled panel instead of being lost."
-                },
-                {
-                    "title": "Smarter search routes",
-                    "body": "Lookup now leans on better candidate routing: exact form first, then rescued candidates, multi-word expression handling, and lemma or compound strategies where useful."
-                },
-                {
-                    "title": "Lots of technique, quietly",
-                    "body": "Quick translate now swaps the definition directly inside the tooltip. Behind that are fallback providers, per-site safeguards, mobile positioning work and browser-specific workarounds meant to keep the interaction short."
-                }
-            ]
-        },
-        "updates": {
-            "eyebrow": "Recent improvements",
-            "title": "Latest work now reflected on the extension site.",
-            "lead": "The landing page now describes the current state of the project instead of an older snapshot.",
-            "items": [
-                {
-                    "kicker": "Conversion",
-                    "title": "Thousands-aware numeric parsing",
-                    "body": "Selections such as \"12,333 feet\" and even \"12,333,425 feet\" are now interpreted as grouped thousands instead of decimal numbers."
-                },
-                {
-                    "kicker": "Time",
-                    "title": "Timezone conversion stays part of the same gesture",
-                    "body": "Time selections can switch to a dedicated tooltip when a timezone is recognized, instead of forcing a separate workflow."
-                },
-                {
-                    "kicker": "Dictionary",
-                    "title": "Finnish joins the active dictionary set",
-                    "body": "Finnish support is now part of the live lineup, including dictionary access, menu exposure and the related audio / lookup plumbing."
-                },
-                {
-                    "kicker": "Lookup",
-                    "title": "New search paths behind the tooltip",
-                    "body": "Recent lookup work improves candidate rescue for English multi-word expressions and adds stronger compound handling for Finnish when direct lookup is not enough."
-                }
-            ]
-        },
-        "engine": {
-            "eyebrow": "Under the hood",
-            "title": "Much more happens than the interface lets on.",
-            "lead": "The extension is intentionally light in appearance and busy in the background.",
-            "items": [
-                {
-                    "title": "Candidate routing",
-                    "body": "A lookup does not stop at one raw form. The engine can retry exact forms, rescued variants and multi-word candidates before giving up."
-                },
-                {
-                    "title": "Conversions that read real text",
-                    "body": "The conversion path now treats grouped thousands more safely and can switch between unit and timezone interpretation from the same selection."
-                },
-                {
-                    "title": "Console fallback",
-                    "body": "The repair control now acts as a real mode switch: it sends the current lookup into console mode instead of only trying cosmetic recovery."
-                },
-                {
-                    "title": "Audio sourcing",
-                    "body": "Pronunciation can come from Wiktionary, Commons, DWDS or a generated fallback depending on dictionary and availability."
-                },
-                {
-                    "title": "Finnish-specific work",
-                    "body": "Finnish lookup is not just another menu entry: it includes extra dictionary routing and compound-aware strategies behind the scenes."
-                },
-                {
-                    "title": "Per-site reliability hints",
-                    "body": "The badge is there to communicate confidence, not only language. Restricted or hostile pages should not look deceptively safe."
-                },
-                {
-                    "title": "Smartphone compatibility",
-                    "body": "The presentation site now keeps the same hierarchy on small screens: stacked actions, stretch buttons and readable cards instead of a squeezed desktop layout."
-                }
-            ]
-        },
-        "usage": {
-            "eyebrow": "Usage",
-            "title": "A short gesture that tries to preserve reading.",
-            "lead": "The extension tries to keep context, avoid unnecessary navigation and degrade gracefully when a page interferes with injection.",
-            "steps": [
-                "Select a word or expression in the page you are reading.",
-                "Use the extension action or context menu to request the definition.",
-                "Read the tooltip near the selection and stay inside the page for definition, audio, quick translate or open-page follow-up.",
-                "If site detection proposes console mode, answer OK to switch. You can also click repair, the tool icon inside a tooltip, to send that lookup to the console.",
-                "Console mode keeps the stored entries in a stable side panel when inline rendering becomes unreliable.",
-                "To set tooltip color and opacity, or disable automatic language detection, open the extension popup: it exposes the current color, the available palette, the opacity slider and the language autodetect switch."
-            ]
-        },
-        "platforms": {
-            "title": "Platforms",
-            "items": [
-                "Published: Firefox desktop",
-                "Published: Chrome desktop",
-                "Published: Firefox Android",
-                "Safari is under active development and needs funding to reach publication."
-            ]
-        },
-        "dictionaries": {
-            "title": "Dictionaries",
-            "items": [
-                "English - Merriam-Webster Learner's Dictionary",
-                "Spanish - Diccionario de la Lengua Espa�f±ola",
-                "French - Larousse",
-                "German - DWDS",
-                "Italian - De Mauro Internazionale",
-                "Finnish - Kielitoimiston sanakirja / Wiktionary fallback",
-                "Latin + Greek - translation-oriented ancient-language route"
-            ]
-        },
-        "faq": {
-            "eyebrow": "FAQ",
-            "title": "A few things worth saying clearly.",
-            "items": [
-                {
-                    "q": "Is this a machine-translation extension?",
-                    "a": "No. Translation exists as an optional fallback. The primary idea is still to expose the original-language definition first."
-                },
-                {
-                    "q": "Why is console mode important?",
-                    "a": "Because some pages interfere with inline DOM injections. You can switch to it either by accepting the extension's detection prompt or by clicking repair, the tool icon inside a tooltip. Console mode then keeps the useful part, the stored definitions, even when the page is difficult."
-                },
-                {
-                    "q": "Can tooltip appearance be adjusted?",
-                    "a": "Yes. In the extension popup, you can choose tooltip color, adjust opacity with the dedicated slider, and disable automatic language detection when you prefer to keep control over the active dictionary."
-                },
-                {
-                    "q": "Does it do a lot behind the scenes?",
-                    "a": "Yes, but on purpose. Provider fallback, smarter lookup candidates, audio routing, conversion heuristics and browser-specific workarounds are there so the visible gesture stays simple."
-                },
-                {
-                    "q": "Will it work everywhere?",
-                    "a": "Almost everywhere, but not on browser-restricted pages such as extension stores or other privileged browser surfaces where content scripts are blocked by the browser itself."
-                }
-            ]
-        },
-        "footer": "No ads, no trackers, a lot of care, and many browser-specific edge cases handled transparently."
+    "languages": {
+      "english": "English",
+      "spanish": "Spanish",
+      "french": "French",
+      "german": "German",
+      "italian": "Italian",
+      "finnish": "Finnish",
+      "ancient": "Latin + Greek (translation)"
     }
+  },
+  "site": {
+    "languageLabel": "Language",
+    "brandTagline": "Definitions stay in the text flow.",
+    "nav": {
+      "features": "Features",
+      "updates": "Updates",
+      "engine": "Engine",
+      "usage": "Usage",
+      "faq": "FAQ"
+    },
+    "hero": {
+      "eyebrow": "Read first. Translate later.",
+      "title": "Keep a definition in the original language of the word inside the page flow.",
+      "lead": "Not A Translator injects lightweight tooltips near your selection, keeps the original-language definition front and center, and hides a lot of technical work behind a very simple gesture.",
+      "primaryCta": "See features",
+      "secondaryCta": "Usage",
+      "storeCtas": {
+        "install": "",
+        "chrome": "Chrome",
+        "firefoxAndroid": "Ffox Android",
+        "firefox": "Firefox",
+        "paypal": "PayPal Me",
+        "paypalLabel": ""
+      },
+      "panelNote": "Console mode stores entries when a page resists tooltip rendering.",
+      "status": {
+        "published": {
+          "kicker": "Published now",
+          "title": "Available on Chrome, Firefox and Firefox Android.",
+          "body": "The application is already distributed on the main current platforms."
+        },
+        "funding": {
+          "kicker": "Safari Extension",
+          "title": "The Safari port is in development, but needs funding to reach publication on the Apple Store.",
+          "body": "The code migration exists, the browser-specific work is done, and funding would help cross the final step.",
+          "cta": "Support development"
+        }
+      },
+      "points": [
+        "Definitions stay in the source language instead of breaking reading with a generic translation detour. no new tab to break your reading. no language swap to interrupt your understanding",
+        "Audio, translate-anyway, repair and open-page actions stay one click away inside the tooltip or console entry.",
+        "A lot happens behind the scenes: lookup retries, candidate routing, fallback providers and per-site safeguards, detection of the languages involved, and detection of pages that resist injection."
+      ],
+      "inlineDemo": {
+        "before": "Not A Translator injects lightweight ",
+        "word": "tooltips",
+        "badge": "rotating",
+        "definition": "(noun) floating definition boxes that stay close to the selection and can rotate around it to escape edges and overlap.",
+        "after": " near your selection, keeps the original-language definition front and center, and hides a lot of technical work behind a very simple gesture."
+      }
+    },
+    "demo": {
+      "word": "epoch",
+      "time": "09:58:47",
+      "definition": "(noun) a long period of time, especially one marked by distinctive events or development."
+    },
+    "signals": {
+      "items": [
+        {
+          "value": "3 published builds",
+          "label": "Live today",
+          "body": "Chrome, Firefox desktop and Firefox Android are the currently published extensions."
+        },
+        {
+          "value": "Console mode",
+          "label": "For difficult pages",
+          "body": "When a page fights tooltip rendering, stored definitions move into a controlled side console."
+        },
+        {
+          "value": "Search smarter",
+          "label": "Behind the tooltip",
+          "body": "Candidate rescue, multi-word lookup and compound handling quietly improve the visible result."
+        }
+      ]
+    },
+    "manifesto": {
+      "eyebrow": "Why it feels different",
+      "title": "A reading-first workflow.",
+      "lead": "The extension is designed to keep the page at the center of the experience: define in place, translate only when necessary, and stay readable even when injection gets difficult.",
+      "items": [
+        {
+          "title": "Definition before translation",
+          "body": "The extension is designed to preserve the idea that a word is often understood more intuitively when its definition is given first in its own language."
+        },
+        {
+          "title": "The page stays the main surface",
+          "body": "Tooltip, quick translate, audio and open-page actions stay close to the selection so reading does not immediately turn into tab switching. You keep the thread!"
+        },
+        {
+          "title": "When a page fights back, the result should survive",
+          "body": "Some sites are hostile to inline injections or simply unstable. Console mode exists so the essential part, the stored definition, remains available instead of disappearing with the tooltip. In the worst case, F5/refresh will restore the page to its initial state. No change is permanent at this level."
+        }
+      ]
+    },
+    "screenshots": {
+      "eyebrow": "In context",
+      "title": "The extension is meant to live inside real reading situations.",
+      "lead": "A desktop Firefox view and a mobile Safari development view help make that concrete.",
+      "desktop": {
+        "title": "Firefox desktop",
+        "body": "Tooltip near the selected word, popup controls, and the original reading flow preserved."
+      },
+      "mobile": {
+        "title": "Safari iPhone development build",
+        "body": "A portable layout where the tooltip stays compact and readable inside a mobile page."
+      }
+    },
+    "features": {
+      "eyebrow": "Core features",
+      "title": "Simple on the surface, dense underneath.",
+      "lead": "One selection can trigger dictionary routing, backup searches, definitions of new candidates on variant forms, audio sourcing, conversion parsing, timezone interpretation and, on hostile pages, a controlled shift into console mode.",
+      "items": [
+        {
+          "title": "Native-language definitions",
+          "body": "The main path is still the same idea: select a word and get its definition in the language it belongs to, so reading and language learning stay connected."
+        },
+        {
+          "title": "Conversions and timezone helpers",
+          "body": "Numeric selections can switch into conversion mode, including unit conversions and timezone-aware time conversion without leaving the page."
+        },
+        {
+          "title": "Audio close to the selection",
+          "body": "When pronunciation is available, the tooltip or console entry can expose audio directly, using the best source available. the icon indicates whether the voice is human or synthetic"
+        },
+        {
+          "title": "Console mode for hostile pages",
+          "body": "The repair action now opens console mode directly. all other repairs are handled automatically upstream. When inline rendering is unreliable, stored entries stay readable in a controlled panel instead of being lost."
+        },
+        {
+          "title": "Smarter search routes",
+          "body": "Lookup now leans on better candidate routing: exact form first, then rescued candidates, multi-word expression handling, and lemma or compound strategies where useful."
+        },
+        {
+          "title": "Lots of technique, quietly",
+          "body": "Quick translate now swaps the definition directly inside the tooltip. Behind that are fallback providers, per-site safeguards, mobile positioning work and browser-specific workarounds meant to keep the interaction short."
+        }
+      ],
+      "conversionShowcase": {
+        "eyebrow": "Timezone conversion",
+        "title": "Timezone conversion stays inside the same gesture.",
+        "body": "A time selection can open a dedicated conversion tooltip instead of forcing a separate workflow or another tool."
+      }
+    },
+    "updates": {
+      "eyebrow": "Recent improvements",
+      "title": "Latest work now reflected on the extension site.",
+      "lead": "The landing page now describes the current state of the project instead of an older snapshot.",
+      "items": [
+        {
+          "kicker": "Conversion",
+          "title": "Thousands-aware numeric parsing",
+          "body": "Selections such as \"12,333 feet\" and even \"12,333,425 feet\" are now interpreted as grouped thousands instead of decimal numbers."
+        },
+        {
+          "kicker": "Time",
+          "title": "Timezone conversion stays part of the same gesture",
+          "body": "Time selections can switch to a dedicated tooltip when a timezone is recognized, instead of forcing a separate workflow."
+        },
+        {
+          "kicker": "Dictionary",
+          "title": "Finnish joins the active dictionary set",
+          "body": "Finnish support is now part of the live lineup, including dictionary access, menu exposure and the related audio / lookup plumbing."
+        },
+        {
+          "kicker": "Lookup",
+          "title": "New search paths behind the tooltip",
+          "body": "Recent lookup work improves candidate rescue for English multi-word expressions and adds stronger compound handling for Finnish when direct lookup is not enough."
+        }
+      ]
+    },
+    "engine": {
+      "eyebrow": "Under the hood",
+      "title": "Much more happens than the interface lets on.",
+      "lead": "The extension is intentionally light in appearance and busy in the background.",
+      "items": [
+        {
+          "title": "Candidate routing",
+          "body": "A lookup does not stop at one raw form. The engine can retry exact forms, rescued variants and multi-word candidates before giving up."
+        },
+        {
+          "title": "Conversions that read real text",
+          "body": "The conversion path now treats grouped thousands more safely and can switch between unit and timezone interpretation from the same selection."
+        },
+        {
+          "title": "Console fallback",
+          "body": "The repair control now acts as a real mode switch: it sends the current lookup into console mode instead of only trying cosmetic recovery."
+        },
+        {
+          "title": "Audio sourcing",
+          "body": "Pronunciation can come from Wiktionary, Commons, DWDS or a generated fallback depending on dictionary and availability."
+        },
+        {
+          "title": "Finnish-specific work",
+          "body": "Finnish lookup is not just another menu entry: it includes extra dictionary routing and compound-aware strategies behind the scenes."
+        },
+        {
+          "title": "Per-site reliability hints",
+          "body": "The badge is there to communicate confidence, not only language. Restricted or hostile pages should not look deceptively safe."
+        },
+        {
+          "title": "Smartphone compatibility",
+          "body": "The presentation site now keeps the same hierarchy on small screens: stacked actions, stretch buttons and readable cards instead of a squeezed desktop layout."
+        }
+      ]
+    },
+    "usage": {
+      "eyebrow": "Usage",
+      "title": "A short gesture that tries to preserve reading.",
+      "lead": "The extension tries to keep context, avoid unnecessary navigation and degrade gracefully when a page interferes with injection.",
+      "steps": [
+        "Select a word or expression in the page you are reading.",
+        "Use the extension action or context menu to request the definition.",
+        "Read the tooltip near the selection and stay inside the page for definition, audio, quick translate or open-page follow-up.",
+        "If site detection proposes console mode, answer OK to switch. You can also click repair, the tool icon inside a tooltip, to send that lookup to the console.",
+        "Console mode keeps the stored entries in a stable side panel when inline rendering becomes unreliable.",
+        "To set tooltip color and opacity, or disable automatic language detection, open the extension popup: it exposes the current color, the available palette, the opacity slider and the language autodetect switch."
+      ]
+    },
+    "platforms": {
+      "title": "Platforms",
+      "items": [
+        "Published: Firefox desktop",
+        "Published: Chrome desktop",
+        "Published: Firefox Android",
+        "Safari is under active development and needs funding to reach publication."
+      ]
+    },
+    "dictionaries": {
+      "title": "Dictionaries",
+      "items": [
+        "English - Merriam-Webster Learner's Dictionary",
+        "Spanish - Diccionario de la Lengua Española",
+        "French - Larousse",
+        "German - DWDS",
+        "Italian - De Mauro Internazionale",
+        "Finnish - Kielitoimiston sanakirja / Wiktionary fallback",
+        "Latin + Greek - translation-oriented route, because giving a dead-language word a same-language definition in its original context did not seem very meaningful in practice."
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "A few things worth saying clearly.",
+      "items": [
+        {
+          "q": "Is this a machine-translation extension?",
+          "a": "No. Translation exists as an optional fallback. The primary idea is still to expose the original-language definition first."
+        },
+        {
+          "q": "Why is console mode important?",
+          "a": "Because some pages interfere with inline DOM injections. You can switch to it either by accepting the extension's detection prompt or by clicking repair, the tool icon inside a tooltip. Console mode then keeps the useful part, the stored definitions, even when the page is difficult."
+        },
+        {
+          "q": "Can tooltip appearance be adjusted?",
+          "a": "Yes. In the extension popup, you can choose tooltip color, adjust opacity with the dedicated slider, and disable automatic language detection when you prefer to keep control over the active dictionary."
+        },
+        {
+          "q": "Does it do a lot behind the scenes?",
+          "a": "Yes, but on purpose. Provider fallback, smarter lookup candidates, audio routing, conversion heuristics and browser-specific workarounds are there so the visible gesture stays simple."
+        },
+        {
+          "q": "Will it work everywhere?",
+          "a": "Almost everywhere, but not on browser-restricted pages such as extension stores or other privileged browser surfaces where content scripts are blocked by the browser itself."
+        }
+      ]
+    },
+    "footer": "No ads, no trackers, a lot of care, and many browser-specific edge cases handled transparently.",
+    "contactLabel": "CONTACT"
+  }
 }
