@@ -356,6 +356,34 @@
     return null;
   }
 
+  function scrollHeroInstallFocus(target) {
+    const storeLinks = document.querySelector('.store-links');
+    const topbar = document.querySelector('.topbar');
+
+    if (!target) return;
+    if (!storeLinks) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+      return;
+    }
+
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+    const currentScrollY = window.scrollY || window.pageYOffset || 0;
+    const topbarHeight = topbar ? topbar.getBoundingClientRect().height : 0;
+    const safeTop = topbarHeight + 28;
+    const safeBottom = 28;
+    const storeRect = storeLinks.getBoundingClientRect();
+    const usableHeight = Math.max(120, viewportHeight - safeTop - safeBottom);
+    const desiredCenterInViewport = safeTop + (usableHeight / 2);
+    const storeCenterInViewport = storeRect.top + (storeRect.height / 2);
+    const nextScrollY = currentScrollY + storeCenterInViewport - desiredCenterInViewport;
+    const maxScrollY = Math.max(0, document.documentElement.scrollHeight - viewportHeight);
+
+    window.scrollTo({
+      top: Math.max(0, Math.min(nextScrollY, maxScrollY)),
+      behavior: 'smooth'
+    });
+  }
+
   function highlightDetectedInstallTarget(event) {
     if (event) {
       event.preventDefault();
@@ -377,7 +405,7 @@
 
     target.classList.add('store-pill-browser-match');
     target.setAttribute('aria-current', 'true');
-    target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    scrollHeroInstallFocus(target);
   }
 
   function bindBrowserDetectTrigger() {
