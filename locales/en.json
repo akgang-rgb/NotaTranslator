@@ -43,7 +43,7 @@
     },
     "hero": {
       "eyebrow": "Read first. Translate later.",
-      "title": "Keep a definition in the original language of the word inside the page flow.",
+      "title": "Inside the page flow, keep a definition of a word in its original language.",
       "lead": "Not A Translator injects lightweight tooltips near your selection, keeps the original-language definition front and center, and hides a lot of technical work behind a very simple gesture.",
       "primaryCta": "See features",
       "secondaryCta": "Usage",

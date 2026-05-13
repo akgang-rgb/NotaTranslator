@@ -43,7 +43,7 @@
     },
     "hero": {
       "eyebrow": "Lire d'abord. Traduire ensuite si besoin.",
-      "title": "Garder dans le flux de la page une définition dans la langue originale du mot.",
+      "title": "Garder dans le flux de la page la définition du mot dans sa langue originale .",
       "lead": "Not A Translator injecte des infobulles légères près de la sélection, met la définition d'origine au premier plan et cache beaucoup de technique derrière un geste très simple.",
       "inlineDemo": {
         "before": "Not A Translator injecte des ",
