@@ -233,6 +233,10 @@
         {
           "title": "Compatibilidad smartphone",
           "body": "La web de presentaci&#243;n mantiene ahora la misma jerarqu&#237;a en pantallas peque&#241;as: acciones apiladas, botones a lo ancho y tarjetas legibles en lugar de un escritorio comprimido."
+        },
+        {
+          "title": "Proceso de concepci\u00f3n",
+          "body": "El proyecto comenz\u00f3 en 2021 de forma artesanal, en un esp\u00edritu de desarrollo old school. A partir de la versi\u00f3n 5, Claude y ChatGPT empezaron a participar en el trabajo, y el propio sitio web tambi\u00e9n fue desarrollado con la ayuda de estas IA."
         }
       ]
     },

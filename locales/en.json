@@ -230,12 +230,16 @@
           "title": "Per-site reliability hints",
           "body": "The badge is there to communicate confidence, not only language. Restricted or hostile pages should not look deceptively safe."
         },
-        {
-          "title": "Smartphone compatibility",
-          "body": "The presentation site now keeps the same hierarchy on small screens: stacked actions, stretch buttons and readable cards instead of a squeezed desktop layout."
-        }
-      ]
-    },
+          {
+            "title": "Smartphone compatibility",
+            "body": "The presentation site now keeps the same hierarchy on small screens: stacked actions, stretch buttons and readable cards instead of a squeezed desktop layout."
+          },
+          {
+            "title": "Design process",
+            "body": "The project started as a hand-made, old-school development effort in 2021. From version 5 onward, Claude and ChatGPT began to take part in the work, and the website itself was also developed with the help of these AIs."
+          }
+        ]
+      },
     "usage": {
       "eyebrow": "Usage",
       "title": "A short gesture that tries to preserve reading.",

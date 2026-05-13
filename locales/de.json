@@ -233,6 +233,10 @@
         {
           "title": "Smartphone-Kompatibilität",
           "body": "Die Präsentationsseite behält jetzt dieselbe Hierarchie auf kleinen Bildschirmen: gestapelte Aktionen, Buttons über die volle Breite und lesbare Karten statt einer gequetschten Desktop-Ansicht."
+        },
+        {
+          "title": "Entwurfsprozess",
+          "body": "Das Projekt begann 2021 als handgemachte, old-schoolartige Entwicklungsarbeit. Ab Version 5 begannen Claude und ChatGPT am Arbeitsprozess teilzunehmen, und auch die Website selbst wurde mit Hilfe dieser KIs entwickelt."
         }
       ]
     },

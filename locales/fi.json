@@ -233,6 +233,10 @@
         {
           "title": "Älypuhelinyhteensopivuus",
           "body": "Esittelysivusto säilyttää nyt saman hierarkian pienillä näytöillä: pinotut toiminnot, täysleveät painikkeet ja luettavat kortit puristetun desktop-näkymän sijaan."
+        },
+        {
+          "title": "Suunnitteluprosessi",
+          "body": "Projekti alkoi vuonna 2021 käsityönä, old school -henkisessä kehitystyössä. Versiosta 5 alkaen Claude ja ChatGPT alkoivat osallistua työhön, ja myös itse verkkosivusto kehitettiin näiden tekoälyjen avulla."
         }
       ]
     },
