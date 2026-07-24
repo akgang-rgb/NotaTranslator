@@ -7,7 +7,7 @@
   <meta name="description" content="Definitions in the source language, audio, conversions, timezone helpers and console mode for difficult pages.">
   <meta name="theme-color" content="#960018">
   <link rel="icon" type="image/png" href="assets/dictionary128.png">
-  <link rel="stylesheet" href="site.css?v=4">
+  <link rel="stylesheet" href="site.css?v=5">
 </head>
 <body>
   <div class="page-shell">
@@ -136,8 +136,8 @@
                   <stop offset="0" stop-color="#08264d" stop-opacity="0.98" />
                   <stop offset="1" stop-color="#2d5f9a" stop-opacity="0.78" />
                 </linearGradient>
-                <marker id="badgeArrowHead" markerWidth="6" markerHeight="6" refX="5.4" refY="3" orient="auto" markerUnits="strokeWidth">
-                  <path d="M 0 0 L 6 3 L 0 6 z" />
+                <marker id="badgeArrowHead" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <circle cx="3" cy="3" r="2.1" />
                 </marker>
               </defs>
               <path class="badge-arrow" d="M 24 20 L 24 38 L 72 52" />
@@ -291,17 +291,17 @@
 
         <div class="feature-grid experiment-adv">
           <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">&#128444;</div>
+            <div class="feature-icon feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill-rule="evenodd"><path d="M5 3h14a2.5 2.5 0 0 1 2.5 2.5v13A2.5 2.5 0 0 1 19 21H5a2.5 2.5 0 0 1-2.5-2.5v-13A2.5 2.5 0 0 1 5 3zm0 2a.5.5 0 0 0-.5.5v13c0 .28.22.5.5.5h14a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H5z"/><circle cx="9" cy="9.3" r="1.9"/><path d="M5 18.7l4.2-5.9 2.9 3.5 2.5-3.1 4.4 5.5z"/></svg></div>
             <h3 data-i18n="site.experiment.adv.imageT">A picture, when it helps</h3>
             <p data-i18n="site.experiment.adv.imageD">For a plant, an animal, an object or a place, Experiment can show an illustrative photo right next to the definition &mdash; sourced from open image libraries, never a distraction you did not ask for.</p>
           </article>
           <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">&#10022;</div>
+            <div class="feature-icon feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill-rule="evenodd"><path d="M11.2 11.6 5.7 7l.9-1.1 5.5 4.6zM12.8 11.6l5.5-4.6.9 1.1-5.5 4.6zM11.4 13h1.2v6h-1.2z"/><circle cx="12" cy="12" r="2.7"/><circle cx="4.8" cy="5.4" r="2.1"/><circle cx="19.2" cy="5.4" r="2.1"/><circle cx="12" cy="20.6" r="2.1"/></svg></div>
             <h3 data-i18n="site.experiment.adv.senseT">SenseMap &mdash; explore meaning</h3>
             <p data-i18n="site.experiment.adv.senseD">A small, draggable graph around the word: synonyms, antonyms, broader and narrower terms. Tap any node to read its definition, expand it, and keep exploring the semantic neighbourhood.</p>
           </article>
           <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">&#9827;</div>
+            <div class="feature-icon feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill-rule="evenodd"><path d="M11.3 17.2 5.8 7.6l1.05-.6 5.5 9.6zM12.7 17.2l5.5-9.6 1.05.6-5.5 9.6zM11.4 17h1.2V6.4h-1.2z"/><circle cx="12" cy="19.4" r="2.7"/><circle cx="5.2" cy="5.6" r="2.1"/><circle cx="12" cy="4.2" r="2.1"/><circle cx="18.8" cy="5.6" r="2.1"/></svg></div>
             <h3 data-i18n="site.experiment.adv.rootT">RootMap &mdash; family &amp; origin</h3>
             <p data-i18n="site.experiment.adv.rootD">A sister graph for the word's family: derived words and relatives grow upward, while the etymons &mdash; the older forms it comes from &mdash; plunge downward like roots.</p>
           </article>
@@ -415,6 +415,6 @@
       <p class="footer-contact"><a id="contactLabel" href="mailto:bongo_plats0s@icloud.com">Contact</a></p>
     </footer>
   </div>
-  <script src="site.js?v=4"></script>
+  <script src="site.js?v=5"></script>
 </body>
 </html>

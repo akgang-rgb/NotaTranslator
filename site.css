@@ -1444,7 +1444,8 @@ a {
   filter: drop-shadow(0 1px 1px rgba(8, 38, 77, 0.18));
 }
 
-#badgeArrowHead path {
+#badgeArrowHead path,
+#badgeArrowHead circle {
   fill: #0b2f5b;
   stroke: none;
 }
@@ -1481,6 +1482,10 @@ a {
 }
 
 .experiment-adv { margin-top: 6px; }
+/* cartes d'avantages : les VRAIES icones de l'extension (image / SenseMap /
+   RootMap inversee) a la place des glyphes generiques */
+.experiment-adv .feature-icon-svg { display: grid; place-items: center; }
+.experiment-adv .feature-icon-svg svg { width: 21px; height: 21px; fill: var(--accent-violet); display: block; }
 
 .dist-callout {
   margin-top: 30px;
