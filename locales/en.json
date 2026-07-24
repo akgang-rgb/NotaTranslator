@@ -80,7 +80,8 @@
         "badge": "rotating",
         "definition": "(noun) floating definition boxes that stay close to the selection and can rotate around it to escape edges and overlap.",
         "after": " near your selection, keeps the original-language definition front and center, and hides a lot of technical work behind a very simple gesture."
-      }
+      },
+      "badgeHint": "In your browser bar, the extension icon's badge takes these colours, site by site — like the real captures above."
     },
     "demo": {
       "word": "epoch",
@@ -230,16 +231,16 @@
           "title": "Per-site reliability hints",
           "body": "The badge is there to communicate confidence, not only language. Restricted or hostile pages should not look deceptively safe."
         },
-          {
-            "title": "Smartphone compatibility",
-            "body": "The presentation site now keeps the same hierarchy on small screens: stacked actions, stretch buttons and readable cards instead of a squeezed desktop layout."
-          },
-          {
-            "title": "Design process",
-            "body": "The project started as a hand-made, old-school development effort in 2021. From version 5 onward, Claude and ChatGPT began to take part in the work, and the website itself was also developed with the help of these AIs."
-          }
-        ]
-      },
+        {
+          "title": "Smartphone compatibility",
+          "body": "The presentation site now keeps the same hierarchy on small screens: stacked actions, stretch buttons and readable cards instead of a squeezed desktop layout."
+        },
+        {
+          "title": "Design process",
+          "body": "The project started as a hand-made, old-school development effort in 2021. From version 5 onward, Claude and ChatGPT began to take part in the work, and the website itself was also developed with the help of these AIs."
+        }
+      ]
+    },
     "usage": {
       "eyebrow": "Usage",
       "title": "A short gesture that tries to preserve reading.",

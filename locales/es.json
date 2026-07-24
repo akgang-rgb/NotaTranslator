@@ -81,7 +81,8 @@
         "badge": "rotativos",
         "definition": "(sust.) cuadros de definici&#243;n flotantes que permanecen cerca de la selecci&#243;n y pueden girar a su alrededor para escapar de los bordes y los solapamientos.",
         "after": " ligeros cerca de su selección, mantiene la definición en la lengua de origen en el centro de la lectura y esconde mucho trabajo técnico detrás de un gesto muy simple."
-      }
+      },
+      "badgeHint": "En la barra del navegador, la insignia del icono de la extensión toma estos colores, sitio a sitio — como en las capturas reales de arriba."
     },
     "demo": {
       "word": "epoch",

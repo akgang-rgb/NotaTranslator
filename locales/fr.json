@@ -81,7 +81,8 @@
         "Les définitions restent dans la langue source au lieu de casser la lecture avec un détour de traduction générique.",
         "Audio, traduire quand même, réparation et ouverture de page restent accessibles directement dans l'infobulle ou l'entrée console.",
         "Beaucoup de choses se passent en coulisses : reprises de recherche, routage de candidats, fournisseurs de secours et garde-fous par site, détection des langues impliquées, des pages réfractaires aux injections."
-      ]
+      ],
+      "badgeHint": "Dans la barre du navigateur, la pastille de l'icône de l'extension prend ces couleurs, site par site — comme sur les vraies captures ci-dessus."
     },
     "demo": {
       "word": "epoch",

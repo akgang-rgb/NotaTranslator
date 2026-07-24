@@ -81,7 +81,8 @@
         "badge": "rotierend",
         "definition": "(Subst.) schwebende Definitionsfelder, die nahe an der Auswahl bleiben und sich um sie drehen können, um Rändern und Überlappungen auszuweichen.",
         "after": " nahe an Ihrer Auswahl ein, hält die originalsprachige Definition mitten im Lesefluss und versteckt viel technische Arbeit hinter einer sehr einfachen Geste."
-      }
+      },
+      "badgeHint": "In der Browserleiste nimmt die Plakette des Erweiterungssymbols diese Farben an, Seite für Seite — wie in den echten Ausschnitten oben."
     },
     "demo": {
       "word": "epoch",

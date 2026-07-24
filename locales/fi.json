@@ -81,7 +81,8 @@
         "badge": "kiertyvät",
         "definition": "(subst.) kelluvat määritelmälaatikot, jotka pysyvät valinnan lähellä ja voivat kiertää sen ympäri väistääkseen reunoja ja päällekkäisyyksiä.",
         "after": " valinnan lähelle, pitää alkuperäiskielisen määritelmän keskellä lukemista ja piilottaa paljon teknistä työtä hyvin yksinkertaisen eleen taakse."
-      }
+      },
+      "badgeHint": "Selaimen palkissa laajennuskuvakkeen merkki saa nämä värit sivukohtaisesti — kuten yllä olevissa aidoissa kaappauksissa."
     },
     "demo": {
       "word": "epoch",
