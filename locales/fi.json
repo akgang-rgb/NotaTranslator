@@ -39,7 +39,8 @@
       "updates": "Uutta",
       "engine": "Moottori",
       "usage": "Käyttö",
-      "faq": "UKK"
+      "faq": "UKK",
+      "experiment": "Experiment"
     },
     "hero": {
       "eyebrow": "Lue ensin. Käännö vasta tarvittaessa.",
@@ -297,10 +298,109 @@
         {
           "q": "Toimiiko tämä kaikkialla?",
           "a": "Lähes kaikkialla, mutta ei selaimen itsensä rajoittamilla sivuilla, kuten lisäosakaupoissa tai muissa etuoikeutetuissa näkymissä, joissa sisältöskriptit on estetty."
+        },
+        {
+          "q": "Miten saan Experimentin, version jossa on kuvat ja sanakartat?",
+          "a": "Experiment on listaamaton kumppanilaajennus, joka jaetaan projektia tukeville. Tue PayPalin tai Buy Me a Coffeen kautta, lähetä lyhyt sähköposti, niin saat yksityisen asennuslinkin. Se säilyttää saman lukueleen ja lisää kuvat, SenseMapin ja RootMapin."
+        },
+        {
+          "q": "Miksi määritelmä on joskus väärä tai aiheeseen kuulumaton?",
+          "a": "Määritelmät tulevat oikeista sanakirjoista ja Wiktionarysta, jotka ovat kolmannen osapuolen lähteitä. Ne voivat järjestää merkitykset odottamattomasti, tai haku voi osua samannäköiseen homografiin. Kun kaksi lähdettä on olemassa, lähteenvaihtopainikkeella voi vertailla, ja «käännä silti» antaa toisen näkökulman. Reititystä hienosäädetään jatkuvasti, mutta osa tapauksista livahtaa yhä läpi."
+        },
+        {
+          "q": "Miksi kuva on joskus outo tai asiaankuulumaton?",
+          "a": "Kuvat haetaan avainsanalla avoimista kuvakirjastoista (Unsplash, Openverse ja luontotietokannat). Abstraktit tai monimerkityksiset sanat voivat tuoda löyhästi liittyvän tai suorastaan väärän kuvan. Sääntö on «parempi ei kuvaa kuin harhaanjohtava», joten monet sanat eivät näytä kuvaa lainkaan, mutta epäsopiva voi silti ilmestyä. Teimme parhaamme hienosäätöön, mutta tiedostamme ettei se ole täydellinen."
+        },
+        {
+          "q": "Näkyvätkö kartat aina?",
+          "a": "Ei. SenseMap näkyy vain kun sanalla on käyttökelpoisia suhteita, ja RootMap vain kun sillä on dokumentoitu perhe, joten jotkin sanat eivät näytä kumpaakaan. Monikot ja taivutetut muodot palautetaan ensin perusmuotoonsa, minkä vuoksi «wolves» näyttää sanan «wolf» kartat."
         }
       ]
     },
     "footer": "Ei mainoksia, ei seurantaa, paljon huolellisuutta ja suuri määrä selainkohtaisia reunatapauksia hoidettuna läpinäkyvästi.",
-    "contactLabel": "CONTACT"
+    "contactLabel": "CONTACT",
+    "experiment": {
+      "eyebrow": "Kumppanisovellus — erillinen sovellus",
+      "title": "Experiment: toinen laajennus, joka lisää kuvia ja sanakarttoja.",
+      "lead": "Experiment on erillinen laajennus, jonka asennat Not a Translatorin rinnalle. Kun molemmat ovat käytössä, Experiment liittyy samaan määritelmäkuplaan ja lisää kolme asiaa silloin kun niillä on merkitystä: havainnollistavan kuvan, merkitysten graafin (SenseMap) ja sanan perheen ja alkuperän graafin (RootMap). Se tarjotaan kiitokseksi projektia tukeville.",
+      "adv": {
+        "imageT": "Kuva, kun siitä on apua",
+        "imageD": "Kasville, eläimelle, esineelle tai paikalle Experiment voi näyttää havainnollistavan valokuvan heti määritelmän vieressä — avoimista kuvakirjastoista, ei koskaan pyytämättä tuleva häiriö.",
+        "senseT": "SenseMap — tutki merkitystä",
+        "senseD": "Pieni, raahattava graafi sanan ympärillä: synonyymit, antonyymit, laajemmat ja suppeammat termit. Napauta mitä tahansa solmua lukeaksesi sen määritelmän, laajentaaksesi sitä ja jatkaaksesi merkitysnaapuruston tutkimista.",
+        "rootT": "RootMap — perhe ja alkuperä",
+        "rootD": "Sisargraafi sanan perheelle: johdokset ja sukulaissanat kasvavat ylöspäin, kun taas etymonit — vanhemmat muodot, joista se on peräisin — vajoavat alaspäin kuin juuret."
+      },
+      "distribution": {
+        "eyebrow": "Näin saat sen",
+        "title": "Experiment on palkinto tukijoille.",
+        "body": "Experiment julkaistaan listaamattomana (unlisted) laajennuksena: se ei näy kaupan hauissa. Se jaetaan suoraan projektia tukeville, jotta lisäominaisuudet pysyvät sidoksissa lahjoituksiin, jotka pitävät kaiken mainoksettomana ja seuraamattomana.",
+        "step1": "Tue projektia PayPalin tai Buy Me a Coffeen kautta.",
+        "step2": "Lähetä lyhyt sähköposti, jotta tiedämme tuestasi.",
+        "step3": "Saat Experimentin yksityisen asennuslinkin."
+      },
+      "mapsNote": "Molemmat kartat käyttävät samaa moottoria: raahaa solmua siirtääksesi sen haaraa, napauta avoimen solmun tähti-/puukuvaketta laajentaaksesi sitä, ja käytä kaksoisnuolta vaihtaaksesi Wiktionaryn nopean määritelmän ja sanakirjan täyden määritelmän välillä."
+    },
+    "glossary": {
+      "title": "Ryhmittelytermit selkokielellä",
+      "synT": "Synonyymi",
+      "synD": "sana, jolla on lähes sama merkitys — iso / suuri.",
+      "antT": "Antonyymi",
+      "antD": "sana, jolla on vastakkainen merkitys — iso / pieni.",
+      "hyperT": "Yläkäsite",
+      "hyperD": "laajempi, kattava termi — koira → eläin.",
+      "hypoT": "Alakäsite",
+      "hypoD": "tarkempi tapaus — eläin → koira. Ryhmitelty yläkäsitteiden kanssa, ylös.",
+      "meroT": "Meronyymi",
+      "meroD": "jonkin osa — pyörä → auto.",
+      "holoT": "Holonyymi",
+      "holoD": "kokonaisuus, johon osa kuuluu — auto → pyörä. Ryhmitelty meronyymien kanssa, alas.",
+      "derivedT": "Johdos",
+      "derivedD": "muodostettu samasta kannasta — ystävä → ystävyys, ystävällinen.",
+      "relatedT": "Sukulaissana",
+      "relatedD": "sama sanaperhe, ei suora johdos — kansakunta → kansallinen.",
+      "etymonT": "Etymoni",
+      "etymonD": "vanhempi muoto, josta sana on peräisin — friend → muinaisenglannin frēond."
+    },
+    "maps": {
+      "senseTitle": "SenseMap — värit ja sijainnit",
+      "senseLead": "Keskussanan ympärillä jokaisella merkitysperheellä on kiinteä paikka ja oma värinsä. Paletti on tetradi, joka rakennetaan kuplasi väristä (oletuksena violetti), joten kartta sopii aina teemaasi.",
+      "senseRight": "Synonyymit — oikealla (kuplasi väri).",
+      "senseLeft": "Antonyymit — vasemmalla (vastakkainen sävy).",
+      "senseUp": "Yläkäsitteet (laajemmat termit) — ylhäällä.",
+      "senseDown": "Meronyymit / holonyymit (osat ja kokonaisuudet) — alhaalla.",
+      "senseCaption": "Miten merkitysryhmät on sijoiteltu ja väritetty.",
+      "rootTitle": "RootMap — värit ja sijainnit",
+      "rootLead": "RootMap luetaan pystysuunnassa, kuin puu. Sanan perhe leviää sen yläpuolelle; sen alkuperät vajoavat alapuolelle. Johdokset ja sukulaissanat noudattavat kuplasi väriä, kun taas etymonit säilyttävät kiinteän maanläheisen beessävyn — maan, johon juuret ulottuvat.",
+      "rootDerived": "Johdokset — ylhäällä vasemmalla.",
+      "rootRelated": "Sukulaissanat — ylhäällä oikealla.",
+      "rootEtymon": "Etymonit (vanhemmat muodot, joista se on peräisin) — alhaalla, beessä.",
+      "rootCaption": "Selite yllä; oikea RootMap sivulla alla."
+    },
+    "toolbar": {
+      "title": "Kuplan työkalurivi — mitä kukin painike tekee",
+      "intro": "Kaikki painikkeet eivät näy joka kerta — kukin näkyy vain kun se on tarpeen, joten tietty kupla näyttää osajoukon. Kolme viimeistä (kuva, SenseMap, RootMap) lisää Experiment.",
+      "shotCaption": "Oikea kupla ja sen työkalurivi, Experiment asennettuna.",
+      "rotateN": "Sijoita uudelleen",
+      "rotateD": "(nuoliristi) — kiertää kuplaa sanan ympäri (alas, vasemmalle, ylös, oikealle) väistääkseen näytön reunan tai päällekkäisyyden.",
+      "cloverN": "Käännä silti / Näytä alkuperäinen",
+      "cloverD": "(neliapila) — vaihtaa alkukielisen määritelmän käännökseen ja takaisin. Määritelmä tulee aina ensin; käännös on varavaihtoehto.",
+      "switchN": "Vaihda sanakirjalähdettä",
+      "switchD": "(kaksoisnuoli) — vaihtaa saman sanan kahden lähteen välillä (esimerkiksi Larousse ja Le Robert), kun molemmat ovat saatavilla.",
+      "audioN": "Ääntäminen",
+      "audioD": "— toistaa äänen, kun se on saatavilla. Pieni kasvo näyttää lähteen: ihmiskasvo aidolle nauhoitukselle (Wiktionary, Commons, DWDS), robottikasvo synteettiselle äänelle (Google TTS).",
+      "moreN": "Lisää…",
+      "moreD": "(avaa uudessa välilehdessä) — avaa sanan lähdesivun (tai verkkohaun), kun haluat syventyä.",
+      "repairN": "Korjaa → konsoli",
+      "repairD": "(jakoavain) — lähettää tämän haun konsolitilaan, vakaaseen sivupaneeliin, jota käytetään kun sivu häiritsee upotettua näyttöä.",
+      "removeN": "Sulje",
+      "removeD": "(ympyrä ja viiva) — sulkee kuplan. Sivulle ei jää mitään; päivitys (F5) palauttaa sen aina.",
+      "imageN": "Kuva",
+      "imageD": "— näyttää havainnollistavan kuvan (tai pienen kartan paikalle). Himmennetty kun mitään sopivaa ei löydy — parempi ei kuvaa kuin harhaanjohtava.",
+      "senseN": "SenseMap",
+      "senseD": "— avaa merkitysgraafin. Näkyy vain kun sanalla on käyttökelpoisia suhteita.",
+      "rootN": "RootMap",
+      "rootD": "— avaa perhe- ja alkuperägraafin. Näkyy vain kun sanalla on dokumentoitu perhe."
+    }
   }
 }

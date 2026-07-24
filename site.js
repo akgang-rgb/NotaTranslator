@@ -420,8 +420,28 @@
     trigger.dataset.detectBound = '1';
   }
 
+  // Effet loupe d'attention sur l'icone Experiment de l'eyebrow : rejoue a
+  // CHAQUE fois qu'elle entre dans le viewport (signale la nouveaute). Repli
+  // sans IntersectionObserver : joue une fois au chargement.
+  function bindEyebrowLoupe() {
+    const icon = document.querySelector('.eyebrow-icon');
+    if (!icon || icon.dataset.loupeBound === '1') return;
+    icon.dataset.loupeBound = '1';
+    const play = function () {
+      icon.classList.remove('loupe');
+      void icon.offsetWidth; // reflow -> relance l'animation
+      icon.classList.add('loupe');
+    };
+    if (!('IntersectionObserver' in window)) { play(); return; }
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) play(); });
+    }, { threshold: 0.6 });
+    io.observe(icon);
+  }
+
   document.addEventListener('DOMContentLoaded', async function () {
     bindBrowserDetectTrigger();
+    bindEyebrowLoupe();
     const select = document.getElementById('languageSelect');
     if (select) {
       select.addEventListener('change', function () {

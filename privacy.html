@@ -39,10 +39,10 @@
   <p class="updated">Not a Translator — Experiment (browser extension) · Last updated: July 2026</p>
 
   <div class="tldr">
-    <strong>In short:</strong> This extension is a dictionary tool. It sends only the single word
-    you hover or select to public dictionary and image services to fetch its definition, related
-    words and an illustrative picture. It does not collect your name, email, accounts, browsing
-    history, or location. It does not track you, show ads, or sell any data.
+    <strong>In short:</strong> This extension is a dictionary tool. It sends only the word or
+    expression you hover or select to public dictionary and image services to fetch its definition,
+    related words and an illustrative picture. It does not collect your name, email, accounts,
+    browsing history, or location. It does not track you, show ads, or sell any data.
   </div>
 
   <div class="card">
@@ -51,13 +51,13 @@
     Not a Translator — Experiment is a companion extension that enriches the definition tooltip of
     the <em>Not a Translator</em> dictionary: it can show an illustrative image, a graph of related
     meanings (SenseMap) and a graph of the word's family and origin (RootMap). All of these are
-    triggered by the single word you hover over or select on a web page.
+    triggered by the word or expression you hover over or select on a web page.
   </p>
 
   <h2>What data is processed</h2>
   <p>
-    To perform a lookup, the extension transmits <strong>only the individual word you choose to look
-    up</strong> (a piece of website text content) to the third-party services listed below. It does
+    To perform a lookup, the extension transmits <strong>only the word or expression you choose to
+    look up</strong> (a piece of website text content) to the third-party services listed below. It does
     <strong>not</strong> send the page you are on, its URL, the surrounding text, your identity, or
     any other content.
   </p>
@@ -74,7 +74,7 @@
   </ul>
 
   <h2>Third-party services contacted</h2>
-  <p>Each service receives only the looked-up word, and only for the feature it powers:</p>
+  <p>Each service receives only the looked-up word or expression, and only for the feature it powers:</p>
   <ul>
     <li><strong>Wiktionary</strong> (wiktionary.org) — definitions, synonyms/antonyms, word family and etymology.</li>
     <li><strong>notatr-proxy</strong> (a Cloudflare Worker operated by the developer) — caches image lookups and holds the API credentials for the image providers below, so those credentials never reside in your browser.</li>
@@ -92,8 +92,8 @@
   <h2>Caching</h2>
   <p>
     To keep lookups fast, results may be cached — in your browser's memory for the current session,
-    and on the developer's Cloudflare edge / cache server. This cache is keyed by the <em>word only</em>,
-    is fully anonymous, and is never linked to any user identity.
+    and on the developer's Cloudflare edge / cache server. This cache is keyed by the
+    <em>word or expression only</em>, is fully anonymous, and is never linked to any user identity.
   </p>
 
   <h2>Data stored on your device</h2>

@@ -7,7 +7,7 @@
   <meta name="description" content="Definitions in the source language, audio, conversions, timezone helpers and console mode for difficult pages.">
   <meta name="theme-color" content="#960018">
   <link rel="icon" type="image/png" href="assets/dictionary128.png">
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site.css?v=2">
 </head>
 <body>
   <div class="page-shell">
@@ -27,6 +27,7 @@
         <a href="#updates" id="navUpdates">Updates</a>
         <a href="#engine" id="navEngine">Engine</a>
         <a href="#usage" id="navUsage">Usage</a>
+        <a href="#experiment" data-i18n="site.nav.experiment">Experiment</a>
         <a href="#faq" id="navFaq">FAQ</a>
       </nav>
       <label class="lang-picker" for="languageSelect">
@@ -276,20 +277,142 @@
         </div>
       </section>
 
+      <section class="section section-alt" id="experiment">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-with-icon"><img class="eyebrow-icon" src="assets/experiment-icon.png" alt=""><span data-i18n="site.experiment.eyebrow">The companion &mdash; a separate app</span></p>
+          <h2 data-i18n="site.experiment.title">Experiment: a second extension that adds pictures and word maps.</h2>
+          <p data-i18n="site.experiment.lead">Experiment is a <strong>separate</strong> extension you install <em>alongside</em> Not a Translator. Once both are present, Experiment plugs into the very same definition tooltip and adds three things when they make sense: an illustrative picture, a graph of meanings (SenseMap), and a graph of a word's family and origin (RootMap). It is offered as a thank-you to the people who support the project.</p>
+        </div>
+        <figure class="companion-diagram">
+          <img src="assets/companion_diagram.png" alt="Not a Translator and Experiment are two separate extensions working side by side on the same tooltip; Experiment is a reward for supporters." loading="lazy">
+        </figure>
+
+        <div class="feature-grid experiment-adv">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128444;</div>
+            <h3 data-i18n="site.experiment.adv.imageT">A picture, when it helps</h3>
+            <p data-i18n="site.experiment.adv.imageD">For a plant, an animal, an object or a place, Experiment can show an illustrative photo right next to the definition &mdash; sourced from open image libraries, never a distraction you did not ask for.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#10022;</div>
+            <h3 data-i18n="site.experiment.adv.senseT">SenseMap &mdash; explore meaning</h3>
+            <p data-i18n="site.experiment.adv.senseD">A small, draggable graph around the word: synonyms, antonyms, broader and narrower terms. Tap any node to read its definition, expand it, and keep exploring the semantic neighbourhood.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#9827;</div>
+            <h3 data-i18n="site.experiment.adv.rootT">RootMap &mdash; family &amp; origin</h3>
+            <p data-i18n="site.experiment.adv.rootD">A sister graph for the word's family: derived words and relatives grow upward, while the etymons &mdash; the older forms it comes from &mdash; plunge downward like roots.</p>
+          </article>
+        </div>
+
+        <article class="dist-callout">
+          <div class="dist-copy">
+            <p class="eyebrow" data-i18n="site.experiment.distribution.eyebrow">How to get it</p>
+            <h3 data-i18n="site.experiment.distribution.title">Experiment is a reward for supporters.</h3>
+            <p data-i18n="site.experiment.distribution.body">Experiment is published as an <strong>unlisted</strong> extension: it does not appear in store searches. It is shared directly with people who support the project, so the extra features stay tied to the donations that keep everything free of ads and tracking.</p>
+            <ol class="dist-steps">
+              <li data-i18n="site.experiment.distribution.step1">Support the project through PayPal or Buy Me a Coffee.</li>
+              <li data-i18n="site.experiment.distribution.step2">Send a short email so we know you contributed.</li>
+              <li data-i18n="site.experiment.distribution.step3">You receive the private install link for Experiment.</li>
+            </ol>
+            <div class="dist-actions">
+              <a class="button button-primary" href="https://paypal.me/notatranslator" target="_blank" rel="noopener noreferrer">PayPal</a>
+              <a class="button button-secondary" href="https://buymeacoffee.com/notatranslator" target="_blank" rel="noopener noreferrer">&#9749; Buy me a coffee</a>
+              <a class="button button-ghost" href="mailto:bongo_plats0s@icloud.com">Email for the link</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="term-glossary">
+          <h3 data-i18n="site.glossary.title">The grouping terms, in plain words</h3>
+          <dl>
+            <div><dt data-i18n="site.glossary.synT">Synonym</dt><dd data-i18n="site.glossary.synD">a word with almost the same meaning &mdash; <em>big / large</em>.</dd></div>
+            <div><dt data-i18n="site.glossary.antT">Antonym</dt><dd data-i18n="site.glossary.antD">a word with the opposite meaning &mdash; <em>big / small</em>.</dd></div>
+            <div><dt data-i18n="site.glossary.hyperT">Hypernym</dt><dd data-i18n="site.glossary.hyperD">a broader, umbrella term &mdash; <em>dog &rarr; animal</em>.</dd></div>
+            <div><dt data-i18n="site.glossary.hypoT">Hyponym</dt><dd data-i18n="site.glossary.hypoD">a more specific case &mdash; <em>animal &rarr; dog</em>. Grouped with hypernyms, above.</dd></div>
+            <div><dt data-i18n="site.glossary.meroT">Meronym</dt><dd data-i18n="site.glossary.meroD">a part of something &mdash; <em>wheel &rarr; car</em>.</dd></div>
+            <div><dt data-i18n="site.glossary.holoT">Holonym</dt><dd data-i18n="site.glossary.holoD">the whole that owns the part &mdash; <em>car &rarr; wheel</em>. Grouped with meronyms, below.</dd></div>
+            <div><dt data-i18n="site.glossary.derivedT">Derived word</dt><dd data-i18n="site.glossary.derivedD">built from the same base &mdash; <em>friend &rarr; friendship, friendly</em>.</dd></div>
+            <div><dt data-i18n="site.glossary.relatedT">Related word</dt><dd data-i18n="site.glossary.relatedD">same lexical family, not a direct derivation &mdash; <em>nation &rarr; native</em>.</dd></div>
+            <div><dt data-i18n="site.glossary.etymonT">Etymon</dt><dd data-i18n="site.glossary.etymonD">an older form the word comes from &mdash; <em>friend &rarr; Old English fr&#275;ond</em>.</dd></div>
+          </dl>
+        </div>
+
+        <div class="maps-block">
+          <article class="map-explainer">
+            <div class="map-copy">
+              <h3 data-i18n="site.maps.senseTitle">SenseMap &mdash; colours &amp; positions</h3>
+              <p data-i18n="site.maps.senseLead">Around the central word, each family of meaning has a fixed place and its own colour. The palette is a tetrad built from your tooltip colour (violet by default), so the map always matches your chosen theme.</p>
+              <ul class="map-legend">
+                <li><span class="lg-dot" style="background:hsl(283,58%,50%)"></span><span data-i18n="site.maps.senseRight"><strong>Synonyms</strong> &mdash; to the <em>right</em> (your tooltip colour).</span></li>
+                <li><span class="lg-dot" style="background:hsl(103,58%,50%)"></span><span data-i18n="site.maps.senseLeft"><strong>Antonyms</strong> &mdash; to the <em>left</em> (opposite hue).</span></li>
+                <li><span class="lg-dot" style="background:hsl(43,58%,50%)"></span><span data-i18n="site.maps.senseUp"><strong>Hypernyms</strong> (broader terms) &mdash; <em>above</em>.</span></li>
+                <li><span class="lg-dot" style="background:hsl(163,58%,50%)"></span><span data-i18n="site.maps.senseDown"><strong>Meronyms / holonyms</strong> (parts &amp; wholes) &mdash; <em>below</em>.</span></li>
+              </ul>
+            </div>
+            <figure class="map-figure">
+              <img class="map-legend-img" src="assets/sensemap_legend.png" alt="SenseMap legend: synonyms right, antonyms left, hypernyms up, meronyms down" loading="lazy">
+              <img class="map-shot" src="assets/sensemap.png" alt="SenseMap on a real page" loading="lazy" onerror="this.remove()">
+              <figcaption data-i18n="site.maps.senseCaption">How the meaning groups are placed and coloured.</figcaption>
+            </figure>
+          </article>
+
+          <article class="map-explainer reverse">
+            <div class="map-copy">
+              <h3 data-i18n="site.maps.rootTitle">RootMap &mdash; colours &amp; positions</h3>
+              <p data-i18n="site.maps.rootLead">RootMap reads vertically, like a tree. The word's family fans out above it; its origins sink below it. Derived and related words follow your tooltip colour, while the etymons keep a fixed earthy beige &mdash; the soil the roots reach into.</p>
+              <ul class="map-legend">
+                <li><span class="lg-dot" style="background:hsl(343,58%,50%)"></span><span data-i18n="site.maps.rootDerived"><strong>Derived words</strong> &mdash; <em>upper-left</em>.</span></li>
+                <li><span class="lg-dot" style="background:hsl(223,58%,50%)"></span><span data-i18n="site.maps.rootRelated"><strong>Related words</strong> &mdash; <em>upper-right</em>.</span></li>
+                <li><span class="lg-dot" style="background:hsl(36,42%,66%)"></span><span data-i18n="site.maps.rootEtymon"><strong>Etymons</strong> (older forms it comes from) &mdash; <em>below</em>, in beige.</span></li>
+              </ul>
+            </div>
+            <figure class="map-figure">
+              <img class="map-legend-img" src="assets/rootmap_legend.png" alt="RootMap legend: derived upper-left, related upper-right, etymons below in beige" loading="lazy">
+              <img class="map-shot" src="assets/rootmap.png" alt="RootMap on a real page" loading="lazy" onerror="this.remove()">
+              <figcaption data-i18n="site.maps.rootCaption">Legend above; a real RootMap on a page below.</figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <p class="maps-note" data-i18n="site.experiment.mapsNote">Both maps use the same engine: drag a node to move its branch, tap the star / tree icon on an open node to expand it, and use the double-arrow to swap between the quick Wiktionary definition and the full dictionary definition.</p>
+      </section>
+
       <section class="section" id="faq">
         <div class="section-heading">
           <p class="eyebrow" id="faqEyebrow">FAQ</p>
           <h2 id="faqTitle">A few things worth saying clearly.</h2>
         </div>
         <div class="faq-list" id="faqList"></div>
+
+        <div class="toolbar-guide">
+          <h3 data-i18n="site.toolbar.title">The tooltip toolbar &mdash; what each button does</h3>
+          <p class="toolbar-intro" data-i18n="site.toolbar.intro">Not every button shows every time &mdash; each appears only when it applies, so a given tooltip shows a subset. The last three (image, SenseMap, RootMap) are added by Experiment.</p>
+          <figure class="toolbar-shot">
+            <img src="assets/experiment_toolbar.png" alt="A definition tooltip with its action toolbar, Experiment installed" loading="lazy">
+            <figcaption data-i18n="site.toolbar.shotCaption">A real tooltip and its toolbar, with Experiment installed.</figcaption>
+          </figure>
+          <ul class="tb-list">
+            <li class="tb-row"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 480 480"><g transform="translate(0,480) scale(0.1,-0.1)" fill="currentColor" stroke="none"><path d="M1768 2343 l-28 -4 0 -90 c0 -64 3 -89 13 -90 6 0 63 0 126 1 l114 1 -131 -138 c-72 -76 -183 -190 -246 -253 l-116 -114 -52 49 c-29 27 -142 138 -251 245 l-197 195 122 5 c142 6 134 -1 123 117 l-7 73 -294 0 -295 0 2 -267 c0 -148 3 -283 6 -300 l5 -33 89 0 c64 0 89 3 90 13 0 6 0 63 -1 126 l-1 114 138 -131 c76 -72 190 -183 253 -246 l114 -116 -49 -52 c-27 -29 -138 -142 -245 -251 l-195 -197 -5 122 c-6 142 1 134 -117 123 l-73 -7 0 -294 0 -295 268 2 c147 0 282 3 300 6 l32 5 0 89 c0 64 -3 89 -12 90 -7 0 -64 0 -127 -1 l-114 -1 131 138 c72 76 183 190 246 253 l116 114 52 -49 c29 -27 142 -138 251 -245 l197 -195 -122 -5 c-142 -6 -134 1 -123 -117 l7 -73 294 0 295 0 -2 267 c0 148 -3 283 -6 301 l-5 32 -89 0 c-64 0 -89 -3 -90 -12 0 -7 0 -64 1 -127 l1 -114 -138 131 c-76 72 -190 183 -253 246 l-114 116 49 52 c27 29 138 142 245 251 l195 197 5 -122 c6 -142 -1 -134 117 -123 l73 7 0 294 0 295 -272 -3 c-150 -1 -285 -3 -300 -5z"/></g></svg></span><div><strong data-i18n="site.toolbar.rotateN">Reposition</strong> <span data-i18n="site.toolbar.rotateD">(the cross of arrows) &mdash; rotates the tooltip around the word (below, left, above, right) to escape a screen edge or an overlap.</span></div></li>
+            <li class="tb-row"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 10 10"><path style="fill-rule:evenodd;fill:currentColor;stroke-width:12.5;stroke-linecap:round;stroke-linejoin:round;stroke:currentColor;stroke-miterlimit:4;" d="M 605.664062 840.478516 C 612.158203 857.910156 626.513672 852.441406 638.134766 831.25 C 661.71875 788.867188 622.412109 655.908203 492.1875 484.667969 C 604.980469 697.949219 765.966797 693.164062 829.541016 560.205078 C 894.482422 423.828125 762.890625 280.957031 532.519531 366.748047 C 778.271484 322.314453 744.433594 135.351562 628.222656 70.751953 C 515.087891 7.861328 332.568359 53.320312 400.244141 320.605469 C 308.642578 51.953125 107.324219 91.943359 54.6875 238.574219 C 4.101562 379.052734 17.431641 588.232422 351.367188 441.601562 C 98.779297 549.267578 109.716797 707.519531 199.951172 779.638672 C 351.367188 899.609375 498.339844 787.5 460.742188 499.023438 C 545.507812 599.853516 614.208984 715.039062 605.664062 840.478516 Z" transform="matrix(0.0114286,0,0,0.0114286,0,0)"/></svg></span><div><strong data-i18n="site.toolbar.cloverN">Translate anyway / Show original</strong> <span data-i18n="site.toolbar.cloverD">(the four-leaf clover) &mdash; swaps the native-language definition for a translation, and back. The definition always comes first; translation is the fallback.</span></div></li>
+            <li class="tb-row"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h15M15 5l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 15H5M9 11l-4 4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong data-i18n="site.toolbar.switchN">Switch dictionary source</strong> <span data-i18n="site.toolbar.switchD">(the double arrow) &mdash; toggles between the two sources for the same word (for example Larousse and Le Robert), when both are available.</span></div></li>
+            <li class="tb-row"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5.7 8.4c.8-3.4 3.5-5.8 6.8-5.8 3.8 0 6.7 2.9 6.7 6.7 0 2.7-1.3 4.4-3.1 6-1.1 1-1.6 1.7-1.8 3.1-.3 1.8-1.5 3-3.3 3-1.5 0-2.7-.7-3.4-1.9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.9 10.2c.3-2.1 1.6-3.4 3.4-3.4 1.8 0 3 1.2 3 2.8 0 1.2-.6 1.9-1.5 2.7-.8.7-1.2 1.3-1.4 2.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.3 15.1c-.7 1-.7 2.2.1 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><div><strong data-i18n="site.toolbar.audioN">Pronunciation</strong> <span data-i18n="site.toolbar.audioD">&mdash; plays the audio when available. A small face shows the source: a human face for a real recording (Wiktionary, Commons, DWDS), a robot face for a synthetic voice (Google TTS).</span></div></li>
+            <li class="tb-row"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M17 17L3 17L3 3L8 3L8 1L3 1C 1.89543 1 1 1.89543 1 3L1 3L1 17C 1 18.10457 1.89543 19 3 19L3 19L17 19C 18.10457 19 19 18.10457 19 17L19 17L19 12L17 12L17 17z"/><path d="M19 1L11 1L14.29 4.29L8.559999 10.02L9.98 11.44L15.71 5.710001L19 9L19 1z"/></svg></span><div><strong data-i18n="site.toolbar.moreN">More&hellip;</strong> <span data-i18n="site.toolbar.moreD">(open in a new tab) &mdash; opens the source page (or a web search) for the word, when you want to dig further.</span></div></li>
+            <li class="tb-row"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 1024 1024" fill="currentColor"><path d="M286.547 465.016C 303.39 481.828 368.263 550.295 368.263 550.295L368.263 550.295L404.231 513.202L347.858 454.954L456.072 340.02C 456.072 340.02 407.23 292.397 428.604 311.365C 449.042 235.462 430.416 150.776 372.762 91.12199C 315.608 31.936 234.392 12.53 161.425 32.904L161.425 32.904L285.078 160.619L252.548 285.928L131.488 319.366L7.898 191.618C -11.82 267.054 6.929 350.957 64.209 410.174C 124.302 472.297 210.83 490.547 286.547 465.016zM698.815 589.231L549.694 736.539L795.626 991.344C 815.688 1012.156 842.124 1022.532 868.498 1022.532C 894.748 1022.532 921.122 1012.157 941.309 991.344C 981.558 949.72 981.558 882.347 941.309 840.724L941.309 840.724L698.815 589.231zM1023.681 161.838L867.06 -0.001L405.387 477.297L461.76 535.545L185.425 821.161L122.271 854.91L33.054 1000.469L55.773 1024.031L196.612 931.784L229.267 866.472L505.603 580.918L562.007 639.166L1023.681 161.838z"/></svg></span><div><strong data-i18n="site.toolbar.repairN">Repair &rarr; console</strong> <span data-i18n="site.toolbar.repairD">(the wrench) &mdash; sends this lookup into console mode, the stable side panel used when a page fights inline rendering.</span></div></li>
+            <li class="tb-row"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 400 400" fill="currentColor"><path d="M377.2461 39.84375L328.418 88.67188C 356.4124 120.4104 370.4098 157.6011 370.4102 200.2441C 370.4098 247.282 353.7269 287.4431 320.3613 320.7275C 286.9951 354.0121 246.7934 370.6543 199.7559 370.6543C 157.2752 370.6543 120.0845 356.8197 88.18359 329.1504L88.18359 329.1504L39.84375 377.2461L22.75391 360.1563L71.33789 312.3047C 43.34306 280.0782 29.34567 242.7247 29.3457 200.2441C 29.34567 153.2066 45.98791 113.0455 79.27246 79.76074C 112.5568 46.47655 152.718 29.83432 199.7559 29.83398C 242.3988 29.83432 279.5896 43.8317 311.3281 71.82617L311.3281 71.82617L360.4004 22.75391L377.2461 39.84375zM294.2383 88.67188C 267.2198 65.39744 235.7257 53.76008 199.7559 53.75977C 159.5539 53.76008 125.0894 68.12367 96.3623 96.85059C 67.63503 125.578 53.27143 160.0425 53.27148 200.2441C 53.27143 236.2143 64.90879 267.7084 88.18359 294.7266L88.18359 294.7266L294.2383 88.67188zM346.2402 200.2441C 346.2399 164.2743 334.6025 132.7802 311.3281 105.7617L311.3281 105.7617L105.2734 311.8164C 132.2915 335.0912 163.7856 346.7285 199.7559 346.7285C 239.9574 346.7285 274.4219 332.3649 303.1494 303.6377C 331.8763 274.9106 346.2399 240.4461 346.2402 200.2441z"/></svg></span><div><strong data-i18n="site.toolbar.removeN">Remove</strong> <span data-i18n="site.toolbar.removeD">(circle with a slash) &mdash; closes the tooltip. Nothing is left on the page; a refresh (F5) always restores it.</span></div></li>
+            <li class="tb-row tb-exp"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M5 3h14a2.5 2.5 0 0 1 2.5 2.5v13A2.5 2.5 0 0 1 19 21H5a2.5 2.5 0 0 1-2.5-2.5v-13A2.5 2.5 0 0 1 5 3zm0 2a.5.5 0 0 0-.5.5v13c0 .28.22.5.5.5h14a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H5z"/><circle cx="9" cy="9.3" r="1.9"/><path d="M5 18.7l4.2-5.9 2.9 3.5 2.5-3.1 4.4 5.5z"/></svg></span><div><strong data-i18n="site.toolbar.imageN">Image</strong> <span class="tb-tag">Experiment</span> <span data-i18n="site.toolbar.imageD">&mdash; shows an illustrative picture (or a small map for a place). Greyed out when nothing suitable is found &mdash; better no image than a misleading one.</span></div></li>
+            <li class="tb-row tb-exp"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M11.2 11.6 5.7 7l.9-1.1 5.5 4.6zM12.8 11.6l5.5-4.6.9 1.1-5.5 4.6zM11.4 13h1.2v6h-1.2z"/><circle cx="12" cy="12" r="2.7"/><circle cx="4.8" cy="5.4" r="2.1"/><circle cx="19.2" cy="5.4" r="2.1"/><circle cx="12" cy="20.6" r="2.1"/></svg></span><div><strong data-i18n="site.toolbar.senseN">SenseMap</strong> <span class="tb-tag">Experiment</span> <span data-i18n="site.toolbar.senseD">&mdash; opens the meaning graph. Appears only when the word has usable relations.</span></div></li>
+            <li class="tb-row tb-exp"><span class="tb-key tb-key-svg" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M11.3 17.2 5.8 7.6l1.05-.6 5.5 9.6zM12.7 17.2l5.5-9.6 1.05.6-5.5 9.6zM11.4 17h1.2V6.4h-1.2z"/><circle cx="12" cy="19.4" r="2.7"/><circle cx="5.2" cy="5.6" r="2.1"/><circle cx="12" cy="4.2" r="2.1"/><circle cx="18.8" cy="5.6" r="2.1"/></svg></span><div><strong data-i18n="site.toolbar.rootN">RootMap</strong> <span class="tb-tag">Experiment</span> <span data-i18n="site.toolbar.rootD">&mdash; opens the family &amp; origin graph. Appears only when the word has a documented family.</span></div></li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <p id="footerLine">No ads, no trackers, a lot of care, and many browser-specific edge cases handled quietly.</p>
-      <p class="footer-contact"><a id="contactLabel" href="mailto:masquages-magie0r@icloud.com">Contact</a></p>
+      <p class="footer-contact"><a id="contactLabel" href="mailto:bongo_plats0s@icloud.com">Contact</a></p>
     </footer>
   </div>
-  <script src="site.js"></script>
+  <script src="site.js?v=2"></script>
 </body>
 </html>

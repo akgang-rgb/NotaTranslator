@@ -297,6 +297,22 @@
         {
           "q": "Will it work everywhere?",
           "a": "Almost everywhere, but not on browser-restricted pages such as extension stores or other privileged browser surfaces where content scripts are blocked by the browser itself."
+        },
+        {
+          "q": "How do I get Experiment, the version with images and word maps?",
+          "a": "Experiment is an unlisted companion extension shared with people who support the project. Contribute through PayPal or Buy Me a Coffee, send a short email, and you receive the private install link. It keeps the same reading gesture and adds pictures, SenseMap and RootMap."
+        },
+        {
+          "q": "Why is a definition sometimes wrong or off-topic?",
+          "a": "Definitions come from real dictionaries and from Wiktionary, which are third-party sources. They can order senses unexpectedly, or a lookup can land on a same-spelling homograph. When two sources exist, the switch-source button lets you compare, and translate-anyway gives another angle. The routing is tuned continuously, but some cases still slip through."
+        },
+        {
+          "q": "Why is an image sometimes odd or unrelated?",
+          "a": "Pictures are fetched by keyword from open image libraries (Unsplash, Openverse and nature databases). Abstract words, or words with several meanings, can pull a loosely related or plainly wrong photo. The rule is 'better no image than a misleading one', so many words show no picture at all, but an incongruous one can still appear. We tried our best for fine tuning but are conscious it's not perfect."
+        },
+        {
+          "q": "Do the maps always appear?",
+          "a": "No. SenseMap appears only when a word has usable relations, and RootMap only when it has a documented family, so some words show neither. Plurals and inflected forms are resolved to their base word first, which is why 'wolves' shows the maps of 'wolf'."
         }
       ]
     },
