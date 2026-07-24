@@ -283,47 +283,6 @@
     });
   }
 
-  // Fleches feu-tricolore -> chips de couleur : les chemins STATIQUES du SVG
-  // tombaient a cote (la largeur des chips change avec la langue et le
-  // viewport). On les recalcule depuis les positions REELLES : pastille i
-  // (rouge/orange/verte) -> sommet du chip i (risky/conditional/ok).
-  // Rejoue au resize et a chaque changement de langue.
-  function drawBadgeArrows() {
-    const svg = document.querySelector('.badge-arrows');
-    if (!svg) return;
-    const dots = document.querySelectorAll('.panel-toolbar .traffic i');
-    const badges = document.querySelectorAll('.badge-row .badge');
-    const paths = svg.querySelectorAll('.badge-arrow');
-    if (dots.length < 3 || badges.length < 3 || paths.length < 3) return;
-    const box = svg.getBoundingClientRect();
-    if (!box.width || !box.height) return;
-    svg.setAttribute('viewBox', '0 0 ' + Math.round(box.width) + ' ' + Math.round(box.height));
-    for (let i = 0; i < 3; i++) {
-      const dr = dots[i].getBoundingClientRect();
-      const br = badges[i].getBoundingClientRect();
-      const x1 = dr.left + dr.width / 2 - box.left;
-      const y1 = dr.bottom - box.top + 3;
-      const x2 = br.left + br.width / 2 - box.left;
-      const y2 = br.top - box.top - 5;
-      const my = (y1 + y2) / 2;
-      paths[i].setAttribute('d',
-        'M ' + x1.toFixed(1) + ' ' + y1.toFixed(1) +
-        ' C ' + x1.toFixed(1) + ' ' + my.toFixed(1) +
-        ', ' + x2.toFixed(1) + ' ' + my.toFixed(1) +
-        ', ' + x2.toFixed(1) + ' ' + y2.toFixed(1));
-    }
-  }
-
-  function scheduleBadgeArrows() {
-    /* PAS de requestAnimationFrame ici : il ne tire jamais dans un onglet en
-     * arriere-plan (piege constate), alors que setTimeout tire toujours. */
-    drawBadgeArrows();
-    setTimeout(drawBadgeArrows, 350);
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(drawBadgeArrows).catch(function () {});
-    }
-  }
-
   function bindInlineTooltipDemo() {
     const root = document.getElementById('inlineTooltipDemo');
     const rotate = document.getElementById('inlineTooltipRotate');
@@ -365,7 +324,6 @@
     if (select && select.value !== state.lang) select.value = state.lang;
 
     bindInlineTooltipDemo();
-    scheduleBadgeArrows(); /* la largeur des chips depend de la langue */
   }
 
   async function setLanguage(lang) {
@@ -462,31 +420,8 @@
     trigger.dataset.detectBound = '1';
   }
 
-  // Effet loupe d'attention sur l'icone Experiment de l'eyebrow : rejoue a
-  // CHAQUE fois qu'elle entre dans le viewport (signale la nouveaute). Repli
-  // sans IntersectionObserver : joue une fois au chargement.
-  function bindEyebrowLoupe() {
-    const icon = document.querySelector('.eyebrow-icon');
-    if (!icon || icon.dataset.loupeBound === '1') return;
-    icon.dataset.loupeBound = '1';
-    const play = function () {
-      icon.classList.remove('loupe');
-      void icon.offsetWidth; // reflow -> relance l'animation
-      icon.classList.add('loupe');
-    };
-    if (!('IntersectionObserver' in window)) { play(); return; }
-    const io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { if (e.isIntersecting) play(); });
-    }, { threshold: 0.6 });
-    io.observe(icon);
-  }
-
-  window.addEventListener('resize', drawBadgeArrows);
-
   document.addEventListener('DOMContentLoaded', async function () {
     bindBrowserDetectTrigger();
-    bindEyebrowLoupe();
-    scheduleBadgeArrows();
     const select = document.getElementById('languageSelect');
     if (select) {
       select.addEventListener('change', function () {

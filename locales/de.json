@@ -39,8 +39,7 @@
       "updates": "Neuheiten",
       "engine": "Engine",
       "usage": "Verwendung",
-      "faq": "FAQ",
-      "experiment": "Experiment"
+      "faq": "FAQ"
     },
     "hero": {
       "eyebrow": "Erst lesen. Dann übersetzen, wenn nötig.",
@@ -81,8 +80,7 @@
         "badge": "rotierend",
         "definition": "(Subst.) schwebende Definitionsfelder, die nahe an der Auswahl bleiben und sich um sie drehen können, um Rändern und Überlappungen auszuweichen.",
         "after": " nahe an Ihrer Auswahl ein, hält die originalsprachige Definition mitten im Lesefluss und versteckt viel technische Arbeit hinter einer sehr einfachen Geste."
-      },
-      "badgeHint": "In der Browserleiste nimmt die Plakette des Erweiterungssymbols diese Farben an, Seite für Seite — wie in den echten Ausschnitten oben."
+      }
     },
     "demo": {
       "word": "epoch",
@@ -299,109 +297,10 @@
         {
           "q": "Funktioniert das überall?",
           "a": "Fast überall, aber nicht auf Seiten, die vom Browser selbst eingeschränkt werden, etwa Erweiterungs-Stores oder andere privilegierte Flächen, auf denen Content-Skripte blockiert sind."
-        },
-        {
-          "q": "Wie bekomme ich Experiment, die Version mit Bildern und Wortkarten?",
-          "a": "Experiment ist eine nicht gelistete Begleit-Erweiterung, die mit den Unterstützern des Projekts geteilt wird. Tragen Sie über PayPal oder Buy Me a Coffee bei, senden Sie eine kurze E-Mail, und Sie erhalten den privaten Installationslink. Sie behält dieselbe Lesegeste und ergänzt Bilder, SenseMap und RootMap."
-        },
-        {
-          "q": "Warum ist eine Definition manchmal falsch oder unpassend?",
-          "a": "Definitionen stammen aus echten Wörterbüchern und aus Wiktionary, also von Drittquellen. Sie können Bedeutungen unerwartet ordnen, oder eine Suche landet bei einem gleich geschriebenen Homograph. Wenn zwei Quellen vorhanden sind, können Sie mit dem Quellenwechsel-Knopf vergleichen, und „Trotzdem übersetzen“ bietet einen anderen Blickwinkel. Das Routing wird laufend verbessert, doch manche Fälle rutschen noch durch."
-        },
-        {
-          "q": "Warum ist ein Bild manchmal seltsam oder ohne Bezug?",
-          "a": "Bilder werden per Stichwort aus offenen Bildbibliotheken geholt (Unsplash, Openverse und Naturdatenbanken). Abstrakte Wörter oder Wörter mit mehreren Bedeutungen können ein locker verwandtes oder schlicht falsches Foto liefern. Die Regel lautet „lieber kein Bild als ein irreführendes“, daher zeigen viele Wörter gar kein Bild, doch ein unpassendes kann trotzdem erscheinen. Wir haben unser Bestes zur Feinabstimmung getan, sind uns aber bewusst, dass es nicht perfekt ist."
-        },
-        {
-          "q": "Erscheinen die Karten immer?",
-          "a": "Nein. SenseMap erscheint nur, wenn ein Wort nutzbare Beziehungen hat, und RootMap nur, wenn es eine dokumentierte Familie hat, daher zeigen manche Wörter keine. Pluralformen und flektierte Formen werden zuerst auf ihr Grundwort zurückgeführt, weshalb „wolves“ die Karten von „wolf“ zeigt."
         }
       ]
     },
     "footer": "Keine Werbung, keine Tracker, viel Sorgfalt und viele browser-spezifische Grenzfälle, die transparent abgefangen werden.",
-    "contactLabel": "CONTACT",
-    "experiment": {
-      "eyebrow": "Die Begleit-App — eine eigene App",
-      "title": "Experiment: eine zweite Erweiterung, die Bilder und Wortkarten hinzufügt.",
-      "lead": "Experiment ist eine eigenständige Erweiterung, die Sie zusätzlich zu Not a Translator installieren. Sind beide vorhanden, klinkt sich Experiment in dieselbe Definitions-Sprechblase ein und ergänzt drei Dinge, wenn sie sinnvoll sind: ein illustrierendes Bild, einen Graphen der Bedeutungen (SenseMap) und einen Graphen der Wortfamilie und -herkunft (RootMap). Sie wird als Dankeschön an alle angeboten, die das Projekt unterstützen.",
-      "adv": {
-        "imageT": "Ein Bild, wenn es hilft",
-        "imageD": "Für eine Pflanze, ein Tier, einen Gegenstand oder einen Ort kann Experiment ein illustrierendes Foto direkt neben der Definition zeigen — aus offenen Bildbibliotheken, nie eine ungefragte Ablenkung.",
-        "senseT": "SenseMap — Bedeutung erkunden",
-        "senseD": "Ein kleiner, verschiebbarer Graph um das Wort: Synonyme, Antonyme, weitere und engere Begriffe. Tippen Sie einen Knoten an, um seine Definition zu lesen, ihn aufzuklappen und die semantische Nachbarschaft weiter zu erkunden.",
-        "rootT": "RootMap — Familie und Herkunft",
-        "rootD": "Ein Schwestergraph für die Wortfamilie: Ableitungen und Verwandte wachsen nach oben, während die Etymone — die älteren Formen, aus denen es stammt — wie Wurzeln nach unten reichen."
-      },
-      "distribution": {
-        "eyebrow": "So bekommen Sie es",
-        "title": "Experiment ist eine Belohnung für Unterstützer.",
-        "body": "Experiment wird als nicht gelistete (unlisted) Erweiterung veröffentlicht: Sie erscheint nicht in der Store-Suche. Sie wird direkt mit den Unterstützern des Projekts geteilt, damit die Zusatzfunktionen an die Spenden gebunden bleiben, die alles werbe- und trackingfrei halten.",
-        "step1": "Unterstützen Sie das Projekt über PayPal oder Buy Me a Coffee.",
-        "step2": "Senden Sie eine kurze E-Mail, damit wir von Ihrem Beitrag wissen.",
-        "step3": "Sie erhalten den privaten Installationslink für Experiment."
-      },
-      "mapsNote": "Beide Karten nutzen dieselbe Engine: Ziehen Sie einen Knoten, um seinen Zweig zu bewegen, tippen Sie das Stern-/Baum-Symbol eines offenen Knotens an, um ihn aufzuklappen, und nutzen Sie den Doppelpfeil, um zwischen der schnellen Wiktionary-Definition und der vollständigen Wörterbuch-Definition zu wechseln."
-    },
-    "glossary": {
-      "title": "Die Gruppierungsbegriffe, einfach erklärt",
-      "synT": "Synonym",
-      "synD": "ein Wort mit fast gleicher Bedeutung — groß / riesig.",
-      "antT": "Antonym",
-      "antD": "ein Wort mit gegenteiliger Bedeutung — groß / klein.",
-      "hyperT": "Hyperonym",
-      "hyperD": "ein weiterer, übergeordneter Begriff — Hund → Tier.",
-      "hypoT": "Hyponym",
-      "hypoD": "ein spezifischerer Fall — Tier → Hund. Mit den Hyperonymen gruppiert, oben.",
-      "meroT": "Meronym",
-      "meroD": "ein Teil von etwas — Rad → Auto.",
-      "holoT": "Holonym",
-      "holoD": "das Ganze, dem der Teil gehört — Auto → Rad. Mit den Meronymen gruppiert, unten.",
-      "derivedT": "Ableitung",
-      "derivedD": "aus derselben Basis gebildet — Freund → Freundschaft, freundlich.",
-      "relatedT": "Verwandtes Wort",
-      "relatedD": "gleiche Wortfamilie, keine direkte Ableitung — Nation → national.",
-      "etymonT": "Etymon",
-      "etymonD": "eine ältere Form, aus der das Wort stammt — Freund → althochdeutsch friunt."
-    },
-    "maps": {
-      "senseTitle": "SenseMap — Farben und Positionen",
-      "senseLead": "Um das zentrale Wort hat jede Bedeutungsfamilie einen festen Platz und eine eigene Farbe. Die Palette ist eine Tetrade aus Ihrer Sprechblasenfarbe (standardmäßig Violett), sodass die Karte immer zu Ihrem Thema passt.",
-      "senseRight": "Synonyme — rechts (Ihre Sprechblasenfarbe).",
-      "senseLeft": "Antonyme — links (Gegenfarbe).",
-      "senseUp": "Hyperonyme (weitere Begriffe) — oben.",
-      "senseDown": "Meronyme / Holonyme (Teile und Ganze) — unten.",
-      "senseCaption": "Wie die Bedeutungsgruppen platziert und gefärbt sind.",
-      "rootTitle": "RootMap — Farben und Positionen",
-      "rootLead": "RootMap liest sich vertikal, wie ein Baum. Die Wortfamilie fächert sich darüber auf; ihre Ursprünge sinken darunter. Ableitungen und Verwandte folgen Ihrer Sprechblasenfarbe, während die Etymone ein festes erdiges Beige behalten — der Boden, in den die Wurzeln reichen.",
-      "rootDerived": "Ableitungen — oben links.",
-      "rootRelated": "Verwandte — oben rechts.",
-      "rootEtymon": "Etymone (ältere Formen, aus denen es stammt) — unten, in Beige.",
-      "rootCaption": "Legende oben; eine echte RootMap auf einer Seite unten."
-    },
-    "toolbar": {
-      "title": "Die Sprechblasen-Leiste — was jeder Knopf tut",
-      "intro": "Nicht jeder Knopf erscheint jedes Mal — jeder zeigt sich nur, wenn er zutrifft, sodass eine bestimmte Sprechblase eine Teilmenge zeigt. Die letzten drei (Bild, SenseMap, RootMap) fügt Experiment hinzu.",
-      "shotCaption": "Eine echte Sprechblase und ihre Leiste, mit installiertem Experiment.",
-      "rotateN": "Neu positionieren",
-      "rotateD": "(das Pfeilkreuz) — dreht die Sprechblase um das Wort (unten, links, oben, rechts), um einem Bildschirmrand oder einer Überlappung auszuweichen.",
-      "cloverN": "Trotzdem übersetzen / Original zeigen",
-      "cloverD": "(das vierblättrige Kleeblatt) — tauscht die Definition in der Originalsprache gegen eine Übersetzung und zurück. Die Definition kommt immer zuerst; die Übersetzung ist die Rückfalloption.",
-      "switchN": "Wörterbuchquelle wechseln",
-      "switchD": "(der Doppelpfeil) — wechselt zwischen den zwei Quellen für dasselbe Wort (zum Beispiel Larousse und Le Robert), wenn beide vorhanden sind.",
-      "audioN": "Aussprache",
-      "audioD": "— spielt das Audio ab, wenn verfügbar. Ein kleines Gesicht zeigt die Quelle: ein menschliches Gesicht für eine echte Aufnahme (Wiktionary, Commons, DWDS), ein Robotergesicht für eine synthetische Stimme (Google TTS).",
-      "moreN": "Mehr…",
-      "moreD": "(in neuem Tab öffnen) — öffnet die Quellseite (oder eine Websuche) für das Wort, wenn Sie tiefer graben wollen.",
-      "repairN": "Reparieren → Konsole",
-      "repairD": "(der Schraubenschlüssel) — schickt diese Suche in den Konsolenmodus, das stabile Seitenpanel, das genutzt wird, wenn eine Seite die Inline-Darstellung stört.",
-      "removeN": "Schließen",
-      "removeD": "(durchgestrichener Kreis) — schließt die Sprechblase. Auf der Seite bleibt nichts zurück; ein Neuladen (F5) stellt sie immer wieder her.",
-      "imageN": "Bild",
-      "imageD": "— zeigt ein illustrierendes Bild (oder eine kleine Karte für einen Ort). Ausgegraut, wenn nichts Passendes gefunden wird — lieber kein Bild als ein irreführendes.",
-      "senseN": "SenseMap",
-      "senseD": "— öffnet den Bedeutungsgraphen. Erscheint nur, wenn das Wort nutzbare Beziehungen hat.",
-      "rootN": "RootMap",
-      "rootD": "— öffnet den Familien- und Herkunftsgraphen. Erscheint nur, wenn das Wort eine dokumentierte Familie hat."
-    }
+    "contactLabel": "CONTACT"
   }
 }
