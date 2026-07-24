@@ -39,7 +39,8 @@
       "updates": "Nouveautés",
       "engine": "Moteur",
       "usage": "Utilisation",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "experiment": "Experiment"
     },
     "hero": {
       "eyebrow": "Lire d'abord. Traduire ensuite si besoin.",
@@ -80,7 +81,8 @@
         "Les définitions restent dans la langue source au lieu de casser la lecture avec un détour de traduction générique.",
         "Audio, traduire quand même, réparation et ouverture de page restent accessibles directement dans l'infobulle ou l'entrée console.",
         "Beaucoup de choses se passent en coulisses : reprises de recherche, routage de candidats, fournisseurs de secours et garde-fous par site, détection des langues impliquées, des pages réfractaires aux injections."
-      ]
+      ],
+      "badgeHint": "Dans la barre du navigateur, la pastille de l'icône de l'extension prend ces couleurs, site par site — comme sur les vraies captures ci-dessus."
     },
     "demo": {
       "word": "epoch",
@@ -297,10 +299,109 @@
         {
           "q": "Est-ce que cela fonctionne partout ?",
           "a": "Presque partout, mais pas sur les pages restreintes par le navigateur lui-même, par exemple les stores d'extensions ou d'autres surfaces privilégiées où les content scripts sont bloqués."
+        },
+        {
+          "q": "Comment obtenir Experiment, la version avec images et cartes de mots ?",
+          "a": "Experiment est une extension compagnon non répertoriée, partagée avec les personnes qui soutiennent le projet. Contribuez via PayPal ou Buy Me a Coffee, envoyez un court e-mail, et vous recevez le lien d'installation privé. Elle garde le même geste de lecture et ajoute images, SenseMap et RootMap."
+        },
+        {
+          "q": "Pourquoi une définition est-elle parfois fausse ou hors sujet ?",
+          "a": "Les définitions viennent de vrais dictionnaires et de Wiktionary, des sources tierces. Elles peuvent ordonner les sens de façon inattendue, ou une recherche peut tomber sur un homographe. Quand deux sources existent, le bouton de changement de source permet de comparer, et « traduire quand même » donne un autre angle. Le routage est affiné en continu, mais certains cas passent encore."
+        },
+        {
+          "q": "Pourquoi une image est-elle parfois étrange ou sans rapport ?",
+          "a": "Les images sont récupérées par mot-clé dans des bibliothèques ouvertes (Unsplash, Openverse et des bases naturalistes). Les mots abstraits, ou à plusieurs sens, peuvent ramener une photo vaguement liée ou franchement fausse. La règle est « mieux vaut pas d'image qu'une image trompeuse », donc beaucoup de mots n'affichent aucune image, mais une image incongrue peut tout de même apparaître. Nous avons fait de notre mieux pour l'affiner, tout en sachant que ce n'est pas parfait."
+        },
+        {
+          "q": "Les cartes apparaissent-elles toujours ?",
+          "a": "Non. SenseMap n'apparaît que si un mot a des relations exploitables, et RootMap que s'il a une famille documentée, donc certains mots n'en montrent aucune. Les pluriels et formes fléchies sont d'abord ramenés à leur mot de base, c'est pourquoi « wolves » affiche les cartes de « wolf »."
         }
       ]
     },
     "footer": "Pas de pubs, pas de traceurs, beaucoup de soin, et une grande quantité de cas limites navigateur gérés de façon transparente.",
-    "contactLabel": "CONTACT"
+    "contactLabel": "CONTACT",
+    "experiment": {
+      "eyebrow": "Le compagnon — une application distincte",
+      "title": "Experiment : une seconde extension qui ajoute des images et des cartes de mots.",
+      "lead": "Experiment est une extension distincte que vous installez en plus de Not a Translator. Une fois les deux présentes, Experiment se greffe sur la même bulle de définition et ajoute trois choses quand elles ont du sens : une image d'illustration, un graphe des sens (SenseMap) et un graphe de la famille et de l'origine du mot (RootMap). Elle est offerte en remerciement aux personnes qui soutiennent le projet.",
+      "adv": {
+        "imageT": "Une image, quand elle aide",
+        "imageD": "Pour une plante, un animal, un objet ou un lieu, Experiment peut afficher une photo d'illustration juste à côté de la définition — issue de bibliothèques d'images ouvertes, jamais une distraction imposée.",
+        "senseT": "SenseMap — explorer le sens",
+        "senseD": "Un petit graphe déplaçable autour du mot : synonymes, antonymes, termes plus larges et plus précis. Touchez un nœud pour lire sa définition, le déployer, et continuer d'explorer le voisinage sémantique.",
+        "rootT": "RootMap — famille et origine",
+        "rootD": "Un graphe jumeau pour la famille du mot : les dérivés et apparentés poussent vers le haut, tandis que les étymons — les formes plus anciennes dont il vient — plongent vers le bas comme des racines."
+      },
+      "distribution": {
+        "eyebrow": "Comment l'obtenir",
+        "title": "Experiment est une récompense pour les donateurs.",
+        "body": "Experiment est publiée en extension non répertoriée (unlisted) : elle n'apparaît pas dans les recherches du store. Elle est partagée directement avec les personnes qui soutiennent le projet, afin que les fonctions supplémentaires restent liées aux dons qui gardent tout sans publicité ni pistage.",
+        "step1": "Soutenez le projet via PayPal ou Buy Me a Coffee.",
+        "step2": "Envoyez un court e-mail pour nous signaler votre don.",
+        "step3": "Vous recevez le lien d'installation privé d'Experiment."
+      },
+      "mapsNote": "Les deux cartes utilisent le même moteur : glissez un nœud pour déplacer sa branche, touchez l'icône étoile / arbre d'un nœud ouvert pour le déployer, et utilisez la double-flèche pour basculer entre la définition rapide de Wiktionary et la définition complète du dictionnaire."
+    },
+    "glossary": {
+      "title": "Les termes de regroupement, en clair",
+      "synT": "Synonyme",
+      "synD": "un mot de sens presque identique — grand / vaste.",
+      "antT": "Antonyme",
+      "antD": "un mot de sens opposé — grand / petit.",
+      "hyperT": "Hyperonyme",
+      "hyperD": "un terme plus large, générique — chien → animal.",
+      "hypoT": "Hyponyme",
+      "hypoD": "un cas plus précis — animal → chien. Regroupé avec les hyperonymes, en haut.",
+      "meroT": "Méronyme",
+      "meroD": "une partie d'un tout — roue → voiture.",
+      "holoT": "Holonyme",
+      "holoD": "le tout qui possède la partie — voiture → roue. Regroupé avec les méronymes, en bas.",
+      "derivedT": "Mot dérivé",
+      "derivedD": "construit sur la même base — ami → amitié, amical.",
+      "relatedT": "Mot apparenté",
+      "relatedD": "même famille lexicale, sans dérivation directe — nation → natif.",
+      "etymonT": "Étymon",
+      "etymonD": "une forme plus ancienne dont le mot vient — ami → latin amicus."
+    },
+    "maps": {
+      "senseTitle": "SenseMap — couleurs et positions",
+      "senseLead": "Autour du mot central, chaque famille de sens a une place fixe et sa propre couleur. La palette est une tétrade construite à partir de la couleur de votre bulle (violet par défaut), pour que la carte s'accorde toujours à votre thème.",
+      "senseRight": "Synonymes — à droite (couleur de votre bulle).",
+      "senseLeft": "Antonymes — à gauche (teinte opposée).",
+      "senseUp": "Hyperonymes (termes plus larges) — en haut.",
+      "senseDown": "Méronymes / holonymes (parties et touts) — en bas.",
+      "senseCaption": "Comment les groupes de sens sont placés et colorés.",
+      "rootTitle": "RootMap — couleurs et positions",
+      "rootLead": "RootMap se lit verticalement, comme un arbre. La famille du mot s'éventaille au-dessus ; ses origines s'enfoncent en dessous. Les dérivés et apparentés suivent la couleur de votre bulle, tandis que les étymons gardent un beige terreux fixe — la terre où plongent les racines.",
+      "rootDerived": "Dérivés — en haut à gauche.",
+      "rootRelated": "Apparentés — en haut à droite.",
+      "rootEtymon": "Étymons (formes plus anciennes dont il vient) — en bas, en beige.",
+      "rootCaption": "Légende ci-dessus ; une vraie RootMap sur une page ci-dessous."
+    },
+    "toolbar": {
+      "title": "La barre d'outils de la bulle — à quoi sert chaque bouton",
+      "intro": "Tous les boutons n'apparaissent pas à chaque fois — chacun ne s'affiche que s'il s'applique, donc une bulle donnée en montre un sous-ensemble. Les trois derniers (image, SenseMap, RootMap) sont ajoutés par Experiment.",
+      "shotCaption": "Une vraie bulle et sa barre d'outils, avec Experiment installé.",
+      "rotateN": "Repositionner",
+      "rotateD": "(la croix de flèches) — fait pivoter la bulle autour du mot (dessous, gauche, dessus, droite) pour éviter un bord d'écran ou un chevauchement.",
+      "cloverN": "Traduire quand même / Voir l'original",
+      "cloverD": "(le trèfle à quatre feuilles) — remplace la définition en langue d'origine par une traduction, et inversement. La définition vient toujours en premier ; la traduction est le repli.",
+      "switchN": "Changer de dictionnaire",
+      "switchD": "(la double-flèche) — bascule entre les deux sources pour le même mot (par exemple Larousse et Le Robert), quand les deux existent.",
+      "audioN": "Prononciation",
+      "audioD": "— joue l'audio quand il est disponible. Un petit visage indique la source : un visage humain pour un vrai enregistrement (Wiktionary, Commons, DWDS), un visage de robot pour une voix de synthèse (Google TTS).",
+      "moreN": "En savoir plus…",
+      "moreD": "(ouvrir dans un nouvel onglet) — ouvre la page source (ou une recherche web) pour le mot, quand vous voulez creuser.",
+      "repairN": "Réparer → console",
+      "repairD": "(la clé à molette) — envoie cette recherche en mode console, le panneau latéral stable utilisé quand une page gêne l'affichage en ligne.",
+      "removeN": "Fermer",
+      "removeD": "(cercle barré) — ferme la bulle. Rien n'est laissé sur la page ; un rafraîchissement (F5) la restaure toujours.",
+      "imageN": "Image",
+      "imageD": "— affiche une image d'illustration (ou une petite carte pour un lieu). Grisé quand rien de convenable n'est trouvé — mieux vaut pas d'image qu'une image trompeuse.",
+      "senseN": "SenseMap",
+      "senseD": "— ouvre le graphe des sens. N'apparaît que si le mot a des relations exploitables.",
+      "rootN": "RootMap",
+      "rootD": "— ouvre le graphe de la famille et de l'origine. N'apparaît que si le mot a une famille documentée."
+    }
   }
 }
