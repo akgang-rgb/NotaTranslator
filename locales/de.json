@@ -402,6 +402,8 @@
       "senseD": "— öffnet den Bedeutungsgraphen. Erscheint nur, wenn das Wort nutzbare Beziehungen hat.",
       "rootN": "RootMap",
       "rootD": "— öffnet den Familien- und Herkunftsgraphen. Erscheint nur, wenn das Wort eine dokumentierte Familie hat."
-    }
+    },
+    "privacyLabel": "DATENSCHUTZ",
+    "privacyProLabel": "DATENSCHUTZ (PRO)"
   }
 }

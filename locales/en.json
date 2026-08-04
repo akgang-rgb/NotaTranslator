@@ -318,6 +318,8 @@
       ]
     },
     "footer": "No ads, no trackers, a lot of care, and many browser-specific edge cases handled transparently.",
-    "contactLabel": "CONTACT"
+    "contactLabel": "CONTACT",
+    "privacyLabel": "PRIVACY POLICY",
+    "privacyProLabel": "PRIVACY POLICY (PRO)"
   }
 }

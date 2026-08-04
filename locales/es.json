@@ -402,6 +402,8 @@
       "senseD": "— abre el grafo de significados. Solo aparece cuando la palabra tiene relaciones aprovechables.",
       "rootN": "RootMap",
       "rootD": "— abre el grafo de familia y origen. Solo aparece cuando la palabra tiene una familia documentada."
-    }
+    },
+    "privacyLabel": "PRIVACIDAD",
+    "privacyProLabel": "PRIVACIDAD (PRO)"
   }
 }

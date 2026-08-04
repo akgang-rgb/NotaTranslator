@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Not a Translator Experiment</title>
+<title>Privacy Policy — Not a Translator Experiment Pro</title>
 <style>
   :root {
     --brand: hsl(283, 58%, 50%);
@@ -36,22 +36,52 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="updated">Not a Translator Experiment (browser extension) · Last updated: August 2026</p>
+  <p class="updated">Not a Translator Experiment <strong>Pro</strong> (browser extension) · Last updated: August 2026</p>
 
   <div class="tldr">
     <strong>In short:</strong> This extension is a dictionary tool. It sends only the word or
     expression you hover or select to public dictionary and image services to fetch its definition,
     related words and an illustrative picture. It does not collect your name, email, accounts,
-    browsing history, or location. It does not track you, show ads, or sell any data.
+    browsing history, or location. Its reader and PDF viewer process page and document content <strong>entirely on your device</strong> — that content is never transmitted anywhere. It does not track you, show ads, or sell any data.
   </div>
 
   <div class="card">
   <h2>What the extension does</h2>
   <p>
-    Not a Translator Experiment is a companion extension that enriches the definition tooltip of
+    Not a Translator — Experiment is a companion extension that enriches the definition tooltip of
     the <em>Not a Translator</em> dictionary: it can show an illustrative image, a graph of related
     meanings (SenseMap) and a graph of the word's family and origin (RootMap). All of these are
     triggered by the word or expression you hover over or select on a web page.
+  </p>
+  <p>
+    The <strong>Pro</strong> edition adds two reading tools: a built-in <strong>reader</strong>,
+    which redisplays the current article in a comfortable reading layout, and a built-in
+    <strong>PDF viewer</strong>, which lets the same definition tooltips work inside PDF documents.
+  </p>
+
+  <h2>Reader and PDF viewer: local processing</h2>
+  <p>
+    These two features are the only part of the extension that handles more than a single word, so
+    they deserve to be described plainly.
+  </p>
+  <ul>
+    <li>The <strong>reader</strong> reads the content of the page you are on in order to extract the
+      article from it (removing menus, adverts and sidebars). This analysis happens
+      <strong>in your browser</strong>, on a copy of the page held in memory.</li>
+    <li>The <strong>PDF viewer</strong> downloads the PDF you asked to open — from the site hosting
+      it, which would have received that request anyway — and renders it locally.</li>
+    <li>In both cases, <strong>no page content, no document content, and no filename is sent to the
+      developer or to any third party</strong>, and nothing is written to disk. Only the individual
+      word you look up leaves your browser, exactly as in the non-Pro edition.</li>
+  </ul>
+
+  <h2>Broad site access</h2>
+  <p>
+    The Pro edition requests access to <strong>all websites</strong> (<code>&lt;all_urls&gt;</code>).
+    This is required for a single reason: a PDF can be hosted on any domain, and the extension
+    cannot know in advance which one. The permission is used to fetch the document you explicitly
+    chose to open and to display the reader on the page you are reading. It is never used to
+    inventory the sites you visit, and no browsing history is collected — as stated above.
   </p>
 
   <h2>What data is processed</h2>
@@ -160,7 +190,7 @@
   <p>Questions about this policy: <a href="mailto:bongo_plats@icloud.com">bongo_plats@icloud.com</a></p>
   </div>
 
-  <footer>© 2026 Not a Translator · This policy applies to the “Not a Translator Experiment” browser extension. The Pro edition, which adds a reader and a PDF viewer, has its <a href="privacy-pro.html">own policy</a>.</footer>
+  <footer>© 2026 Not a Translator · This policy applies to the “Not a Translator Experiment Pro” browser extension. The non-Pro edition has its <a href="privacy.html">own policy</a>.</footer>
 </div>
 </body>
 </html>

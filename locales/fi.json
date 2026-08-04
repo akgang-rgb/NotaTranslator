@@ -402,6 +402,8 @@
       "senseD": "— avaa merkitysgraafin. Näkyy vain kun sanalla on käyttökelpoisia suhteita.",
       "rootN": "RootMap",
       "rootD": "— avaa perhe- ja alkuperägraafin. Näkyy vain kun sanalla on dokumentoitu perhe."
-    }
+    },
+    "privacyLabel": "TIETOSUOJA",
+    "privacyProLabel": "TIETOSUOJA (PRO)"
   }
 }

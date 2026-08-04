@@ -402,6 +402,8 @@
       "senseD": "— ouvre le graphe des sens. N'apparaît que si le mot a des relations exploitables.",
       "rootN": "RootMap",
       "rootD": "— ouvre le graphe de la famille et de l'origine. N'apparaît que si le mot a une famille documentée."
-    }
+    },
+    "privacyLabel": "CONFIDENTIALITÉ",
+    "privacyProLabel": "CONFIDENTIALITÉ (PRO)"
   }
 }
