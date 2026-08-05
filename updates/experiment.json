@@ -16,13 +16,5 @@
         }
       ]
     }
-    "addon@notatrexperimentpro.fr": {
-      "updates": [
-        {
-          "version": "1.2.4",
-          "update_link": "https://akgang-rgb.github.io/NotaTranslator/downloads/experiment_firefox_1_2_4.xpi"
-        }
-      ]
-    }
   }
 }
