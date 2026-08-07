@@ -116,7 +116,7 @@
     if (/Diccionario de la Lengua/i.test(textValue)) return { icon: 'https://dle.rae.es/favicon.ico', alt: 'RAE' };
     if (/Larousse/i.test(textValue)) return { icon: 'https://www.larousse.fr/favicon.ico', alt: 'Larousse' };
     if (/DWDS/i.test(textValue)) return { icon: 'https://www.dwds.de/favicon.ico', alt: 'DWDS' };
-    if (/De Mauro|Internazionale/i.test(textValue)) return { icon: 'https://www.internazionale.it/favicon.ico', alt: 'Internazionale' };
+    if (/De Mauro|Internazionale/i.test(textValue)) return { icon: './assets/dimauro.png', alt: 'Internazionale' };
     if (/Kielitoimiston sanakirja/i.test(textValue)) return { icon: './assets/kielitoimiston.png', alt: 'Kielitoimiston sanakirja' };
     if (/Wiktionary/i.test(textValue)) return { icon: 'https://en.wiktionary.org/static/favicon/wiktionary/en.ico', alt: 'Wiktionary' };
     return null;
