@@ -1,4 +1,5 @@
-{
+window.NOTATR_SITE_LOCALES = window.NOTATR_SITE_LOCALES || {};
+window.NOTATR_SITE_LOCALES['fr'] = {
   "lang": "fr",
   "meta": {
     "title": "Not A Translator - Définitions en langue d'origine dans la page",
@@ -408,3 +409,4 @@
     "privacyProLabel": "Politique de confidentialité (Pro)"
   }
 }
+;

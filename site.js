@@ -2,6 +2,7 @@
   'use strict';
 
   const SUPPORTED_LANGS = ['en', 'fr', 'es', 'de', 'fi'];
+  const LANG_STORAGE_KEY = 'notatrSiteLang';
   const state = {
     lang: 'en',
     messages: null
@@ -33,20 +34,58 @@
     el.textContent = decodeEntities(value);
   }
 
+  function readStoredLanguage() {
+    try {
+      const stored = localStorage.getItem(LANG_STORAGE_KEY);
+      return SUPPORTED_LANGS.indexOf(stored) >= 0 ? stored : '';
+    } catch (_) {
+      return '';
+    }
+  }
+
+  function writeStoredLanguage(lang) {
+    try { localStorage.setItem(LANG_STORAGE_KEY, lang); } catch (_) {}
+  }
+
   function pickInitialLanguage() {
     const urlLang = new URLSearchParams(window.location.search).get('lang');
+    const storedLang = readStoredLanguage();
     const browserLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
     if (SUPPORTED_LANGS.indexOf(urlLang) >= 0) return urlLang;
+    if (SUPPORTED_LANGS.indexOf(storedLang) >= 0) return storedLang;
     if (SUPPORTED_LANGS.indexOf(browserLang) >= 0) return browserLang;
     return 'en';
+  }
+  function loadScriptMessages(lang) {
+    return new Promise((resolve, reject) => {
+      window.NOTATR_SITE_LOCALES = window.NOTATR_SITE_LOCALES || {};
+      if (window.NOTATR_SITE_LOCALES[lang]) {
+        resolve(window.NOTATR_SITE_LOCALES[lang]);
+        return;
+      }
+      const script = document.createElement('script');
+      script.src = `locales/${lang}.js?v=${Date.now()}`;
+      script.onload = () => {
+        const messages = window.NOTATR_SITE_LOCALES && window.NOTATR_SITE_LOCALES[lang];
+        if (messages) resolve(messages);
+        else reject(new Error(`Cannot load script locale ${lang}`));
+      };
+      script.onerror = () => reject(new Error(`Cannot load script locale ${lang}`));
+      document.head.appendChild(script);
+    });
   }
 
   async function loadMessages(lang) {
     const safeLang = SUPPORTED_LANGS.indexOf(lang) >= 0 ? lang : 'en';
+    if (window.location.protocol === 'file:') return loadScriptMessages(safeLang);
     const url = `locales/${safeLang}.json?v=${Date.now()}`;
-    const response = await fetch(url, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`Cannot load locale ${safeLang}`);
-    return response.json();
+    try {
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Cannot load locale ${safeLang}`);
+      return response.json();
+    } catch (err) {
+      return loadScriptMessages(safeLang);
+    }
   }
 
   function makeEl(tag, className, textValue) {
@@ -231,7 +270,10 @@
     faqEyebrow: 'site.faq.eyebrow',
     faqTitle: 'site.faq.title',
     footerLine: 'site.footer',
-    contactLabel: 'site.contactLabel'
+    contactLabel: 'site.contactLabel',
+    privacyNatLabel: 'site.privacyNatLabel',
+    privacyLabel: 'site.privacyLabel',
+    privacyProLabel: 'site.privacyProLabel'
   };
 
   const legacyListBindings = {
@@ -368,10 +410,23 @@
     scheduleBadgeArrows(); /* la largeur des chips depend de la langue */
   }
 
+  function updatePolicyLinks(lang) {
+    [
+      ['privacyNatLabel', 'privacyNAT.html'],
+      ['privacyLabel', 'privacy.html'],
+      ['privacyProLabel', 'privacy-pro.html']
+    ].forEach(([id, href]) => {
+      const link = document.getElementById(id);
+      if (link) link.href = `${href}?lang=${encodeURIComponent(lang)}`;
+    });
+  }
+
   async function setLanguage(lang) {
     const nextLang = SUPPORTED_LANGS.indexOf(lang) >= 0 ? lang : 'en';
     const messages = await loadMessages(nextLang);
     applyMessages(messages);
+    writeStoredLanguage(nextLang);
+    updatePolicyLinks(nextLang);
     const url = new URL(window.location.href);
     url.searchParams.set('lang', nextLang);
     history.replaceState(null, '', url.toString());

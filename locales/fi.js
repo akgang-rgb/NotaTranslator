@@ -1,4 +1,5 @@
-{
+window.NOTATR_SITE_LOCALES = window.NOTATR_SITE_LOCALES || {};
+window.NOTATR_SITE_LOCALES['fi'] = {
   "lang": "fi",
   "meta": {
     "title": "Not A Translator - Määritelmät alkuperäiskielellä suoraan sivulla",
@@ -408,3 +409,4 @@
     "privacyProLabel": "Tietosuojakäytäntö (Pro)"
   }
 }
+;

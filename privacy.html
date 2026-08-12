@@ -3,164 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Not a Translator Experiment</title>
+<title>Privacy Policy - Not a Translator</title>
 <style>
-  :root {
-    --brand: hsl(283, 58%, 50%);
-    --brand-dark: hsl(283, 58%, 38%);
-    --ink: #1c1424; --muted: #55505c; --bg: #faf7fc; --card: #ffffff; --border: #ece6f2;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --ink:#f3eef8; --muted:#b3a9bd; --bg:#17121c; --card:#211a29; --border:#33293d; }
-  }
+  :root { --brand: hsl(283, 58%, 50%); --brand-dark: hsl(283, 58%, 38%); --ink: #1c1424; --muted: #55505c; --bg: #faf7fc; --card: #ffffff; --border: #ece6f2; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#f3eef8; --muted:#b3a9bd; --bg:#17121c; --card:#211a29; --border:#33293d; } }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg); color: var(--ink); line-height: 1.6;
-    padding: 32px 20px; display: flex; justify-content: center;
-  }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; padding: 32px 20px; display: flex; justify-content: center; }
   .wrap { max-width: 760px; width: 100%; }
+  .langbar { display:flex; align-items:center; justify-content:flex-end; gap:8px; margin:0 0 18px; color:var(--muted); font-size:13px; flex-wrap:wrap; }
+  .langbar a { color:var(--brand-dark); text-decoration:none; padding:2px 4px; border-radius:4px; }
+  .langbar a[aria-current="true"] { background:var(--border); font-weight:700; }
   h1 { font-size: 24px; margin: 0 0 4px; }
   .updated { color: var(--muted); font-size: 13px; margin: 0 0 24px; }
   h2 { font-size: 17px; margin: 28px 0 8px; color: var(--brand-dark); }
   p, li { font-size: 14.5px; color: var(--ink); }
-  ul { padding-left: 22px; }
-  li { margin: 4px 0; }
-  a { color: var(--brand-dark); }
+  ul { padding-left: 22px; } li { margin: 4px 0; } a { color: var(--brand-dark); }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; }
   .tldr { border-left: 3px solid var(--brand); background: rgba(160,54,201,.06); padding: 12px 16px; border-radius: 8px; margin: 16px 0 24px; font-size: 14px; }
   code { background: var(--border); padding: 1px 5px; border-radius: 4px; font-size: 13px; }
   footer { margin-top: 28px; color: var(--muted); font-size: 12.5px; }
 </style>
 </head>
-<body>
+<body data-policy="experiment" data-default-lang="EN">
 <div class="wrap">
-  <h1>Privacy Policy</h1>
-  <p class="updated">Not a Translator Experiment (browser extension) · Last updated: August 2026</p>
-
-  <div class="tldr">
-    <strong>In short:</strong> This extension is a dictionary tool. It sends only the word or
-    expression you hover or select to public dictionary and image services to fetch its definition,
-    related words and an illustrative picture. It does not collect your name, email, accounts,
-    browsing history, or location. It does not track you, show ads, or sell any data.
-  </div>
-
-  <div class="card">
-  <h2>What the extension does</h2>
-  <p>
-    Not a Translator Experiment is a companion extension that enriches the definition tooltip of
-    the <em>Not a Translator</em> dictionary: it can show an illustrative image, a graph of related
-    meanings (SenseMap) and a graph of the word's family and origin (RootMap). All of these are
-    triggered by the word or expression you hover over or select on a web page.
-  </p>
-
-  <h2>What data is processed</h2>
-  <p>
-    To perform a lookup, the extension transmits <strong>only the word or expression you choose to
-    look up</strong> (a piece of website text content) to the third-party services listed below. It does
-    <strong>not</strong> send the page you are on, its URL, the surrounding text, your identity, or
-    any other content.
-  </p>
-
-  <h2>What is NOT collected</h2>
-  <ul>
-    <li>No personally identifiable information (name, email, age, ID).</li>
-    <li>No accounts, passwords, or authentication data.</li>
-    <li>No financial or payment information.</li>
-    <li>No browsing history, list of visited pages, or page URLs.</li>
-    <li>No location, GPS, or IP-based geolocation is requested or used.</li>
-    <li>No clicks, keystrokes, mouse tracking, or on-page analytics.</li>
-    <li>No advertising, no user profiling, no sale or sharing of data with data brokers.</li>
-  </ul>
-
-  <h2>Third-party services contacted</h2>
-  <p>Each service receives only the looked-up word or expression, and only for the feature it powers:</p>
-  <ul>
-    <li><strong>Wiktionary</strong> (wiktionary.org) — definitions, synonyms/antonyms, word family and etymology.</li>
-    <li><strong>notatr-proxy</strong> (a Cloudflare Worker operated by the developer) — caches image lookups and holds the API credentials for the image providers below, so those credentials never reside in your browser.</li>
-    <li><strong>Unsplash</strong> and <strong>Openverse</strong> — illustrative photographs, retrieved through the notatr-proxy worker.</li>
-    <li><strong>iNaturalist, GBIF, Wikidata, Wikimedia Commons</strong> — photographs of species and objects.</li>
-    <li><strong>OpenStreetMap / Nominatim</strong> — map thumbnails for place names.</li>
-    <li><strong>LINDAT / UDPipe</strong> (lindat.mff.cuni.cz) — reduces a word to its base form (lemmatization).</li>
-  </ul>
-  <p>
-    These services receive the request under their own privacy policies. As with any web request,
-    they technically see the originating IP address; the extension neither adds nor stores it.
-    Lookups sent to third parties (Wiktionary, Wikidata, OpenStreetMap and the rest) carry no
-    identifier of any kind.
-  </p>
-
-  <h2>Donor key</h2>
-  <p>
-    Some features are reserved for donors. A donor receives a <strong>key</strong> — a short
-    signed string such as <code>NTX-XXXXX-XXXXX-XXXXX-XXXXXX</code> — which they paste into the
-    extension's popup. This is the one place where a request is <em>not</em> anonymous, so it is
-    worth being precise about it:
-  </p>
-  <ul>
-    <li>The key is derived from the donor's email address, but does <strong>not contain it</strong>:
-      only a salted, irreversible fingerprint of it is embedded. Your email address is never sent
-      to, nor stored on, any server as part of this mechanism.</li>
-    <li>The key is transmitted <strong>only</strong> to the developer's own two services — the
-      notatr-proxy Cloudflare Worker and the developer's cache server — and never to any third
-      party. It is sent to check that it is valid, and to authorise image and synonym lookups.</li>
-    <li>Because the same key accompanies those requests, the developer's services can in principle
-      relate several lookups to the same key. No log associating keys with looked-up words is kept,
-      and the key cannot be turned back into your email address — but we prefer to state the
-      capability rather than claim an anonymity that would not be exact.</li>
-    <li>Nothing else changes: requests to third-party services remain anonymous, and the key plays
-      no part in them.</li>
-  </ul>
-  <p>
-    The key is stored in <code>chrome.storage.sync</code>, which means your browser
-    <strong>synchronises it across the devices signed into your browser profile</strong> (Google or
-    Mozilla account), exactly as it does for your bookmarks. If you prefer to avoid that, disable
-    extension synchronisation in your browser settings; the key can be re-entered by hand on each
-    device. Clearing the field in the popup removes it.
-  </p>
-
-  <h2>Caching</h2>
-  <p>
-    To keep lookups fast, results may be cached — in your browser's memory for the current session,
-    and on the developer's Cloudflare edge / cache server. This cache is keyed by the
-    <em>word or expression only</em>, is fully anonymous, and is never linked to any user identity.
-  </p>
-
-  <h2>Data stored on your device</h2>
-  <ul>
-    <li><code>chrome.storage.local</code> — your four on/off toggles (extension enabled, images,
-      SenseMap, RootMap), and the result of the last donor-key check (valid or not, and its expiry
-      date). These stay on your device and are never transmitted.</li>
-    <li><code>chrome.storage.sync</code> — the donor key itself, if you entered one. Unlike the
-      above, this store is synchronised by your browser across your devices (see “Donor key”).</li>
-  </ul>
-  <p>
-    Nothing else is written to your device: no lookup history, no list of the words you consulted,
-    and no page or document content. Note that definitions themselves are cached on the developer's
-    server, indexed by word — see “Caching” above; that shared cache records the word and its
-    definition, never who requested it.
-  </p>
-
-  <h2>Donations</h2>
-  <p>
-    Donations are entirely optional and are handled by external providers (PayPal, Buy Me a Coffee)
-    outside the extension. If you email us after donating, we use your email address only to reply,
-    to send the install link, and to generate your donor key — never for marketing, and it is not
-    shared. The address is kept in ordinary correspondence, not in any database queried by the
-    extension.
-  </p>
-
-  <h2>Children</h2>
-  <p>The extension is a general-audience dictionary tool and is not directed at children, nor does it knowingly collect data from them.</p>
-
-  <h2>Changes</h2>
-  <p>This policy may be updated as features evolve; the “Last updated” date above will change accordingly.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:bongo_plats@icloud.com">bongo_plats@icloud.com</a></p>
-  </div>
-
-  <footer>© 2026 Not a Translator · This policy applies to the “Not a Translator Experiment” browser extension. The Pro edition, which adds a reader and a PDF viewer, has its <a href="privacy-pro.html">own policy</a>.</footer>
+  <nav class="langbar" id="langbar" aria-label="Language"></nav>
+  <h1 id="policyTitle">Privacy Policy</h1>
+  <p class="updated" id="policyUpdated"></p>
+  <div class="tldr" id="policyTldr"></div>
+  <div class="card" id="policyBody"></div>
+  <footer id="policyFooter"></footer>
 </div>
+<script>
+(function () {
+  var supported = ['EN', 'FR', 'DE', 'FI', 'ES'];
+  var names = { EN:'English', FR:'Français', DE:'Deutsch', FI:'Suomi', ES:'Español' };
+  var params = new URLSearchParams(location.search);
+  var requested = String(params.get('lang') || localStorage.getItem('notatrSiteLang') || localStorage.getItem('notatrPolicyLang') || navigator.language || '').slice(0, 2).toUpperCase();
+  var fallback = document.body.dataset.defaultLang || 'EN';
+  var lang = supported.indexOf(requested) >= 0 ? requested : fallback;
+  var policyKey = document.body.dataset.policy || 'experiment';
+  function el(tag, html) { var n = document.createElement(tag); if (html !== undefined) n.innerHTML = html; return n; }
+  function render(data) {
+    var page = data.pages[policyKey] || data.pages.experiment || data.pages.nat;
+    document.documentElement.lang = data.code || lang.toLowerCase();
+    document.title = page.htmlTitle || data.policy;
+    document.getElementById('policyTitle').textContent = data.policy;
+    document.getElementById('policyUpdated').innerHTML = (page.product || '') + ' · ' + data.updated;
+    document.getElementById('policyTldr').innerHTML = page.tldr || '';
+    var body = document.getElementById('policyBody'); body.textContent = '';
+    (page.sections || []).forEach(function (section) {
+      body.appendChild(el('h2', section.h));
+      (section.b || []).forEach(function (block) {
+        if (block.p) body.appendChild(el('p', block.p));
+        if (block.list) { var ul = el('ul'); block.list.forEach(function (item) { ul.appendChild(el('li', item)); }); body.appendChild(ul); }
+      });
+    });
+    document.getElementById('policyFooter').innerHTML = page.footer || '';
+    var nav = document.getElementById('langbar'); nav.textContent = '';
+    nav.appendChild(document.createTextNode((data.language || 'Language') + ': '));
+    supported.forEach(function (code, i) {
+      if (i) nav.appendChild(document.createTextNode(' · '));
+      var a = el('a', names[code]);
+      a.href = location.pathname + '?lang=' + code.toLowerCase();
+      a.setAttribute('aria-current', code === lang ? 'true' : 'false');
+      a.addEventListener('click', function () { localStorage.setItem('notatrPolicyLang', code); localStorage.setItem('notatrSiteLang', code.toLowerCase()); });
+      nav.appendChild(a);
+    });
+  }
+  function loadLocale(code) {
+    function loadScriptLocale() {
+      return new Promise(function (resolve, reject) {
+        var script = document.createElement('script');
+        script.src = 'locales/policy' + code + '.js';
+        script.onload = function () {
+          var bag = window.NOTATR_POLICY_LOCALES || {};
+          if (bag[code]) resolve(bag[code]); else reject(new Error('script-locale'));
+        };
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+    if (location.protocol === 'file:') return loadScriptLocale();
+    return fetch('locales/policy' + code + '.json', { cache: 'no-store' }).then(function (r) {
+      if (!r.ok) throw new Error('locale'); return r.json();
+    }).catch(loadScriptLocale);
+  }
+  loadLocale(lang).then(render).catch(function () {
+    if (lang !== fallback) location.replace(location.pathname + '?lang=' + fallback.toLowerCase());
+  });
+}());
+</script>
 </body>
 </html>
