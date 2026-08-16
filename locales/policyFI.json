@@ -18,7 +18,7 @@
       { "h": "Lapset", "b": [{ "p": "Not a Translator sopii perhe- ja koulukäyttöön. Laajennus ei tietoisesti kerää lasten henkilötietoja eikä sisällä mainontaa tai käyttäytymisen seurantaa." }] },
       { "h": "Turvallisuus", "b": [{ "p": "Kehittäjä voi valvoa välimuisteja, teknisiä virheitä ja poikkeavaa käyttöä suojatakseen palvelua väärinkäytöltä, hyökkäyksiltä, roskapostilta, väärinkäytetyltä sisällöltä ja laatuongelmilta. Valvonta palvelee turvallisuutta ja luotettavuutta, ei yksilöseurantaa." }] },
       { "h": "Muutokset", "b": [{ "p": "Tätä käytäntöä voidaan päivittää laajennuksen kehittyessä." }] },
-      { "h": "Yhteys", "b": [{ "p": "Kysymykset: <a href=\"mailto:masquages-magie0r@icloud.com\">masquages-magie0r@icloud.com</a>" }] }
+      { "h": "Yhteys", "b": [{ "p": "Kysymykset: <a href=\"mailto:bongo_plats@icloud.com\">bongo_plats@icloud.com</a>" }] }
     ], "footer": "© 2026 Not a Translator · Tämä käytäntö koskee päälaajennusta “Not a Translator”." },
     "experiment": { "htmlTitle": "Tietosuojakäytäntö - Not a Translator Experiment", "product": "Not a Translator Experiment (selainlaajennus)", "tldr": "<strong>Lyhyesti:</strong> Tämä lisälaajennus lähettää vain valitun sanan tai ilmauksen palveluihin, joita tarvitaan kuvien, liittyvien sanojen, SenseMapin ja RootMapin näyttämiseen. Se ei kerää henkilöllisyyttä, historiaa tai sijaintia, ei seuraa, ei näytä mainoksia eikä myy tietoja.", "sections": [
       { "h": "Mitä laajennus tekee", "b": [{ "p": "Not a Translator Experiment lisää Not a Translatorin työkaluvihjeeseen havainnollistavan kuvan, merkityskartan (SenseMap) sekä sanaperheen ja alkuperän kartan (RootMap). Toiminnot käynnistyvät vain valitusta tai osoitetusta sanasta." }] },
