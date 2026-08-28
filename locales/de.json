@@ -141,6 +141,8 @@
     "aiMode": {
       "eyebrow": "Neu: KI-Modus",
       "stamp": "NEU: KI-MODUS !",
+      "stampLine1": "NEU:",
+      "stampLine2": "KI-MODUS !",
       "title": "KI, wenn sie hilft, Wörterbücher, wenn sie genügen.",
       "lead": "Der KI-Modus erweitert den Lesegestus, ohne das Prinzip Wörterbuch zuerst zu ersetzen, außer wenn Sie es wünschen!",
       "introEyebrow": "Ein kontrollierter Fallback",

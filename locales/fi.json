@@ -141,6 +141,8 @@
     "aiMode": {
       "eyebrow": "Uutta: AI-tila",
       "stamp": "UUTTA: AI-TILA !",
+      "stampLine1": "UUTTA:",
+      "stampLine2": "AI-TILA !",
       "title": "AI auttaa tarvittaessa, sanakirja riittää kun se riittää.",
       "lead": "AI-tila laajentaa lukuelettä korvaamatta sanakirja ensin -periaatetta, ellet itse toivo muuta!",
       "introEyebrow": "Hallittu varamenetelmä",

@@ -141,6 +141,8 @@
     "aiMode": {
       "eyebrow": "Nuevo: modo AI",
       "stamp": "NUEVO: ¡MODO AI !",
+      "stampLine1": "NUEVO:",
+      "stampLine2": "¡MODO AI !",
       "title": "AI cuando ayuda, diccionarios cuando bastan.",
       "lead": "El modo AI amplía el gesto de lectura sin sustituir el principio de diccionario primero, salvo que prefieras lo contrario.",
       "introEyebrow": "Un respaldo controlado",

@@ -34,7 +34,10 @@
         <a href="#faq" id="navFaq">FAQ</a>
       </nav>
       <a class="top-ai-badge" href="#ai-mode" aria-label="New AI mode">
-        <span data-i18n="site.aiMode.stamp">NEW: AI MODE !</span>
+        <span class="stamp-lines">
+          <span class="stamp-line" data-i18n="site.aiMode.stampLine1">NEW:</span>
+          <span class="stamp-line" data-i18n="site.aiMode.stampLine2">AI MODE !</span>
+        </span>
       </a>
       <label class="lang-picker" for="languageSelect">
         <span id="langLabel">Language</span>
@@ -259,7 +262,12 @@
         </div>
         <div class="ai-mode-layout">
           <article class="ai-mode-intro">
-            <span class="new-stamp" role="img" aria-label="New AI mode"><span data-i18n="site.aiMode.stamp">NEW: AI MODE !</span></span>
+            <span class="new-stamp" role="img" aria-label="New AI mode">
+              <span class="stamp-lines">
+                <span class="stamp-line" data-i18n="site.aiMode.stampLine1">NEW:</span>
+                <span class="stamp-line" data-i18n="site.aiMode.stampLine2">AI MODE !</span>
+              </span>
+            </span>
             <p class="eyebrow" data-i18n="site.aiMode.introEyebrow">A controlled fallback</p>
             <h3 data-i18n="site.aiMode.introTitle">A second opinion inside the tooltip.</h3>
             <p data-i18n="site.aiMode.introBody">When the selected word is missing from the local and VPS dictionaries, a configured AI provider can propose a definition in the browser language. The result remains visibly marked as AI, and the extension keeps its normal fallbacks and safeguards.</p>

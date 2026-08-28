@@ -141,6 +141,8 @@
     "aiMode": {
       "eyebrow": "New: AI mode",
       "stamp": "NEW: AI MODE !",
+      "stampLine1": "NEW:",
+      "stampLine2": "AI MODE !",
       "title": "AI when it helps, dictionaries when they are enough.",
       "lead": "AI mode extends the reading gesture without replacing the dictionary-first principle except if you wish to !",
       "introEyebrow": "A controlled fallback",

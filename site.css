@@ -201,6 +201,18 @@ a {
   outline-offset: 4px;
 }
 
+.stamp-lines {
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  line-height: 1.04;
+  white-space: nowrap;
+}
+
+.stamp-line {
+  display: block;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
@@ -1535,9 +1547,11 @@ a {
   filter: drop-shadow(0 8px 10px rgba(150, 0, 24, 0.22));
 }
 
-.new-stamp span {
-  display: block;
-  margin-top: 3px;
+.new-stamp .stamp-lines {
+  gap: 2px;
+}
+
+.new-stamp .stamp-line {
   font-size: 0.83rem;
   letter-spacing: 0;
 }
