@@ -57,7 +57,7 @@ a {
   top: 12px;
   z-index: 20;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto auto auto;
   gap: 18px;
   align-items: center;
   padding: 14px 18px;
@@ -169,12 +169,59 @@ a {
   font: inherit;
 }
 
+.top-ai-badge {
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  padding: 10px;
+  border-radius: 0;
+  clip-path: polygon(50% 0%, 57% 9%, 66% 3%, 70% 14%, 81% 11%, 81% 22%, 92% 23%, 87% 33%, 100% 40%, 90% 50%, 100% 60%, 87% 67%, 92% 77%, 81% 78%, 81% 89%, 70% 86%, 66% 97%, 57% 91%, 50% 100%, 43% 91%, 34% 97%, 30% 86%, 19% 89%, 19% 78%, 8% 77%, 13% 67%, 0% 60%, 10% 50%, 0% 40%, 13% 33%, 8% 23%, 19% 22%, 19% 11%, 30% 14%, 34% 3%, 43% 9%);
+  color: #fff;
+  background: #e00019;
+  box-shadow: 0 8px 16px rgba(150, 0, 24, 0.22);
+  font-size: 0.54rem;
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.top-ai-badge:hover,
+.top-ai-badge:focus-visible {
+  transform: rotate(-10deg) scale(1.04);
+  box-shadow: 0 10px 22px rgba(150, 0, 24, 0.32);
+}
+
+.top-ai-badge:focus-visible {
+  outline: 2px solid #274d8f;
+  outline-offset: 4px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
   gap: 34px;
   padding: 64px 0 28px;
   align-items: start;
+}
+
+.top-demo {
+  margin: 28px 0 0;
+}
+
+.top-demo-video {
+  display: block;
+  width: 100%;
+  max-height: min(620px, 68vh);
+  border: 1px solid rgba(55, 32, 16, 0.14);
+  border-radius: var(--radius-lg);
+  background: #1f1a17;
+  box-shadow: var(--shadow-lg);
+  object-fit: contain;
 }
 
 .eyebrow {
@@ -657,24 +704,6 @@ a {
 .panel-url {
   color: var(--muted);
   font-size: 0.9rem;
-}
-
-/* capture REELLE de la barre du navigateur (icone + pastille EN rouge / IT
-   verte) : posee a droite de la fausse barre, comme le vrai coin extensions */
-.panel-ext-badges {
-  margin-left: auto;
-  height: 52px;
-  border-radius: 9px;
-  border: 1px solid var(--line);
-  box-shadow: 0 3px 9px rgba(57, 28, 18, 0.18);
-}
-
-.badge-hint {
-  position: relative;
-  z-index: 4;
-  margin: -6px 0 14px;
-  font-size: 0.78rem;
-  color: var(--muted);
 }
 
 .panel-content {
@@ -1280,12 +1309,6 @@ a {
   font-weight: 700;
 }
 
-.footer-privacy {
-  font-size: 0.8rem;
-  line-height: 1.4;
-}
-
-
 @media (max-width: 1024px) {
   .topbar {
     grid-template-columns: 1fr;
@@ -1427,7 +1450,133 @@ a {
   75% { transform: translateX(2px); }
 }
 
-/* Badge annotation arrows */
+.store-pill.pwa-install-ready {
+  position: relative;
+  border-color: #0b5f9a;
+  background: #e9f7ff;
+  color: #073b63;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.96),
+    0 0 0 2px rgba(11, 95, 154, 0.14),
+    0 16px 34px rgba(11, 95, 154, 0.24);
+}
+
+.pwa-install-ready::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 1px solid rgba(11, 95, 154, 0.34);
+  border-radius: 999px;
+  pointer-events: none;
+  animation: pwaInstallPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pwaInstallPulse {
+  0%, 100% { opacity: 0.35; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.ai-mode-section {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(150, 0, 24, 0.18);
+  border-bottom: 1px solid rgba(150, 0, 24, 0.12);
+  background: rgba(255, 247, 239, 0.72);
+}
+
+.ai-mode-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.ai-mode-intro {
+  position: relative;
+  min-height: 100%;
+  padding: 30px 130px 28px 30px;
+  border-left: 4px solid var(--accent);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 16px 34px rgba(81, 37, 38, 0.09);
+}
+
+.ai-mode-intro h3 {
+  max-width: 12ch;
+  margin: 0;
+  font: 700 clamp(1.5rem, 2.6vw, 2.4rem)/1.02 "Palatino Linotype", Georgia, serif;
+}
+
+.ai-mode-intro p:last-child {
+  max-width: 48ch;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.new-stamp {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  padding: 12px;
+  color: #fff;
+  background: #e00019;
+  border-radius: 0;
+  clip-path: polygon(50% 0%, 57% 9%, 66% 3%, 70% 14%, 81% 11%, 81% 22%, 92% 23%, 87% 33%, 100% 40%, 90% 50%, 100% 60%, 87% 67%, 92% 77%, 81% 78%, 81% 89%, 70% 86%, 66% 97%, 57% 91%, 50% 100%, 43% 91%, 34% 97%, 30% 86%, 19% 89%, 19% 78%, 8% 77%, 13% 67%, 0% 60%, 10% 50%, 0% 40%, 13% 33%, 8% 23%, 19% 22%, 19% 11%, 30% 14%, 34% 3%, 43% 9%);
+  font-size: 0.67rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  filter: drop-shadow(0 8px 10px rgba(150, 0, 24, 0.22));
+}
+
+.new-stamp span {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.83rem;
+  letter-spacing: 0;
+}
+
+.ai-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ai-mode-item {
+  min-width: 0;
+  padding: 22px 22px 20px;
+  border: 1px solid rgba(39, 77, 143, 0.18);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.ai-mode-number {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--accent);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.ai-mode-item h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.ai-mode-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
 /* Badge annotation arrows */
 .badge-arrows {
   position: absolute;
@@ -1450,8 +1599,7 @@ a {
   filter: drop-shadow(0 1px 1px rgba(8, 38, 77, 0.18));
 }
 
-#badgeArrowHead path,
-#badgeArrowHead circle {
+#badgeArrowHead path {
   fill: #0b2f5b;
   stroke: none;
 }
@@ -1461,133 +1609,27 @@ a {
   z-index: 4;
 }
 
-/* =========================================================
-   Experiment section : companion, maps, glossary, toolbar
-   ========================================================= */
-.eyebrow-with-icon { display: inline-flex; align-items: center; gap: 10px; }
-.eyebrow-icon {
-  width: 24px; height: 24px; border-radius: 7px; flex: 0 0 auto;
-  transform-origin: center;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5), 0 2px 5px rgba(150,0,24,0.18);
-}
-/* Effet loupe d'attention (nouveauté) : joue quand l'icone entre a l'ecran
-   (classe .loupe posee par IntersectionObserver dans site.js). Deux pulsations
-   avec halo violet Experiment. Respecte prefers-reduced-motion. */
-@keyframes eyebrowLoupe {
-  0%, 100% { transform: scale(1); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5), 0 2px 5px rgba(150,0,24,0.18); }
-  18%, 58% { transform: scale(1.55); box-shadow: 0 0 0 7px rgba(155,70,216,0.26), 0 7px 18px rgba(150,0,24,0.34); }
-  38%, 78% { transform: scale(1); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5), 0 2px 5px rgba(150,0,24,0.18); }
-}
-.eyebrow-icon.loupe { animation: eyebrowLoupe 1.9s ease-in-out both; }
-@media (prefers-reduced-motion: reduce) { .eyebrow-icon.loupe { animation: none; } }
-.companion-diagram { margin: 6px 0 30px; }
-.companion-diagram img {
-  display: block; width: 100%; height: auto;
-  border-radius: var(--radius-lg); border: 1px solid var(--line);
-  box-shadow: var(--shadow-md);
-}
-
-.experiment-adv { margin-top: 6px; }
-/* cartes d'avantages : les VRAIES icones de l'extension (image / SenseMap /
-   RootMap inversee) a la place des glyphes generiques */
-.experiment-adv .feature-icon-svg { display: grid; place-items: center; }
-.experiment-adv .feature-icon-svg svg { width: 21px; height: 21px; fill: var(--accent-violet); display: block; }
-
-.dist-callout {
-  margin-top: 30px;
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--accent-violet);
-  background: var(--paper-strong);
-  border-radius: var(--radius-lg);
-  padding: 26px 28px;
-  box-shadow: var(--shadow-md);
-}
-.dist-callout h3 { margin: 4px 0 10px; font: 700 1.25rem/1.2 "Palatino Linotype", Georgia, serif; }
-.dist-callout > .dist-copy > p { color: var(--muted); margin: 0; }
-.dist-steps { margin: 14px 0 18px; padding-left: 20px; display: grid; gap: 6px; color: var(--muted); }
-.dist-steps li { padding-left: 4px; }
-.dist-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-
-.term-glossary {
-  margin-top: 30px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: var(--paper-strong);
-  padding: 24px 26px;
-  box-shadow: var(--shadow-md);
-}
-.term-glossary h3 { margin: 0 0 16px; font: 700 1.2rem/1.2 "Palatino Linotype", Georgia, serif; }
-.term-glossary dl {
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 14px 26px;
-}
-.term-glossary dl > div { display: grid; }
-.term-glossary dt { font-weight: 700; color: var(--accent); }
-.term-glossary dd { margin: 2px 0 0; color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
-.term-glossary em { color: var(--ink); font-style: italic; }
-
-.maps-block { margin-top: 32px; display: grid; gap: 26px; }
-.map-explainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  align-items: center;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  background: var(--paper);
-  padding: 26px;
-  box-shadow: var(--shadow-md);
-}
-.map-explainer.reverse .map-copy { order: 2; }
-.map-copy h3 { margin: 0 0 8px; font: 700 1.2rem/1.2 "Palatino Linotype", Georgia, serif; }
-.map-copy p { color: var(--muted); margin: 0 0 14px; }
-.map-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
-.map-legend li { display: flex; align-items: baseline; gap: 10px; font-size: 0.95rem; }
-.lg-dot {
-  flex: 0 0 auto; width: 14px; height: 14px; border-radius: 5px;
-  transform: translateY(2px); box-shadow: 0 1px 2px rgba(0,0,0,.2);
-}
-.map-figure { margin: 0; display: grid; gap: 10px; }
-.map-figure img { width: 100%; border-radius: var(--radius-md); border: 1px solid var(--line); background: #fffaf4; }
-.map-legend-img { box-shadow: var(--shadow-md); }
-.map-figure figcaption { font-size: 0.82rem; color: var(--muted); text-align: center; }
-.maps-note {
-  margin: 24px auto 0; color: var(--muted); font-size: 0.95rem;
-  text-align: center; max-width: 800px;
-}
-
-.toolbar-guide { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 26px; }
-.toolbar-guide h3 { margin: 0 0 6px; font: 700 1.2rem/1.2 "Palatino Linotype", Georgia, serif; }
-.toolbar-intro { color: var(--muted); margin: 0 0 16px; }
-.tb-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.tb-row {
-  display: flex; align-items: flex-start; gap: 14px;
-  padding: 12px 15px; border: 1px solid var(--line);
-  border-radius: var(--radius-md); background: var(--paper);
-}
-.tb-row div { font-size: 0.95rem; line-height: 1.5; }
-.tb-row strong { color: var(--ink); }
-.tb-key {
-  flex: 0 0 auto; display: grid; place-items: center;
-  width: 34px; height: 34px; border-radius: 10px;
-  background: var(--accent-soft); color: var(--accent);
-  font-size: 18px; line-height: 1;
-}
-.tb-key-svg svg { width: 20px; height: 20px; display: block; }
-.tb-exp .tb-key { background: rgba(155, 70, 216, 0.14); color: var(--accent-violet); }
-.toolbar-shot { margin: 6px 0 20px; max-width: 440px; }
-.toolbar-shot img { display: block; width: 100%; border-radius: var(--radius-md); border: 1px solid var(--line); box-shadow: var(--shadow-md); }
-.toolbar-shot figcaption { margin-top: 7px; font-size: 0.82rem; color: var(--muted); text-align: center; }
-.tb-tag {
-  display: inline-block; margin-left: 6px; padding: 1px 7px;
-  border-radius: 999px; background: rgba(155, 70, 216, 0.14);
-  color: var(--accent-violet); font-size: 0.66rem; font-weight: 700;
-  letter-spacing: 0.04em; text-transform: uppercase; vertical-align: 1px;
+@media (max-width: 900px) {
+  .ai-mode-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
-  .map-explainer { grid-template-columns: 1fr; }
-  .map-explainer.reverse .map-copy { order: 0; }
+  .top-ai-badge {
+    justify-self: start;
+  }
+
+  .ai-mode-intro {
+    padding: 126px 22px 24px;
+  }
+
+  .new-stamp {
+    top: 18px;
+    right: 20px;
+  }
+
+  .ai-mode-grid {
+    grid-template-columns: 1fr;
+  }
 }

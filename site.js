@@ -2,10 +2,10 @@
   'use strict';
 
   const SUPPORTED_LANGS = ['en', 'fr', 'es', 'de', 'fi'];
-  const LANG_STORAGE_KEY = 'notatrSiteLang';
   const state = {
     lang: 'en',
-    messages: null
+    messages: null,
+    deferredInstallPrompt: null
   };
 
   const featureIcons = ['\u25cd', '\u21c4', '\ud83d\udd0a', '\u2318', '\u223f', '\u2699'];
@@ -34,58 +34,20 @@
     el.textContent = decodeEntities(value);
   }
 
-  function readStoredLanguage() {
-    try {
-      const stored = localStorage.getItem(LANG_STORAGE_KEY);
-      return SUPPORTED_LANGS.indexOf(stored) >= 0 ? stored : '';
-    } catch (_) {
-      return '';
-    }
-  }
-
-  function writeStoredLanguage(lang) {
-    try { localStorage.setItem(LANG_STORAGE_KEY, lang); } catch (_) {}
-  }
-
   function pickInitialLanguage() {
     const urlLang = new URLSearchParams(window.location.search).get('lang');
-    const storedLang = readStoredLanguage();
     const browserLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
     if (SUPPORTED_LANGS.indexOf(urlLang) >= 0) return urlLang;
-    if (SUPPORTED_LANGS.indexOf(storedLang) >= 0) return storedLang;
     if (SUPPORTED_LANGS.indexOf(browserLang) >= 0) return browserLang;
     return 'en';
-  }
-  function loadScriptMessages(lang) {
-    return new Promise((resolve, reject) => {
-      window.NOTATR_SITE_LOCALES = window.NOTATR_SITE_LOCALES || {};
-      if (window.NOTATR_SITE_LOCALES[lang]) {
-        resolve(window.NOTATR_SITE_LOCALES[lang]);
-        return;
-      }
-      const script = document.createElement('script');
-      script.src = `locales/${lang}.js?v=${Date.now()}`;
-      script.onload = () => {
-        const messages = window.NOTATR_SITE_LOCALES && window.NOTATR_SITE_LOCALES[lang];
-        if (messages) resolve(messages);
-        else reject(new Error(`Cannot load script locale ${lang}`));
-      };
-      script.onerror = () => reject(new Error(`Cannot load script locale ${lang}`));
-      document.head.appendChild(script);
-    });
   }
 
   async function loadMessages(lang) {
     const safeLang = SUPPORTED_LANGS.indexOf(lang) >= 0 ? lang : 'en';
-    if (window.location.protocol === 'file:') return loadScriptMessages(safeLang);
     const url = `locales/${safeLang}.json?v=${Date.now()}`;
-    try {
-      const response = await fetch(url, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Cannot load locale ${safeLang}`);
-      return response.json();
-    } catch (err) {
-      return loadScriptMessages(safeLang);
-    }
+    const response = await fetch(url, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Cannot load locale ${safeLang}`);
+    return response.json();
   }
 
   function makeEl(tag, className, textValue) {
@@ -155,8 +117,8 @@
     if (/Diccionario de la Lengua/i.test(textValue)) return { icon: 'https://dle.rae.es/favicon.ico', alt: 'RAE' };
     if (/Larousse/i.test(textValue)) return { icon: 'https://www.larousse.fr/favicon.ico', alt: 'Larousse' };
     if (/DWDS/i.test(textValue)) return { icon: 'https://www.dwds.de/favicon.ico', alt: 'DWDS' };
-    if (/De Mauro|Internazionale/i.test(textValue)) return { icon: './assets/dimauro.png', alt: 'Internazionale' };
-    if (/Kielitoimiston sanakirja/i.test(textValue)) return { icon: './assets/kielitoimiston.png', alt: 'Kielitoimiston sanakirja' };
+    if (/De Mauro|Internazionale/i.test(textValue)) return { icon: 'https://www.internazionale.it/favicon.ico', alt: 'Internazionale' };
+    if (/Kielitoimiston sanakirja/i.test(textValue)) return { icon: 'https://kielitoimistonsanakirja.fi/favicon.ico', alt: 'Kielitoimiston sanakirja' };
     if (/Wiktionary/i.test(textValue)) return { icon: 'https://en.wiktionary.org/static/favicon/wiktionary/en.ico', alt: 'Wiktionary' };
     return null;
   }
@@ -270,10 +232,7 @@
     faqEyebrow: 'site.faq.eyebrow',
     faqTitle: 'site.faq.title',
     footerLine: 'site.footer',
-    contactLabel: 'site.contactLabel',
-    privacyNatLabel: 'site.privacyNatLabel',
-    privacyLabel: 'site.privacyLabel',
-    privacyProLabel: 'site.privacyProLabel'
+    contactLabel: 'site.contactLabel'
   };
 
   const legacyListBindings = {
@@ -325,47 +284,6 @@
     });
   }
 
-  // Fleches feu-tricolore -> chips de couleur : les chemins STATIQUES du SVG
-  // tombaient a cote (la largeur des chips change avec la langue et le
-  // viewport). On les recalcule depuis les positions REELLES : pastille i
-  // (rouge/orange/verte) -> sommet du chip i (risky/conditional/ok).
-  // Rejoue au resize et a chaque changement de langue.
-  function drawBadgeArrows() {
-    const svg = document.querySelector('.badge-arrows');
-    if (!svg) return;
-    const dots = document.querySelectorAll('.panel-toolbar .traffic i');
-    const badges = document.querySelectorAll('.badge-row .badge');
-    const paths = svg.querySelectorAll('.badge-arrow');
-    if (dots.length < 3 || badges.length < 3 || paths.length < 3) return;
-    const box = svg.getBoundingClientRect();
-    if (!box.width || !box.height) return;
-    svg.setAttribute('viewBox', '0 0 ' + Math.round(box.width) + ' ' + Math.round(box.height));
-    for (let i = 0; i < 3; i++) {
-      const dr = dots[i].getBoundingClientRect();
-      const br = badges[i].getBoundingClientRect();
-      const x1 = dr.left + dr.width / 2 - box.left;
-      const y1 = dr.bottom - box.top + 3;
-      const x2 = br.left + br.width / 2 - box.left;
-      const y2 = br.top - box.top - 5;
-      const my = (y1 + y2) / 2;
-      paths[i].setAttribute('d',
-        'M ' + x1.toFixed(1) + ' ' + y1.toFixed(1) +
-        ' C ' + x1.toFixed(1) + ' ' + my.toFixed(1) +
-        ', ' + x2.toFixed(1) + ' ' + my.toFixed(1) +
-        ', ' + x2.toFixed(1) + ' ' + y2.toFixed(1));
-    }
-  }
-
-  function scheduleBadgeArrows() {
-    /* PAS de requestAnimationFrame ici : il ne tire jamais dans un onglet en
-     * arriere-plan (piege constate), alors que setTimeout tire toujours. */
-    drawBadgeArrows();
-    setTimeout(drawBadgeArrows, 350);
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(drawBadgeArrows).catch(function () {});
-    }
-  }
-
   function bindInlineTooltipDemo() {
     const root = document.getElementById('inlineTooltipDemo');
     const rotate = document.getElementById('inlineTooltipRotate');
@@ -407,26 +325,12 @@
     if (select && select.value !== state.lang) select.value = state.lang;
 
     bindInlineTooltipDemo();
-    scheduleBadgeArrows(); /* la largeur des chips depend de la langue */
-  }
-
-  function updatePolicyLinks(lang) {
-    [
-      ['privacyNatLabel', 'privacyNAT.html'],
-      ['privacyLabel', 'privacy.html'],
-      ['privacyProLabel', 'privacy-pro.html']
-    ].forEach(([id, href]) => {
-      const link = document.getElementById(id);
-      if (link) link.href = `${href}?lang=${encodeURIComponent(lang)}`;
-    });
   }
 
   async function setLanguage(lang) {
     const nextLang = SUPPORTED_LANGS.indexOf(lang) >= 0 ? lang : 'en';
     const messages = await loadMessages(nextLang);
     applyMessages(messages);
-    writeStoredLanguage(nextLang);
-    updatePolicyLinks(nextLang);
     const url = new URL(window.location.href);
     url.searchParams.set('lang', nextLang);
     history.replaceState(null, '', url.toString());
@@ -517,31 +421,61 @@
     trigger.dataset.detectBound = '1';
   }
 
-  // Effet loupe d'attention sur l'icone Experiment de l'eyebrow : rejoue a
-  // CHAQUE fois qu'elle entre dans le viewport (signale la nouveaute). Repli
-  // sans IntersectionObserver : joue une fois au chargement.
-  function bindEyebrowLoupe() {
-    const icon = document.querySelector('.eyebrow-icon');
-    if (!icon || icon.dataset.loupeBound === '1') return;
-    icon.dataset.loupeBound = '1';
-    const play = function () {
-      icon.classList.remove('loupe');
-      void icon.offsetWidth; // reflow -> relance l'animation
-      icon.classList.add('loupe');
-    };
-    if (!('IntersectionObserver' in window)) { play(); return; }
-    const io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { if (e.isIntersecting) play(); });
-    }, { threshold: 0.6 });
-    io.observe(icon);
+  function updatePwaInstallControl() {
+    const control = document.getElementById('storeChromeLink');
+    if (!control) return;
+    const ready = Boolean(state.deferredInstallPrompt);
+    control.classList.toggle('pwa-install-ready', ready);
+    control.setAttribute('data-pwa-ready', ready ? 'true' : 'false');
+    control.setAttribute('aria-label', ready ? 'Install Not A Translator' : 'Open Not A Translator in the Chrome Web Store');
   }
 
-  window.addEventListener('resize', drawBadgeArrows);
+  async function handlePwaInstallClick(event) {
+    if (!state.deferredInstallPrompt) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const promptEvent = state.deferredInstallPrompt;
+    state.deferredInstallPrompt = null;
+    updatePwaInstallControl();
+    promptEvent.prompt();
+    try {
+      await promptEvent.userChoice;
+    } catch (err) {
+      console.debug('PWA install prompt closed', err);
+    }
+    updatePwaInstallControl();
+  }
+
+  function bindPwaInstallControl() {
+    const control = document.getElementById('storeChromeLink');
+    if (!control || control.dataset.pwaBound === '1') return;
+    control.addEventListener('click', handlePwaInstallClick);
+    control.dataset.pwaBound = '1';
+    updatePwaInstallControl();
+  }
+
+  function registerServiceWorker() {
+    if (!('serviceWorker' in navigator) || window.location.protocol === 'file:') return;
+    navigator.serviceWorker.register('sw.js', { scope: './' }).catch((err) => {
+      console.debug('Service worker registration unavailable', err);
+    });
+  }
+
+  window.addEventListener('beforeinstallprompt', function (event) {
+    event.preventDefault();
+    state.deferredInstallPrompt = event;
+    updatePwaInstallControl();
+  });
+
+  window.addEventListener('appinstalled', function () {
+    state.deferredInstallPrompt = null;
+    updatePwaInstallControl();
+  });
 
   document.addEventListener('DOMContentLoaded', async function () {
     bindBrowserDetectTrigger();
-    bindEyebrowLoupe();
-    scheduleBadgeArrows();
+    bindPwaInstallControl();
+    registerServiceWorker();
     const select = document.getElementById('languageSelect');
     if (select) {
       select.addEventListener('change', function () {
