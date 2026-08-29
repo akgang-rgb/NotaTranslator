@@ -4,8 +4,7 @@
   const SUPPORTED_LANGS = ['en', 'fr', 'es', 'de', 'fi'];
   const state = {
     lang: 'en',
-    messages: null,
-    deferredInstallPrompt: null
+    messages: null
   };
 
   const featureIcons = ['\u25cd', '\u21c4', '\ud83d\udd0a', '\u2318', '\u223f', '\u2699'];
@@ -421,61 +420,8 @@
     trigger.dataset.detectBound = '1';
   }
 
-  function updatePwaInstallControl() {
-    const control = document.getElementById('storeChromeLink');
-    if (!control) return;
-    const ready = Boolean(state.deferredInstallPrompt);
-    control.classList.toggle('pwa-install-ready', ready);
-    control.setAttribute('data-pwa-ready', ready ? 'true' : 'false');
-    control.setAttribute('aria-label', ready ? 'Install Not A Translator' : 'Open Not A Translator in the Chrome Web Store');
-  }
-
-  async function handlePwaInstallClick(event) {
-    if (!state.deferredInstallPrompt) return;
-    event.preventDefault();
-    event.stopPropagation();
-    const promptEvent = state.deferredInstallPrompt;
-    state.deferredInstallPrompt = null;
-    updatePwaInstallControl();
-    promptEvent.prompt();
-    try {
-      await promptEvent.userChoice;
-    } catch (err) {
-      console.debug('PWA install prompt closed', err);
-    }
-    updatePwaInstallControl();
-  }
-
-  function bindPwaInstallControl() {
-    const control = document.getElementById('storeChromeLink');
-    if (!control || control.dataset.pwaBound === '1') return;
-    control.addEventListener('click', handlePwaInstallClick);
-    control.dataset.pwaBound = '1';
-    updatePwaInstallControl();
-  }
-
-  function registerServiceWorker() {
-    if (!('serviceWorker' in navigator) || window.location.protocol === 'file:') return;
-    navigator.serviceWorker.register('sw.js', { scope: './' }).catch((err) => {
-      console.debug('Service worker registration unavailable', err);
-    });
-  }
-
-  window.addEventListener('beforeinstallprompt', function (event) {
-    event.preventDefault();
-    state.deferredInstallPrompt = event;
-    updatePwaInstallControl();
-  });
-
-  window.addEventListener('appinstalled', function () {
-    state.deferredInstallPrompt = null;
-    updatePwaInstallControl();
-  });
-
   document.addEventListener('DOMContentLoaded', async function () {
     bindBrowserDetectTrigger();
-    bindPwaInstallControl();
-    registerServiceWorker();
     const select = document.getElementById('languageSelect');
     if (select) {
       select.addEventListener('change', function () {

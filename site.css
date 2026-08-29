@@ -1462,32 +1462,6 @@ a {
   75% { transform: translateX(2px); }
 }
 
-.store-pill.pwa-install-ready {
-  position: relative;
-  border-color: #0b5f9a;
-  background: #e9f7ff;
-  color: #073b63;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.96),
-    0 0 0 2px rgba(11, 95, 154, 0.14),
-    0 16px 34px rgba(11, 95, 154, 0.24);
-}
-
-.pwa-install-ready::after {
-  content: "";
-  position: absolute;
-  inset: -5px;
-  border: 1px solid rgba(11, 95, 154, 0.34);
-  border-radius: 999px;
-  pointer-events: none;
-  animation: pwaInstallPulse 1.8s ease-in-out infinite;
-}
-
-@keyframes pwaInstallPulse {
-  0%, 100% { opacity: 0.35; transform: scale(0.98); }
-  50% { opacity: 1; transform: scale(1.02); }
-}
-
 .ai-mode-section {
   position: relative;
   overflow: hidden;
