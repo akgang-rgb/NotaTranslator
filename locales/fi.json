@@ -35,6 +35,7 @@
     "languageLabel": "Kieli",
     "brandTagline": "Määritelmät pysyvät lukemisen virrassa.",
     "nav": {
+      "versionLogs": "Versiohistoria",
       "features": "Ominaisuudet",
       "updates": "Uutta",
       "engine": "Moottori",

@@ -1,0 +1,170 @@
+:root {
+  color-scheme: light;
+  --ink: #22252a;
+  --muted: #5e636b;
+  --line: #dcdfe3;
+  --accent: #960018;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font: 16px/1.6 "Segoe UI", Arial, sans-serif;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+
+.page-header,
+.page-intro,
+.section-heading,
+.release-inner,
+.page-footer {
+  width: min(960px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  background: #f8eef0;
+}
+
+.page-intro {
+  padding-block: 36px 28px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.page-intro p {
+  max-width: 70ch;
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.section-heading {
+  padding-block: 20px 14px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.release {
+  border-top: 1px solid var(--line);
+  background: #fff;
+}
+
+.release:nth-child(odd) {
+  background: #f1f2f4;
+}
+
+.release:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.release-inner {
+  display: grid;
+  grid-template-columns: 156px minmax(0, 1fr);
+  gap: 12px 32px;
+  padding-block: 24px;
+}
+
+.release h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+}
+
+.release-label {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.release ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.release li + li {
+  margin-top: 6px;
+}
+
+.page-footer {
+  padding-block: 24px 40px;
+}
+
+@media (max-width: 600px) {
+  .release-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-intro {
+    padding-top: 28px;
+  }
+}

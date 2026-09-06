@@ -319,6 +319,9 @@
     updateStaticLabels(messages);
     updateLegacyIdBindings(messages);
     updateLanguageNames(messages);
+    document.querySelectorAll('a[href^="version-logs.html"]').forEach(function(link) {
+      link.href = 'version-logs.html?lang=' + encodeURIComponent(state.lang);
+    });
 
     const select = document.getElementById('languageSelect');
     if (select && select.value !== state.lang) select.value = state.lang;

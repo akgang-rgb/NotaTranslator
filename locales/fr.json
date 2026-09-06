@@ -35,6 +35,7 @@
     "languageLabel": "Langue",
     "brandTagline": "Les définitions restent dans le flux de lecture.",
     "nav": {
+      "versionLogs": "Historique des versions",
       "features": "Fonctions",
       "updates": "Nouveautés",
       "engine": "Moteur",

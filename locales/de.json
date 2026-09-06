@@ -35,6 +35,7 @@
     "languageLabel": "Sprache",
     "brandTagline": "Definitionen bleiben im Lesefluss.",
     "nav": {
+      "versionLogs": "Versionsverlauf",
       "features": "Funktionen",
       "updates": "Neuheiten",
       "engine": "Engine",
