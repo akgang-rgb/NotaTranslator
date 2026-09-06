@@ -444,6 +444,11 @@ a {
   margin: 28px 0 24px;
 }
 
+.store-install-label {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
 .store-links {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
