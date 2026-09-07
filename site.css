@@ -146,18 +146,6 @@ a {
   font-size: 0.96rem;
 }
 
-.topnav .nav-versions {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 6px 12px;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  color: var(--accent);
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .topnav a:hover,
 .topnav a:focus-visible {
   color: var(--accent);
@@ -1339,11 +1327,12 @@ a {
   font-weight: 700;
 }
 
-.version-logs-link {
-  color: var(--accent);
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.footer-versions {
+  font-size: 0.8rem;
+}
+
+.footer-versions a {
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
