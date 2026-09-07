@@ -177,11 +177,9 @@
     heroLeadAfter: 'site.hero.inlineDemo.after',
     heroPrimaryCta: 'site.hero.primaryCta',
     heroSecondaryCta: 'site.hero.secondaryCta',
-    storePaypalKicker: 'site.hero.storeCtas.paypal',
     storeChromeLabel: 'site.hero.storeCtas.chrome',
     storeAndroidLabel: 'site.hero.storeCtas.firefoxAndroid',
     storeFirefoxLabel: 'site.hero.storeCtas.firefox',
-    storePaypalLabel: 'site.hero.storeCtas.paypalLabel',
     badgeRisk: 'shared.badges.risky',
     badgeMaybe: 'shared.badges.conditional',
     badgeOk: 'shared.badges.ok',
@@ -318,6 +316,9 @@
     updateLanguageNames(messages);
     document.querySelectorAll('a[href^="version-logs.html"]').forEach(function(link) {
       link.href = 'version-logs.html?lang=' + encodeURIComponent(state.lang);
+    });
+    document.querySelectorAll('a[href^="donate.html"]').forEach(function(link) {
+      link.href = 'donate.html?lang=' + encodeURIComponent(state.lang);
     });
 
     const select = document.getElementById('languageSelect');

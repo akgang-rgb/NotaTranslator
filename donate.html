@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Support Not A Translator</title>
+  <meta name="description" content="Support Not A Translator with a one-time donation.">
+  <link rel="icon" href="assets/dictionary128.png">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="donate.css">
+  <script src="donate-config.js" defer></script>
+  <script src="donate.js" defer></script>
+</head>
+<body>
+  <div class="donation-shell">
+    <header class="donation-header">
+      <a class="brand" href="index.html"><img src="assets/dictionary128.png" width="36" height="36" alt="">Not A Translator</a>
+      <a class="donation-back" href="index.html#top" data-copy="back">Back to home</a>
+    </header>
+    <main class="donation-card">
+      <h1 data-copy="title">Support Not A Translator</h1>
+      <p data-copy="intro">Choose a one-time donation to support the project and its dictionary services.</p>
+      <p id="test-notice" class="donation-notice" hidden data-copy="test">Test mode — no real payment will be taken.</p>
+      <form id="donation-form">
+        <label for="donation-amount" data-copy="amount">Amount in euros</label>
+        <div class="donation-amount"><input id="donation-amount" name="amount" type="text" inputmode="decimal" value="5" required aria-describedby="amount-help"><span aria-hidden="true">€</span></div>
+        <p id="amount-help" data-copy="range">From €1 to €500. No subscription.</p>
+        <button id="donation-submit" class="button button-primary" type="submit" disabled data-copy="continue">Continue to secure payment</button>
+      </form>
+      <p id="donation-status" role="status" aria-live="polite" tabindex="-1" data-copy="loading">Loading payment options…</p>
+      <div id="stripe-checkout"></div>
+      <p class="donation-privacy" data-copy="privacy">Payment details are entered in Stripe's secure form. This site does not receive your card number.</p>
+      <a class="donation-paypal" href="https://paypal.me/notatranslator" target="_blank" rel="noopener noreferrer" data-copy="paypal">Prefer PayPal?</a>
+      <noscript><p>JavaScript is required for Stripe payments. You can use the PayPal link above.</p></noscript>
+    </main>
+  </div>
+</body>
+</html>

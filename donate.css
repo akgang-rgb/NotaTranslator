@@ -1,0 +1,18 @@
+.donation-shell { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0 48px; }
+.donation-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 32px; }
+.donation-back, .donation-paypal { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.donation-back { display: inline-flex; align-items: center; min-height: 44px; }
+.donation-card { padding: clamp(20px, 5vw, 44px); border: 1px solid var(--line); border-radius: 24px; background: var(--paper-strong); }
+.donation-card h1 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin-top: 0; }
+#donation-form { margin-top: 28px; max-width: 420px; }
+#donation-form label { display: block; font-weight: 700; margin-bottom: 8px; }
+.donation-amount { display: flex; align-items: center; gap: 12px; }
+.donation-amount input { width: 180px; max-width: 80%; padding: 12px; border: 1px solid var(--muted); border-radius: 10px; font: inherit; background: #fff; color: var(--ink); }
+#amount-help, .donation-privacy { font-size: 0.9rem; color: var(--muted); }
+#donation-submit { border: 0; font: inherit; font-weight: 700; cursor: pointer; max-width: 100%; padding: 12px 20px; }
+#donation-submit:disabled { cursor: default; opacity: 0.55; }
+#donation-status { overflow-wrap: anywhere; }
+.donation-notice { padding: 12px 16px; background: #fff0ce; border-radius: 10px; }
+#stripe-checkout { margin-top: 20px; }
+.donation-card :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+[hidden] { display: none !important; }

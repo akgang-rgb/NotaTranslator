@@ -516,6 +516,39 @@ a {
     0 12px 28px rgba(255, 174, 68, 0.18);
 }
 
+.support-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-width: 0;
+  min-height: 66px;
+  border: 1px solid rgba(99, 91, 255, 0.24);
+  border-radius: 999px;
+  background: #f2f9ff;
+  box-shadow: 0 8px 22px rgba(75, 67, 180, 0.14);
+}
+
+.support-half {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 10px 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.support-paypal { color: #003087; border-radius: 999px 0 0 999px; }
+.support-stripe { color: #fff; background: #635bff; border-radius: 0 999px 999px 0; }
+.support-paypal:hover { background: #e0f1ff; }
+.support-stripe:hover { background: #5147e5; }
+.support-half:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; position: relative; z-index: 1; }
+.support-wordmark { display: block; white-space: nowrap; line-height: 1; font-family: Arial, Helvetica, sans-serif; }
+.support-wordmark-paypal { font-size: 18px; font-weight: 800; font-style: italic; letter-spacing: -0.9px; }
+.support-wordmark-paypal span { color: #0070ba; }
+.support-wordmark-stripe { font-size: 24px; font-weight: 800; letter-spacing: -1.2px; }
+
 .store-pill-icon {
   display: inline-flex;
   align-items: center;
