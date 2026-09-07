@@ -6,6 +6,7 @@
 .donation-card h1 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin-top: 0; }
 #donation-form { margin-top: 28px; max-width: 420px; }
 #donation-form label { display: block; font-weight: 700; margin-bottom: 8px; }
+.donation-name { box-sizing: border-box; width: 100%; margin-bottom: 16px; padding: 12px; border: 1px solid var(--muted); border-radius: 10px; font: inherit; background: #fff; color: var(--ink); }
 .donation-amount { display: flex; align-items: center; gap: 12px; }
 .donation-amount input { width: 180px; max-width: 80%; padding: 12px; border: 1px solid var(--muted); border-radius: 10px; font: inherit; background: #fff; color: var(--ink); }
 #amount-help, .donation-privacy { font-size: 0.9rem; color: var(--muted); }

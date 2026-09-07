@@ -9,6 +9,8 @@
     fi: { back: 'Takaisin etusivulle', title: 'Tue Not A Translatoria', intro: 'Tue projektia ja sen sanakirjapalveluja kertalahjoituksella.', amount: 'Summa euroina', range: '1–500 €. Ei tilausta.', continue: 'Jatka turvalliseen maksuun', loading: 'Ladataan maksutapoja…', privacy: 'Maksutiedot syötetään Stripen suojattuun lomakkeeseen. Tämä sivusto ei saa korttisi numeroa.', paypal: 'Haluatko käyttää PayPalia?', test: 'Testitila — oikeaa maksua ei veloiteta.', unavailable: 'Stripe-maksut eivät ole vielä käytettävissä. Voit käyttää alla olevaa PayPal-linkkiä.', invalid: 'Anna summa väliltä 1–500 €, enintään kahdella desimaalilla.', failed: 'Maksulomaketta ei voitu ladata. Yritä uudelleen tai käytä PayPalia.', paid: 'Kiitos! Lahjoituksesi on vastaanotettu.', pending: 'Maksuasi käsitellään. Tarkista Stripen vahvistus ennen uutta yritystä.', open: 'Maksua ei suoritettu loppuun. Voit yrittää uudelleen alla.', checkFailed: 'Maksua ei voitu vahvistaa. Tarkista Stripen vahvistus ennen uutta lahjoitusta.' }
   };
   const params = new URLSearchParams(location.search);
+  const nameLabels = { en: ['First name (optional)', 'Last name (optional)'], fr: ['Prénom (facultatif)', 'Nom (facultatif)'], de: ['Vorname (optional)', 'Nachname (optional)'], es: ['Nombre (opcional)', 'Apellidos (opcional)'], fi: ['Etunimi (valinnainen)', 'Sukunimi (valinnainen)'] };
+  Object.keys(copy).forEach(key => { [copy[key].firstName, copy[key].lastName] = nameLabels[key]; });
   const requested = params.get('lang') || (navigator.language || 'en').slice(0, 2);
   const lang = Object.hasOwn(copy, requested) ? requested : 'en';
   const text = copy[lang];
@@ -65,7 +67,9 @@
     if (busy || !config) return;
     const cents = amountInCents(amount.value);
     if (cents === null) { show(text.invalid); amount.focus(); return; }
-    if (!attempt || attempt.amount !== cents) attempt = { amount: cents, requestId: crypto.randomUUID() };
+    const firstName = document.getElementById('donation-first-name').value.trim();
+    const lastName = document.getElementById('donation-last-name').value.trim();
+    if (!attempt || attempt.amount !== cents || attempt.firstName !== firstName || attempt.lastName !== lastName) attempt = { amount: cents, firstName, lastName, requestId: crypto.randomUUID() };
     busy = true;
     button.disabled = true;
     amount.disabled = true;

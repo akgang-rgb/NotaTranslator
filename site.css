@@ -519,12 +519,9 @@ a {
 .support-split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 6px;
   min-width: 0;
   min-height: 66px;
-  border: 1px solid rgba(99, 91, 255, 0.24);
-  border-radius: 999px;
-  background: #f2f9ff;
-  box-shadow: 0 8px 22px rgba(75, 67, 180, 0.14);
 }
 
 .support-half {
@@ -532,6 +529,8 @@ a {
   align-items: center;
   justify-content: center;
   min-width: 0;
+  border: 1px solid rgba(99, 91, 255, 0.24);
+  box-shadow: 0 8px 22px rgba(75, 67, 180, 0.14);
   padding: 10px 4px;
   font-size: 0.85rem;
   font-weight: 700;
@@ -539,8 +538,8 @@ a {
   transition: background-color 160ms ease, box-shadow 160ms ease;
 }
 
-.support-paypal { color: #003087; border-radius: 999px 0 0 999px; }
-.support-stripe { color: #fff; background: #635bff; border-radius: 0 999px 999px 0; }
+.support-paypal { color: #003087; background: #f2f9ff; border-radius: 999px 8px 8px 999px; }
+.support-stripe { color: #fff; background: #635bff; border-radius: 8px 999px 999px 8px; }
 .support-paypal:hover { background: #e0f1ff; }
 .support-stripe:hover { background: #5147e5; }
 .support-half:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; position: relative; z-index: 1; }

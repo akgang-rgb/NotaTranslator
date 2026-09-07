@@ -23,6 +23,10 @@
       <p data-copy="intro">Choose a one-time donation to support the project and its dictionary services.</p>
       <p id="test-notice" class="donation-notice" hidden data-copy="test">Test mode — no real payment will be taken.</p>
       <form id="donation-form">
+        <label for="donation-first-name" data-copy="firstName">First name (optional)</label>
+        <input id="donation-first-name" class="donation-name" name="given-name" autocomplete="given-name" maxlength="80">
+        <label for="donation-last-name" data-copy="lastName">Last name (optional)</label>
+        <input id="donation-last-name" class="donation-name" name="family-name" autocomplete="family-name" maxlength="80">
         <label for="donation-amount" data-copy="amount">Amount in euros</label>
         <div class="donation-amount"><input id="donation-amount" name="amount" type="text" inputmode="decimal" value="5" required aria-describedby="amount-help"><span aria-hidden="true">€</span></div>
         <p id="amount-help" data-copy="range">From €1 to €500. No subscription.</p>
