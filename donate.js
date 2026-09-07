@@ -57,7 +57,10 @@
     form.hidden = true;
     try {
       const result = await api('/session?session_id=' + encodeURIComponent(sessionId));
-      if (result.paymentStatus === 'paid') show(text.paid, true);
+      if (result.paymentStatus === 'paid') {
+        document.getElementById('donation-paypal').hidden = true;
+        show(text.paid, true);
+      }
       else if (result.status === 'complete') show(text.pending, true);
       else { form.hidden = false; button.disabled = false; show(text.open, true); }
     } catch (_) { show(text.checkFailed, true); }
