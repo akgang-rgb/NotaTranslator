@@ -3,16 +3,16 @@
     "addon@notatrexperiment.fr": {
       "updates": [
         {
-          "version": "1.0.9",
-          "update_link": "https://akgang-rgb.github.io/NotaTranslator/downloads/experiment_firefox_1.0.9.xpi"
+          "version": "1.2.5",
+          "update_link": "https://akgang-rgb.github.io/NotaTranslator/downloads/experiment_firefox_1.2.5.xpi"
         }
       ]
     },
     "addon@notatrexperimentpro.fr": {
       "updates": [
         {
-          "version": "1.2.29",
-          "update_link": "https://akgang-rgb.github.io/NotaTranslator/downloads/experiment_pro_firefox_1.2.29.xpi"
+          "version": "1.4.5",
+          "update_link": "https://akgang-rgb.github.io/NotaTranslator/downloads/experiment_pro_firefox_1.4.5.xpi"
         }
       ]
     }
