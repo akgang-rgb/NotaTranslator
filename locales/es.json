@@ -52,9 +52,7 @@
         "install": "Instalar",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "Contribuir",
-        "paypalLabel": "PayPal"
+        "firefox": "Firefox"
       },
       "panelNote": "El modo consola conserva las entradas cuando una p&#225;gina se resiste al renderizado inline.",
       "status": {

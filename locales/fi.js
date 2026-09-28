@@ -53,9 +53,7 @@ window.NOTATR_SITE_LOCALES['fi'] = {
         "install": "",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "Osallistu",
-        "paypalLabel": "PayPal"
+        "firefox": "Firefox"
       },
       "panelNote": "Konsolitila säilyttää merkinnät, kun sivu vastustaa työkaluvihjeiden renderöintiä.",
       "status": {
@@ -303,7 +301,7 @@ window.NOTATR_SITE_LOCALES['fi'] = {
         },
         {
           "q": "Miten saan Experimentin, version jossa on kuvat ja sanakartat?",
-          "a": "Experiment on listaamaton kumppanilaajennus, joka jaetaan projektia tukeville. Tue PayPalin tai Buy Me a Coffeen kautta, lähetä lyhyt sähköposti, niin saat yksityisen asennuslinkin. Se säilyttää saman lukueleen ja lisää kuvat, SenseMapin ja RootMapin."
+          "a": "Experiment on listaamaton kumppanilaajennus, joka jaetaan projektia tukeville. Tue Buy Me a Coffeen kautta, lähetä lyhyt sähköposti, niin saat yksityisen asennuslinkin. Se säilyttää saman lukueleen ja lisää kuvat, SenseMapin ja RootMapin."
         },
         {
           "q": "Miksi määritelmä on joskus väärä tai aiheeseen kuulumaton?",
@@ -337,7 +335,7 @@ window.NOTATR_SITE_LOCALES['fi'] = {
         "eyebrow": "Näin saat sen",
         "title": "Experiment on palkinto tukijoille.",
         "body": "Experiment julkaistaan listaamattomana (unlisted) laajennuksena: se ei näy kaupan hauissa. Se jaetaan suoraan projektia tukeville, jotta lisäominaisuudet pysyvät sidoksissa lahjoituksiin, jotka pitävät kaiken mainoksettomana ja seuraamattomana.",
-        "step1": "Tue projektia PayPalin tai Buy Me a Coffeen kautta.",
+        "step1": "Tue projektia Buy Me a Coffeen kautta.",
         "step2": "Lähetä lyhyt sähköposti, jotta tiedämme tuestasi.",
         "step3": "Saat Experimentin yksityisen asennuslinkin."
       },

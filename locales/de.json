@@ -52,9 +52,7 @@
         "install": "Installieren",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "PayPal Me",
-        "paypalLabel": ""
+        "firefox": "Firefox"
       },
       "panelNote": "Der Konsolenmodus bewahrt Einträge, wenn eine Seite das Tooltip-Rendering stört.",
       "status": {

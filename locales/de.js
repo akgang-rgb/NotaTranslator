@@ -53,9 +53,7 @@ window.NOTATR_SITE_LOCALES['de'] = {
         "install": "",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "PayPal Me",
-        "paypalLabel": ""
+        "firefox": "Firefox"
       },
       "panelNote": "Der Konsolenmodus bewahrt Einträge, wenn eine Seite das Tooltip-Rendering stört.",
       "status": {
@@ -303,7 +301,7 @@ window.NOTATR_SITE_LOCALES['de'] = {
         },
         {
           "q": "Wie bekomme ich Experiment, die Version mit Bildern und Wortkarten?",
-          "a": "Experiment ist eine nicht gelistete Begleit-Erweiterung, die mit den Unterstützern des Projekts geteilt wird. Tragen Sie über PayPal oder Buy Me a Coffee bei, senden Sie eine kurze E-Mail, und Sie erhalten den privaten Installationslink. Sie behält dieselbe Lesegeste und ergänzt Bilder, SenseMap und RootMap."
+          "a": "Experiment ist eine nicht gelistete Begleit-Erweiterung, die mit den Unterstützern des Projekts geteilt wird. Tragen Sie über Buy Me a Coffee bei, senden Sie eine kurze E-Mail, und Sie erhalten den privaten Installationslink. Sie behält dieselbe Lesegeste und ergänzt Bilder, SenseMap und RootMap."
         },
         {
           "q": "Warum ist eine Definition manchmal falsch oder unpassend?",
@@ -337,7 +335,7 @@ window.NOTATR_SITE_LOCALES['de'] = {
         "eyebrow": "So bekommen Sie es",
         "title": "Experiment ist eine Belohnung für Unterstützer.",
         "body": "Experiment wird als nicht gelistete (unlisted) Erweiterung veröffentlicht: Sie erscheint nicht in der Store-Suche. Sie wird direkt mit den Unterstützern des Projekts geteilt, damit die Zusatzfunktionen an die Spenden gebunden bleiben, die alles werbe- und trackingfrei halten.",
-        "step1": "Unterstützen Sie das Projekt über PayPal oder Buy Me a Coffee.",
+        "step1": "Unterstützen Sie das Projekt über Buy Me a Coffee.",
         "step2": "Senden Sie eine kurze E-Mail, damit wir von Ihrem Beitrag wissen.",
         "step3": "Sie erhalten den privaten Installationslink für Experiment."
       },

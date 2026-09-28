@@ -59,9 +59,7 @@
         "install": "Installer",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "PayPal Me",
-        "paypalLabel": ""
+        "firefox": "Firefox"
       },
       "panelNote": "Le mode console conserve les entrées quand une page résiste au rendu des infobulles.",
       "status": {

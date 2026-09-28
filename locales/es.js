@@ -53,9 +53,7 @@ window.NOTATR_SITE_LOCALES['es'] = {
         "install": "",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "Contribuir",
-        "paypalLabel": "PayPal"
+        "firefox": "Firefox"
       },
       "panelNote": "El modo consola conserva las entradas cuando una p&#225;gina se resiste al renderizado inline.",
       "status": {
@@ -303,7 +301,7 @@ window.NOTATR_SITE_LOCALES['es'] = {
         },
         {
           "q": "¿Cómo consigo Experiment, la versión con imágenes y mapas de palabras?",
-          "a": "Experiment es una extensión complementaria no listada, compartida con quienes apoyan el proyecto. Colabora mediante PayPal o Buy Me a Coffee, envía un breve correo y recibirás el enlace de instalación privado. Mantiene el mismo gesto de lectura y añade imágenes, SenseMap y RootMap."
+          "a": "Experiment es una extensión complementaria no listada, compartida con quienes apoyan el proyecto. Colabora mediante Buy Me a Coffee, envía un breve correo y recibirás el enlace de instalación privado. Mantiene el mismo gesto de lectura y añade imágenes, SenseMap y RootMap."
         },
         {
           "q": "¿Por qué a veces una definición es incorrecta o no viene al caso?",
@@ -337,7 +335,7 @@ window.NOTATR_SITE_LOCALES['es'] = {
         "eyebrow": "Cómo conseguirla",
         "title": "Experiment es una recompensa para quienes colaboran.",
         "body": "Experiment se publica como extensión no listada (unlisted): no aparece en las búsquedas de la tienda. Se comparte directamente con quienes apoyan el proyecto, para que las funciones extra sigan ligadas a las donaciones que mantienen todo sin anuncios ni rastreo.",
-        "step1": "Apoya el proyecto mediante PayPal o Buy Me a Coffee.",
+        "step1": "Apoya el proyecto mediante Buy Me a Coffee.",
         "step2": "Envía un breve correo para avisarnos de tu aportación.",
         "step3": "Recibes el enlace de instalación privado de Experiment."
       },

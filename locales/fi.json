@@ -52,9 +52,7 @@
         "install": "Asenna",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "Osallistu",
-        "paypalLabel": "PayPal"
+        "firefox": "Firefox"
       },
       "panelNote": "Konsolitila säilyttää merkinnät, kun sivu vastustaa työkaluvihjeiden renderöintiä.",
       "status": {

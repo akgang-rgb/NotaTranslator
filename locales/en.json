@@ -52,9 +52,7 @@
         "install": "Install",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "PayPal Me",
-        "paypalLabel": ""
+        "firefox": "Firefox"
       },
       "panelNote": "Console mode stores entries when a page resists tooltip rendering.",
       "status": {

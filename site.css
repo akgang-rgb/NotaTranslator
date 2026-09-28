@@ -538,14 +538,13 @@ a {
   transition: background-color 160ms ease, box-shadow 160ms ease;
 }
 
-.support-paypal { color: #003087; background: #f2f9ff; border-radius: 999px 8px 8px 999px; }
+.support-bmc { color: #000; background: #ffdd00; border-color: rgba(212, 184, 0, 0.7); border-radius: 999px 8px 8px 999px; }
 .support-stripe { color: #fff; background: #635bff; border-radius: 8px 999px 999px 8px; }
-.support-paypal:hover { background: #e0f1ff; }
+.support-bmc:hover { background: #ffe94d; }
 .support-stripe:hover { background: #5147e5; }
 .support-half:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; position: relative; z-index: 1; }
 .support-wordmark { display: block; white-space: nowrap; line-height: 1; font-family: Arial, Helvetica, sans-serif; }
-.support-wordmark-paypal { font-size: 18px; font-weight: 800; font-style: italic; letter-spacing: -0.9px; }
-.support-wordmark-paypal span { color: #0070ba; }
+.support-wordmark-bmc { font-size: 15px; font-weight: 800; line-height: 1.15; text-align: center; white-space: normal; }
 .support-wordmark-stripe { font-size: 24px; font-weight: 800; letter-spacing: -1.2px; }
 
 .store-pill-icon {

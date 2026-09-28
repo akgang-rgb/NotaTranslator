@@ -52,9 +52,7 @@ window.NOTATR_SITE_LOCALES['en'] = {
         "install": "",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "PayPal Me",
-        "paypalLabel": ""
+        "firefox": "Firefox"
       },
       "panelNote": "Console mode stores entries when a page resists tooltip rendering.",
       "status": {
@@ -302,7 +300,7 @@ window.NOTATR_SITE_LOCALES['en'] = {
         },
         {
           "q": "How do I get Experiment, the version with images and word maps?",
-          "a": "Experiment is an unlisted companion extension shared with people who support the project. Contribute through PayPal or Buy Me a Coffee, send a short email, and you receive the private install link. It keeps the same reading gesture and adds pictures, SenseMap and RootMap."
+          "a": "Experiment is an unlisted companion extension shared with people who support the project. Contribute through Buy Me a Coffee, send a short email, and you receive the private install link. It keeps the same reading gesture and adds pictures, SenseMap and RootMap."
         },
         {
           "q": "Why is a definition sometimes wrong or off-topic?",

@@ -60,9 +60,7 @@ window.NOTATR_SITE_LOCALES['fr'] = {
         "install": "",
         "chrome": "Chrome",
         "firefoxAndroid": "Ffox Android",
-        "firefox": "Firefox",
-        "paypal": "PayPal Me",
-        "paypalLabel": ""
+        "firefox": "Firefox"
       },
       "panelNote": "Le mode console conserve les entrées quand une page résiste au rendu des infobulles.",
       "status": {
@@ -303,7 +301,7 @@ window.NOTATR_SITE_LOCALES['fr'] = {
         },
         {
           "q": "Comment obtenir Experiment, la version avec images et cartes de mots ?",
-          "a": "Experiment est une extension compagnon non répertoriée, partagée avec les personnes qui soutiennent le projet. Contribuez via PayPal ou Buy Me a Coffee, envoyez un court e-mail, et vous recevez le lien d'installation privé. Elle garde le même geste de lecture et ajoute images, SenseMap et RootMap."
+          "a": "Experiment est une extension compagnon non répertoriée, partagée avec les personnes qui soutiennent le projet. Contribuez via Buy Me a Coffee, envoyez un court e-mail, et vous recevez le lien d'installation privé. Elle garde le même geste de lecture et ajoute images, SenseMap et RootMap."
         },
         {
           "q": "Pourquoi une définition est-elle parfois fausse ou hors sujet ?",
@@ -337,7 +335,7 @@ window.NOTATR_SITE_LOCALES['fr'] = {
         "eyebrow": "Comment l'obtenir",
         "title": "Experiment est une récompense pour les donateurs.",
         "body": "Experiment est publiée en extension non répertoriée (unlisted) : elle n'apparaît pas dans les recherches du store. Elle est partagée directement avec les personnes qui soutiennent le projet, afin que les fonctions supplémentaires restent liées aux dons qui gardent tout sans publicité ni pistage.",
-        "step1": "Soutenez le projet via PayPal ou Buy Me a Coffee.",
+        "step1": "Soutenez le projet via Buy Me a Coffee.",
         "step2": "Envoyez un court e-mail pour nous signaler votre don.",
         "step3": "Vous recevez le lien d'installation privé d'Experiment."
       },
