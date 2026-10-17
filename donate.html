@@ -9,6 +9,26 @@
   <link rel="icon" href="assets/dictionary128.png">
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="donate.css">
+  <style>
+    /* Bandeau et Buy Me a Coffee : affichés seulement si la visite vient de NotaTranslator
+       (référeur du site/app, ou ?from=notatranslator pour les contextes sans référeur). */
+    html:not([data-from-nt]) .donation-header,
+    html:not([data-from-nt]) #donation-bmc { display: none; }
+  </style>
+  <script>
+    (function () {
+      var from = false, ref = document.referrer || '';
+      try { from = String(new URLSearchParams(location.search).get('from') || '').toLowerCase() === 'notatranslator'; } catch (e) {}
+      if (!from && ref) {
+        from = ref.indexOf(location.origin + '/') === 0 || /notatranslator/i.test(ref);
+      }
+      if (from) document.documentElement.setAttribute('data-from-nt', '');
+    })();
+  </script>
+  <noscript><style>
+    .donation-header { display: flex !important; }
+    #donation-bmc { display: inline-flex !important; }
+  </style></noscript>
   <script src="donate-config.js" defer></script>
   <script src="donate.js" defer></script>
 </head>
