@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Archè (ARCH3)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 46rem; margin: 2rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+  h3 { font-size: 1rem; margin-top: 1.25rem; }
+  .meta { opacity: .75; font-size: .9rem; }
+  .lang { margin-top: 3rem; border-top: 1px solid color-mix(in srgb, currentColor 25%, transparent); padding-top: 1rem; }
+  ul { padding-left: 1.25rem; }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité — Archè (ARCH3)</h1>
+<p class="meta">Dernière mise à jour : 22 octobre 2026 · Contact : dorsal.buscs9l@icloud.com</p>
+
+<h2>Principe</h2>
+<p>Archè (ARCH3) est une extension de navigateur (Chrome, Safari) et une application iOS qui fonctionne <strong>localement sur votre appareil</strong>. L'éditeur n'exploite aucun serveur de collecte : <strong>aucune donnée n'est envoyée à l'éditeur</strong>. Pas d'inscription, pas de compte, pas de publicité, pas de traceur, pas de statistique d'usage.</p>
+
+<h2>Données stockées localement</h2>
+<p>Si vous les activez, les éléments suivants restent dans le stockage local de votre navigateur ou de votre appareil :</p>
+<ul>
+  <li>pages observées (texte des pages que vous visitez, pour le contexte de lecture),</li>
+  <li>mesures d'engagement approximatives (défilement, temps de présence),</li>
+  <li>historique de navigation (facultatif, désactivé par défaut),</li>
+  <li>contexte géographique que vous choisissez,</li>
+  <li>pile de propositions (liens et idées récoltés).</li>
+</ul>
+<p>Rien de tout cela ne quitte votre appareil, sauf si vous activez explicitement un service ci-dessous. Vous pouvez tout effacer depuis les réglages de l'extension. Les secrets (clés, jetons, phrases) sont protégés par un coffre chiffré ; en cas d'échec du coffre, l'extension <strong>ne stocke rien en clair</strong>.</p>
+
+<h2>Services que vous activez vous-même (facultatifs, révocables)</h2>
+
+<h3>Google Drive — synchronisation chiffrée</h3>
+<p>Si vous activez la synchronisation, l'extension demande l'autorisation Google limitée au <strong>dossier applicatif caché</strong> de l'extension dans votre Drive (portée <code>drive.appdata</code>). Elle ne voit ni ne modifie aucun autre fichier de votre Drive. Le contenu synchronisé est <strong>chiffré (AES-GCM) avec votre phrase de chiffrement partagée avant tout envoi</strong> : Google ne stocke que du chiffrement, que vous seul(e) pouvez lire. Vous pouvez révoquer l'accès à tout moment via <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ; la suppression de l'application dans Drive supprime les données synchronisées.</p>
+
+<h3>Discord — liens vers vos webhooks</h3>
+<p>Si vous configurez vos propres webhooks Discord, l'extension y envoie les liens d'articles trouvés, vers le serveur que vous avez choisi. L'extension ne crée aucun compte et n'envoie rien ailleurs.</p>
+
+<h3>Fournisseurs d'IA — extraits de la page en cours</h3>
+<p>Si vous activez l'IA distante avec votre propre clé API (OpenAI, OpenRouter, Groq, etc.), des extraits de la page en cours sont transmis au fournisseur que vous avez configuré, pour générer des résumés ou aides à la lecture. La politique de ce fournisseur s'applique alors à ces requêtes.</p>
+
+<h3>Réseaux sociaux et actualités — lecture anonyme</h3>
+<p>Bluesky, Mastodon (tags publics) et Reddit (flux RSS publics) sont consultés <strong>anonymement, en lecture seule, sans compte</strong>, pour récolter des liens publics. Aucune de ces plateformes ne reçoit d'identité vous concernant au-delà d'une requête de flux publique standard.</p>
+
+<h3>Recherche web</h3>
+<p>Si vous la configurez, la recherche web passe par Brave Search (avec votre clé) ou l'instance SearXNG de votre choix.</p>
+
+<h2>Droits (RGPD)</h2>
+<p>L'éditeur ne détenant aucune donnée personnelle, aucun registre de traitement n'est tenu et aucune suppression côté serveur n'est nécessaire : vos données sont chez vous. Pour toute question : <a href="mailto:dorsal.buscs9l@icloud.com">dorsal.buscs9l@icloud.com</a>.</p>
+
+<h2>Hébergement de cette page</h2>
+<p>Page statique hébergée sur GitHub Pages, sans traceur ni cookie.</p>
+
+<!-- ============================== ENGLISH ============================== -->
+<div class="lang" lang="en">
+<h1>Privacy Policy — Archè (ARCH3)</h1>
+<p class="meta">Last updated: October 22, 2026 · Contact: dorsal.buscs9l@icloud.com</p>
+
+<h2>Principle</h2>
+<p>Archè (ARCH3) is a browser extension (Chrome, Safari) and an iOS app that runs <strong>locally on your device</strong>. The publisher operates no collection server: <strong>no data is sent to the publisher</strong>. No sign-up, no account, no advertising, no tracker, no usage analytics.</p>
+
+<h2>Data stored locally</h2>
+<p>If you enable them, the following stay in your browser's or device's local storage:</p>
+<ul>
+  <li>observed pages (text of the pages you visit, for reading context),</li>
+  <li>approximate engagement measures (scrolling, time on page),</li>
+  <li>browsing history (optional, off by default),</li>
+  <li>the geographic context you choose,</li>
+  <li>the proposal stack (collected links and ideas).</li>
+</ul>
+<p>None of this leaves your device unless you explicitly enable a service below. You can erase everything from the extension's settings. Secrets (keys, tokens, passphrases) are protected by an encrypted vault; if the vault fails, the extension <strong>stores nothing in plaintext</strong>.</p>
+
+<h2>Services you enable yourself (optional, revocable)</h2>
+
+<h3>Google Drive — encrypted sync</h3>
+<p>If you enable sync, the extension requests the Google authorization limited to the extension's <strong>hidden app-data folder</strong> in your Drive (scope <code>drive.appdata</code>). It can neither see nor modify any other file in your Drive. Synced content is <strong>encrypted (AES-GCM) with your shared passphrase before any upload</strong>: Google stores only ciphertext only you can read. You can revoke access anytime at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; deleting the app in Drive removes the synced data.</p>
+
+<h3>Discord — links to your webhooks</h3>
+<p>If you configure your own Discord webhooks, the extension posts the discovered article links to the server you chose. It creates no account and sends nothing anywhere else.</p>
+
+<h3>AI providers — excerpts of the current page</h3>
+<p>If you enable remote AI with your own API key (OpenAI, OpenRouter, Groq, etc.), excerpts of the current page are sent to the provider you configured, to generate summaries or reading aids. That provider's policy then applies to those requests.</p>
+
+<h3>Social networks and news — anonymous reading</h3>
+<p>Bluesky, Mastodon (public tags) and Reddit (public RSS feeds) are consulted <strong>anonymously, read-only, without an account</strong>, to collect public links. None of these platforms receives an identity beyond a standard public-feed request.</p>
+
+<h3>Web search</h3>
+<p>If configured, web search goes through Brave Search (with your key) or your chosen SearXNG instance.</p>
+
+<h2>Rights (GDPR)</h2>
+<p>The publisher holds no personal data: no processing register is kept and no server-side deletion is needed — your data is with you. For any question: <a href="mailto:dorsal.buscs9l@icloud.com">dorsal.buscs9l@icloud.com</a>.</p>
+
+<h2>Hosting of this page</h2>
+<p>Static page hosted on GitHub Pages, no tracker and no cookie.</p>
+</div>
+
+</body>
+</html>
