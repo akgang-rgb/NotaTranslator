@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fonctions avancées — Archè (ARCH3)</title>
+<link rel="icon" href="images/icon32.png" sizes="32x32">
+<link rel="stylesheet" href="arch3.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="index.html"><img src="images/icon32.png" alt="">ARCHƎ</a>
+  <a class="plain" href="index.html#fonctionnalites">Fonctionnalités</a>
+  <a class="plain" href="tuto-discord.html">Tuto Discord</a>
+  <a class="plain" href="tuto-avancees.html">Fonctions avancées</a>
+  <span class="spacer"></span>
+  <a class="plain" href="privacy-arch3.html">Confidentialité</a>
+</nav>
+
+<div class="narrow" style="padding-top:2.6rem">
+
+<h1><span class="kicker">Tutoriel</span>Fonctions avancées</h1>
+<p class="lede">Tout ce qui est <b>facultatif</b> : fournisseurs d'IA, Jev, recherche web, sources sociales, YouTube, synchro Drive et réglages de lecture. Chaque brique s'active séparément dans les options d'Archè — et rien n'est requis pour utiliser l'extension au quotidien.</p>
+
+<h2>Fournisseurs d'IA — votre clé, votre choix</h2>
+<p>Les extraits de la page en cours partent vers le fournisseur que <b>vous</b> configurez, pour générer résumés et aides à la lecture. La politique de ce fournisseur s'applique alors à ces requêtes.</p>
+<ol class="steps">
+  <li><b>Groq — conseillé pour commencer</b> : créez une clé d'essai sur <a href="https://console.groq.com/keys" rel="noopener">console.groq.com/keys</a>, activez « Activer Groq » dans les options, collez la clé. Modèle conseillé : <code>llama-3.3-70b-versatile</code>.</li>
+  <li><b>OpenRouter</b> : clé sur <a href="https://openrouter.ai/keys" rel="noopener">openrouter.ai/keys</a> — un seul compte pour des dizaines de modèles, dont beaucoup gratuits.</li>
+  <li><b>Google Gemini</b> : clé via <a href="https://aistudio.google.com/apikey" rel="noopener">Google AI Studio</a>.</li>
+  <li><b>OpenAI</b> (ou compatible) : clé sur <a href="https://platform.openai.com/api-keys" rel="noopener">platform.openai.com</a>.</li>
+</ol>
+<div class="callout"><b>Les clés sont stockées dans le coffre chiffré</b> de l'extension — jamais en clair. Laissez un champ de clé vide à l'enregistrement pour conserver la valeur déjà sauvegardée. Bouton « Tester » : vérifiez la connexion avant d'aller plus loin.</div>
+
+<h2>Jev — le modèle qui choisit</h2>
+<p>Jev est un modèle <b>décisionnel probabiliste</b> : il ne rédige pas de texte, il choisit. Avec une clé, la liste des pages trouvées lui est soumise (question <em>Choice</em> sur <code>api.typesafe.ai</code>, modèle <code>jev-1.13.0</code>) et c'est <em>sa</em> page qui vous est proposée, avec sa confiance affichée dans la popup (ex. <code>· Jev : 0.87</code>).</p>
+<ol class="steps">
+  <li>Clé d'essai : <a href="https://console.typesafe.ai/keys" rel="noopener">console.typesafe.ai/keys</a>.</li>
+  <li>Collez-la dans les options, section Jev.</li>
+  <li>Sans clé — ou si l'appel échoue — la sélection notée locale reprend la main : rien ne casse.</li>
+</ol>
+
+<h2>Recherche web</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Brave Search</h3>
+    <p>Clé API sur <a href="https://brave.com/search/api/" rel="noopener">brave.com/search/api</a> (offre gratuite disponible), collez-la dans les options.</p>
+  </div>
+  <div class="card">
+    <h3>SearXNG</h3>
+    <p>Vous hébergez votre instance (ou en choisissez une publique) : renseignez son URL dans les options. Aucune clé.</p>
+  </div>
+</div>
+
+<h2>Sources sociales</h2>
+<p>Facultatif, désactivé par défaut, lecture anonyme et seule. Lors de l'enregistrement, l'extension demande l'autorisation d'accéder aux sites (requis pour ces lectures).</p>
+<div class="grid">
+  <div class="card">
+    <h3>Bluesky</h3>
+    <p>Case à cocher : consultation anonyme des flux publics, sans compte.</p>
+  </div>
+  <div class="card">
+    <h3>Mastodon</h3>
+    <p>Une instance par ligne (ex. <code>mastodon.social</code>) plus des tags au choix (sans le <code>#</code>).</p>
+  </div>
+  <div class="card">
+    <h3>Reddit</h3>
+    <p>Un sub par ligne, formats <code>r/nom</code>, <code>/r/nom</code> ou <code>nom</code> acceptés. Flux RSS publics, lus anonymement.</p>
+  </div>
+  <div class="card">
+    <h3><a href="tuto-discord.html">Discord →</a></h3>
+    <p>Bot de votre serveur, salons listés à la main. Voir le tutoriel dédié, cinq étapes.</p>
+  </div>
+  <div class="card">
+    <h3>YouTube</h3>
+    <p>API Data v3 sur un projet Google Cloud dédié, clé restreinte à cette API. Quota ≈ 100 recherches/jour — très au-dessus des besoins.</p>
+  </div>
+</div>
+<p class="lede" style="margin-top:.9rem">Les liens trouvés subissent les mêmes filtres que la recherche web : sensibilité, paywall, unicité.</p>
+
+<h2>Synchro Drive — simple par construction</h2>
+<p>Facultative et désactivée par défaut. Vos propositions, observations et retours sont <b>chiffrés sur votre appareil (AES-GCM)</b> puis envoyés dans votre espace privé Google Drive (<code>appDataFolder</code>). Google ne reçoit jamais la clé de chiffrement ; rien n'est lisible dans votre Drive.</p>
+<ol class="steps">
+  <li>Dans les options, section Drive : activez la synchronisation.</li>
+  <li>Définissez une <b>phrase de chiffrement</b> (12 caractères minimum). Elle n'est <em>jamais</em> envoyée — elle reste dans le coffre local, avec vos clés IA.</li>
+  <li>Cliquez <b>« Se connecter et synchroniser »</b> et autorisez l'accès (portée limitée au dossier applicatif).</li>
+</ol>
+<div class="grid">
+  <div class="card">
+    <h3>Votre pile vous suit</h3>
+    <p>Installez Archè sur un autre appareil (Chrome, Safari, iPhone), même compte Google, <b>même phrase</b> : vos propositions et notes s'y retrouvent. Gardez la phrase dans un gestionnaire de mots de passe — jamais par courriel.</p>
+  </div>
+  <div class="card">
+    <h3>Synchronisation automatique</h3>
+    <p>Au démarrage du navigateur et toutes les heures, en plus du bouton manuel. Désactiver stoppe les prochains transferts sans supprimer ce qui est déjà déposé.</p>
+  </div>
+  <div class="card">
+    <h3>Ce qui ne synchro pas</h3>
+    <p>Réglages, clés IA et état Xenolith restent sur l'appareil — toujours. Chaque appareil garde ses propres fichiers chiffrés, fusionnés à la synchro.</p>
+  </div>
+</div>
+
+<h2>Réglages de lecture</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Rétention</h3>
+    <p>Durée de conservation des observations (30 jours par défaut), au-delà elles sont purgées.</p>
+  </div>
+  <div class="card">
+    <h3>Domaines exclus</h3>
+    <p>Une liste de sites que l'observation ignore (banques, messageries…).</p>
+  </div>
+  <div class="card">
+    <h3>Contexte géographique</h3>
+    <p>Pays et région que vous choisissez, pour situer vos lectures. Désactivé par défaut.</p>
+  </div>
+  <div class="card">
+    <h3>Historique &amp; engagement</h3>
+    <p>Facultatifs : historique de navigation (désactivé par défaut), mesures de défilement et de temps de présence. Tout reste local.</p>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:2rem"><b>Rappel</b> : tout est révocable à tout moment depuis les options, et rien de tout cela ne part vers l'éditeur. Détails dans la <a href="privacy-arch3.html">politique de confidentialité</a>.</div>
+
+</div>
+
+<footer>
+  <p>Archè (ARCH3) · v1.0.1 · <a href="index.html">Accueil</a> · <a href="privacy-arch3.html">Confidentialité</a> · Contact : <a href="mailto:dorsal.buscs9l@icloud.com">dorsal.buscs9l@icloud.com</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuto Discord — Archè (ARCH3)</title>
+<link rel="icon" href="images/icon32.png" sizes="32x32">
+<link rel="stylesheet" href="arch3.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="index.html"><img src="images/icon32.png" alt="">ARCHƎ</a>
+  <a class="plain" href="index.html#fonctionnalites">Fonctionnalités</a>
+  <a class="plain" href="tuto-discord.html">Tuto Discord</a>
+  <a class="plain" href="tuto-avancees.html">Fonctions avancées</a>
+  <span class="spacer"></span>
+  <a class="plain" href="privacy-arch3.html">Confidentialité</a>
+</nav>
+
+<div class="narrow" style="padding-top:2.6rem">
+
+<h1><span class="kicker">Tutoriel · 10 minutes</span>Configurer Discord</h1>
+<p class="lede">Facultatif, désactivé par défaut. Archè peut lire <b>vos propres salons</b> via un bot que <b>vous</b> créez, uniquement pour enrichir votre pile de propositions. Le bot ne lit que les salons que vous listez — et n'envoie rien nulle part.</p>
+
+<div class="callout"><b>Principe de base</b> : l'extension ne crée aucun compte Discord et n'utilise aucun service intermédiaire. C'est votre bot, sur votre serveur, avec vos salons. Voyez-en la portée dans la <a href="privacy-arch3.html">politique de confidentialité</a> (section Discord).</div>
+
+<h2>Étape 1 — Créer l'application</h2>
+<ol class="steps">
+  <li>Ouvrez <a href="https://discord.com/developers/applications" rel="noopener">discord.com/developers/applications</a> et connectez-vous avec votre compte Discord.</li>
+  <li>Cliquez <b>New Application</b>, donnez-lui un nom (ex. <code>Archè Lecteur</code>), acceptez les conditions.</li>
+</ol>
+
+<h2>Étape 2 — Créer le bot</h2>
+<ol class="steps">
+  <li>Dans l'application, ouvrez l'onglet <b>Bot</b> (menu de gauche).</li>
+  <li>Cliquez <b>Reset Token</b> puis <b>Copy</b> : c'est le <b>jeton du bot</b>. Il sera collé dans Archè à l'étape 5.</li>
+  <li>Toujours dans l'onglet Bot, descendez dans <b>Privileged Gateway Intents</b> et activez <b>Message Content Intent</b>. Sans cet intent, Discord n'envoie le bot <em>que des messages vides</em> — c'est l'erreur n°1.</li>
+</ol>
+
+<div class="callout warn"><b>Le jeton, c'est la clé du bot.</b> Ne le partagez jamais (ni dans un salon, ni dans une capture d'écran). S'il fuite : <b>Reset Token</b> dans le portail développeurs, puis recollez le nouveau jeton dans les réglages d'Archè. La valeur est stockée dans le coffre chiffré de l'extension, jamais en clair.</div>
+
+<h2>Étape 3 — Inviter le bot dans votre serveur</h2>
+<ol class="steps">
+  <li>Toujours dans l'application, ouvrez <b>OAuth2 → URL Generator</b>.</li>
+  <li>Dans <b>Scopes</b>, cochez <code>bot</code>.</li>
+  <li>Dans <b>Bot Permissions</b>, <b>View Channels</b> (« Voir les salons ») suffit.</li>
+  <li>Copiez l'URL générée en bas de page, ouvrez-la dans votre navigateur, choisissez votre serveur et autorisez.</li>
+</ol>
+
+<h2>Étape 4 — Récupérer les identifiants de salons</h2>
+<ol class="steps">
+  <li>Dans Discord, activez le <b>mode développeur</b> : <b>Réglages utilisateur → Avancé → Mode développeur</b>.</li>
+  <li>Clic droit sur chaque salon à suivre → <b>Copier l'identifiant</b>. Vous obtenez un long nombre (ex. <code>112233445566778899</code>).</li>
+  <li>Notez-les : un identifiant par ligne, ils seront collés à l'étape 5.</li>
+</ol>
+
+<h2>Étape 5 — Brancher Archè</h2>
+<ol class="steps">
+  <li>Ouvrez les réglages d'Archè (clic sur l'icône → Options), section <b>Sources sociales</b>.</li>
+  <li>Collez le jeton du bot dans <b>Discord — jeton de bot</b>.</li>
+  <li>Collez les identifiants de salons dans <b>Discord — canaux suivis</b>, un par ligne.</li>
+  <li><b>Enregistrer.</b> Lors de l'enregistrement, l'extension demande l'autorisation d'accéder aux sites : acceptez (requis pour lire l'API Discord).</li>
+</ol>
+
+<h2>Si ça ne fonctionne pas</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Salon lu mais rien ne tombe</h3>
+    <p>Vérifiez <b>Message Content Intent</b> (étape 2) — sans lui, les messages sont vides et aucun lien n'est extractible.</p>
+  </div>
+  <div class="card">
+    <h3>Le bot ne voit pas le salon</h3>
+    <p>Permission <b>View Channels</b> manquante à l'invitation, ou salon privé non visible. Réinvitez avec la bonne permission.</p>
+  </div>
+  <div class="card">
+    <h3>Erreur 401</h3>
+    <p>Jeton invalide ou régénéré. Recopiez le jeton courant depuis le portail développeurs dans les réglages d'Archè.</p>
+  </div>
+  <div class="card">
+    <h3>Mauvais identifiant de salon</h3>
+    <p>Un ID de <em>salon</em>, pas de serveur ni de message. Recopiez via clic droit → « Copier l'identifiant » avec le mode développeur activé.</p>
+  </div>
+</div>
+
+<p style="margin-top:2.2rem">Suite : <a href="tuto-avancees.html">les fonctions avancées</a> — IA, Jev, recherche web, Drive et réglages de lecture.</p>
+
+</div>
+
+<footer>
+  <p>Archè (ARCH3) · v1.0.1 · <a href="index.html">Accueil</a> · <a href="privacy-arch3.html">Confidentialité</a> · Contact : <a href="mailto:dorsal.buscs9l@icloud.com">dorsal.buscs9l@icloud.com</a></p>
+</footer>
+
+</body>
+</html>
